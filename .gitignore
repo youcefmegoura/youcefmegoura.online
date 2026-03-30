@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+.next/
+out/
+
+# IDE
+.idea/
+
+# env
+.env
+.env.local
+
+# build
+*.tsbuildinfo
+next-env.d.ts
+
+# QA artifacts
+qa-screenshots/
+qa-investigate.mjs
+
+# misc
+.DS_Store
+Thumbs.db

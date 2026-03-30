@@ -1,0 +1,31 @@
+- id: master
+  degree:
+    fr: "Master en Réseaux et Systèmes Distribués"
+    en: "Master's in Networks and Distributed Systems"
+  school:
+    fr: "Université Abd El-Hamid Mehri Constantine 2"
+    en: "University of Constantine 2"
+  faculty:
+    fr: "Faculté des Nouvelles Technologies"
+    en: "Faculty of New Technologies"
+  period:
+    start: "2018"
+    end: "2020"
+  location: "Constantine, Algérie"
+  primary: true
+
+- id: licence
+  degree:
+    fr: "Licence en Sciences de l'Informatique"
+    en: "Bachelor's in Computer Science"
+  school:
+    fr: "Université Abd El-Hamid Mehri Constantine 2"
+    en: "University of Constantine 2"
+  faculty:
+    fr: "Faculté des Nouvelles Technologies"
+    en: "Faculty of New Technologies"
+  period:
+    start: "2015"
+    end: "2018"
+  location: "Constantine, Algérie"
+  primary: false

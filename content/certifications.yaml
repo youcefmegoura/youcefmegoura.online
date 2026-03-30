@@ -1,0 +1,41 @@
+- title: "Cisco CCNA"
+  issuer: "Cisco"
+  description:
+    fr: "Certificat Cisco CCNA Routing and Switching"
+    en: "Cisco CCNA Routing and Switching Certificate"
+  date: "2019-04"
+
+- title: "Hacking Éthique"
+  issuer: "Udemy"
+  description:
+    fr: "Tests d'intrusion et sécurité web"
+    en: "Penetration testing and web security"
+  date: null
+
+- title: "PHP et MySQL"
+  issuer: "OpenClassRooms"
+  description:
+    fr: "Concevez votre site web avec PHP et MySQL"
+    en: "Design your website with PHP and MySQL"
+  date: null
+
+- title: "HTML5 et CSS3"
+  issuer: "OpenClassRooms"
+  description:
+    fr: "Créer votre site web avec HTML5 et CSS3"
+    en: "Create your website with HTML5 and CSS3"
+  date: null
+
+- title: "JavaScript"
+  issuer: "OpenClassRooms"
+  description:
+    fr: "Apprenez à coder avec JavaScript"
+    en: "Learn to code with JavaScript"
+  date: null
+
+- title: "Intelligence Artificielle"
+  issuer: "Udemy"
+  description:
+    fr: "Intelligence Artificielle de A à Z"
+    en: "Artificial Intelligence from A to Z"
+  date: null

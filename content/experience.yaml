@@ -1,0 +1,173 @@
+- id: keutt
+  company:
+    fr: "Keutt (Startup)"
+    en: "Keutt (Startup)"
+  role:
+    fr: "DevOps & LeadTech"
+    en: "DevOps & LeadTech"
+  type: "part-time"
+  period:
+    start: "2026-01"
+    end: null
+  location: "Paris, France"
+  short:
+    fr: "Structuration infra d'une startup. Docker, Traefik, Ansible, CI/CD GitHub Actions."
+    en: "Built startup infrastructure from scratch. Docker, Traefik, Ansible, CI/CD GitHub Actions."
+  detailed:
+    fr: |
+      Contexte: Participation à la structuration technique d'une startup avec backend, frontend web et mobile Flutter.
+      Missions:
+      - Conception et mise en place de l'infrastructure serveur
+      - Conteneurisation des applications avec Docker
+      - Mise en place de reverse proxy avec Traefik
+      - Automatisation des déploiements avec Ansible
+      - Pipeline CI/CD avec GitHub Actions
+    en: |
+      Context: Technical structuring of a startup with backend, frontend web and mobile Flutter apps.
+      Missions:
+      - Server infrastructure design and setup
+      - Application containerization with Docker
+      - Reverse proxy setup with Traefik
+      - Deployment automation with Ansible
+      - CI/CD pipeline with GitHub Actions
+  environment:
+    - Docker
+    - Ansible
+    - Terraform
+    - Kubernetes
+    - Traefik
+    - GitHub Actions
+    - Linux
+
+- id: lacroix
+  company:
+    fr: "Lacroix Electronics (IoT)"
+    en: "Lacroix Electronics (IoT)"
+  role:
+    fr: "Ingénieur Backend & DevOps"
+    en: "Backend & DevOps Engineer"
+  type: "full-time"
+  period:
+    start: "2021-09"
+    end: "2025-12"
+  location: "Rennes, France"
+  short:
+    fr: "Développement de la plateforme IoT LX Connect. Microservices Java/Kotlin, Kubernetes, CI/CD."
+    en: "Developed LX Connect IoT platform. Java/Kotlin microservices, Kubernetes, CI/CD."
+  detailed:
+    fr: |
+      Contexte: Développement de la plateforme IoT LX Connect pour la gestion d'équipements connectés industriels.
+      Missions:
+      - Développement de microservices en Java et Kotlin avec Spring Boot
+      - Architecture événementielle avec Kafka
+      - Déploiement sur Kubernetes avec Helm Charts
+      - Mise en place de pipelines CI/CD avec GitLab CI
+      - Monitoring avec Prometheus, Grafana et OpenTelemetry
+      - Protocoles IoT: LwM2M, FOTA, CoAP, MQTT
+      - Sécurité: Keycloak, SonarQube, Trivy, BlackDuck
+    en: |
+      Context: Development of the LX Connect IoT platform for industrial connected equipment management.
+      Missions:
+      - Microservices development in Java and Kotlin with Spring Boot
+      - Event-driven architecture with Kafka
+      - Kubernetes deployment with Helm Charts
+      - CI/CD pipeline setup with GitLab CI
+      - Monitoring with Prometheus, Grafana and OpenTelemetry
+      - IoT protocols: LwM2M, FOTA, CoAP, MQTT
+      - Security: Keycloak, SonarQube, Trivy, BlackDuck
+  environment:
+    - Java
+    - Kotlin
+    - Spring Boot
+    - Kafka
+    - Kubernetes
+    - Helm
+    - Docker
+    - GitLab CI
+    - Prometheus
+    - Grafana
+    - OpenTelemetry
+    - PostgreSQL
+    - TimescaleDB
+    - Redis
+    - Keycloak
+
+- id: audaxis
+  company:
+    fr: "Audaxis (ERP)"
+    en: "Audaxis (ERP)"
+  role:
+    fr: "Développeur Backend Java"
+    en: "Java Backend Developer"
+  type: "full-time"
+  period:
+    start: "2020-09"
+    end: "2021-08"
+  location: "Paris, France"
+  short:
+    fr: "Développement backend sur l'ERP Odoo et intégrations Java. Migration de données et API REST."
+    en: "Backend development on Odoo ERP and Java integrations. Data migration and REST APIs."
+  detailed:
+    fr: |
+      Contexte: Intégration et développement sur la plateforme ERP Odoo pour des clients enterprise.
+      Missions:
+      - Développement de modules backend en Java
+      - Intégrations API REST avec des systèmes tiers
+      - Migration de données depuis des systèmes legacy
+      - Optimisation des performances des requêtes SQL
+      - Support technique et documentation
+    en: |
+      Context: Integration and development on the Odoo ERP platform for enterprise clients.
+      Missions:
+      - Backend module development in Java
+      - REST API integrations with third-party systems
+      - Data migration from legacy systems
+      - SQL query performance optimization
+      - Technical support and documentation
+  environment:
+    - Java
+    - Spring Boot
+    - PostgreSQL
+    - Oracle
+    - REST API
+    - Docker
+    - Git
+
+- id: freelance
+  company:
+    fr: "Freelance"
+    en: "Freelance"
+  role:
+    fr: "Développeur Web/Mobile & Designer"
+    en: "Web/Mobile Developer & Designer"
+  type: "freelance"
+  period:
+    start: "2017-01"
+    end: "2020-08"
+  location: "Constantine, Algérie"
+  short:
+    fr: "Développement web et mobile freelance. Sites web, applications Android, design graphique."
+    en: "Freelance web and mobile development. Websites, Android apps, graphic design."
+  detailed:
+    fr: |
+      Contexte: Travail indépendant sur diverses plateformes freelance et projets directs.
+      Missions:
+      - Développement de sites web responsive (HTML, CSS, JavaScript, PHP)
+      - Création d'applications Android natives
+      - Design graphique et UI/UX
+      - Gestion de projets clients de bout en bout
+    en: |
+      Context: Independent work on various freelance platforms and direct projects.
+      Missions:
+      - Responsive website development (HTML, CSS, JavaScript, PHP)
+      - Native Android application development
+      - Graphic design and UI/UX
+      - End-to-end client project management
+  environment:
+    - HTML/CSS
+    - JavaScript
+    - PHP
+    - Android
+    - Photoshop
+    - Illustrator
+    - WordPress

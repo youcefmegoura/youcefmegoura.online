@@ -1,0 +1,66 @@
+download_cv:
+  fr: "Télécharger CV"
+  en: "Download CV"
+detailed_experience:
+  fr: "Expérience détaillée"
+  en: "Detailed Experience"
+see_details:
+  fr: "Voir les détails"
+  en: "See details"
+hide_details:
+  fr: "Masquer les détails"
+  en: "Hide details"
+dark_mode:
+  fr: "Mode sombre"
+  en: "Dark mode"
+light_mode:
+  fr: "Mode clair"
+  en: "Light mode"
+about:
+  fr: "À propos"
+  en: "About"
+skills:
+  fr: "Compétences"
+  en: "Skills"
+experience:
+  fr: "Expérience"
+  en: "Experience"
+education:
+  fr: "Formation"
+  en: "Education"
+projects:
+  fr: "Projets"
+  en: "Projects"
+languages:
+  fr: "Langues"
+  en: "Languages"
+certifications:
+  fr: "Certifications"
+  en: "Certifications"
+contact:
+  fr: "Contact"
+  en: "Contact"
+development:
+  fr: "Développement"
+  en: "Development"
+design:
+  fr: "Design"
+  en: "Design"
+present:
+  fr: "Présent"
+  en: "Present"
+years_experience:
+  fr: "ans d'expérience"
+  en: "years experience"
+clients:
+  fr: "clients"
+  en: "clients"
+projects_count:
+  fr: "projets"
+  en: "projects"
+all_rights_reserved:
+  fr: "Tous droits réservés"
+  en: "All rights reserved"
+version_select:
+  fr: "Choisir une version"
+  en: "Select a version"

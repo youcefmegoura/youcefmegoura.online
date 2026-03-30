@@ -1,0 +1,76 @@
+- category:
+    fr: "Backend & Dev"
+    en: "Backend & Dev"
+  skills:
+    - Java
+    - Kotlin
+    - Spring Boot
+    - GoLang
+    - Python
+    - REST API
+    - GraphQL
+
+- category:
+    fr: "DevOps & Cloud"
+    en: "DevOps & Cloud"
+  skills:
+    - Docker
+    - Kubernetes
+    - Helm
+    - Ansible
+    - Terraform
+    - Traefik
+    - CI/CD
+    - GitHub Actions
+    - GitLab CI
+    - Linux
+
+- category:
+    fr: "Bases de données"
+    en: "Databases"
+  skills:
+    - PostgreSQL
+    - Oracle
+    - MySQL
+    - Redis
+    - Kafka
+    - RabbitMQ
+    - TimescaleDB
+
+- category:
+    fr: "IoT & Protocoles"
+    en: "IoT & Protocols"
+  skills:
+    - LwM2M
+    - FOTA
+    - CoAP
+    - MQTT
+
+- category:
+    fr: "Frontend & Mobile"
+    en: "Frontend & Mobile"
+  skills:
+    - Angular
+    - React
+    - Tailwind CSS
+    - Flutter
+
+- category:
+    fr: "Monitoring"
+    en: "Monitoring"
+  skills:
+    - Prometheus
+    - Grafana
+    - OpenTelemetry
+    - SigNoz
+
+- category:
+    fr: "Outils"
+    en: "Tools"
+  skills:
+    - Keycloak
+    - Jira
+    - Git
+    - SonarQube
+    - Trivy
+    - BlackDuck
