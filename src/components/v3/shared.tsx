@@ -54,30 +54,6 @@ export function Reveal({
   );
 }
 
-/* ─── dot grid background ─── */
-export function DotGrid() {
-  return (
-    <div
-      className="pointer-events-none fixed inset-0 -z-10 opacity-[0.05] dark:opacity-[0.03]"
-      aria-hidden="true"
-    >
-      <svg width="100%" height="100%">
-        <defs>
-          <pattern
-            id="dot-grid"
-            width="24"
-            height="24"
-            patternUnits="userSpaceOnUse"
-          >
-            <circle cx="1" cy="1" r="1" fill="currentColor" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#dot-grid)" />
-      </svg>
-    </div>
-  );
-}
-
 /* ─── terminal section header ─── */
 export function TerminalHeader({
   command,

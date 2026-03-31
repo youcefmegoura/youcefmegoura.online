@@ -5,8 +5,8 @@ import dynamic from 'next/dynamic';
 import { useI18n } from '@/lib/i18n';
 import { useTheme } from '@/lib/theme';
 import type { SiteData } from '@/lib/types';
-import { DotGrid } from './shared';
 import { Navbar } from './Navbar';
+import { ParticleBackground } from './ParticleBackground';
 import { Hero } from './Hero';
 import { About } from './About';
 import { Skills } from './Skills';
@@ -110,8 +110,8 @@ export function Page({ data }: { data: SiteData }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-950 font-mono text-zinc-900 dark:text-zinc-100 selection:bg-cyan-500/30">
-      <DotGrid />
+    <div className="min-h-screen font-mono text-zinc-900 dark:text-zinc-100 selection:bg-cyan-500/30">
+      <ParticleBackground />
 
       <Navbar
         locale={locale}
