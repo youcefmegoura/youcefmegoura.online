@@ -101,14 +101,6 @@ export interface Meta {
 // UI Strings
 export interface UIStrings {
   [key: string]: LocalizedString;
-  // Error page strings
-  error_page_not_found: LocalizedString;
-  error_404_description: LocalizedString;
-  error_back_home: LocalizedString;
-  error_occurred: LocalizedString;
-  error_description: LocalizedString;
-  error_try_again: LocalizedString;
-  error_report_issue: LocalizedString;
 }
 
 // All data combined
