@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Globe, Terminal, Menu, X } from 'lucide-react';
 
@@ -26,6 +26,25 @@ export function Navbar({
   onToggleTheme,
 }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>('');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        }
+      },
+      { rootMargin: '-20% 0px -80% 0px' }
+    );
+
+    const sections = NAV_ITEMS.map((item) => document.getElementById(item.id)).filter(Boolean) as HTMLElement[];
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleToggleMenu = useCallback(() => {
     setMenuOpen((prev) => !prev);
@@ -57,7 +76,9 @@ export function Navbar({
             <a
               key={n.id}
               href={`#${n.id}`}
-              className="text-xs text-zinc-500 transition-colors hover:text-cyan-400"
+              className={`text-xs transition-colors hover:text-cyan-400 ${
+                activeSection === n.id ? 'text-cyan-400' : 'text-zinc-500'
+              }`}
             >
               {n.label}
             </a>
@@ -117,7 +138,9 @@ export function Navbar({
                   key={n.id}
                   href={`#${n.id}`}
                   onClick={handleNavClick}
-                  className="rounded-md px-3 py-2 font-mono text-sm text-zinc-600 dark:text-zinc-400 transition-colors hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:text-cyan-400"
+                  className={`rounded-md px-3 py-2 font-mono text-sm transition-colors hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:text-cyan-400 ${
+                    activeSection === n.id ? 'text-cyan-400' : 'text-zinc-600 dark:text-zinc-400'
+                  }`}
                 >
                   {n.label}
                 </a>

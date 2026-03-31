@@ -9,8 +9,27 @@ import type { Container, ISourceOptions } from '@tsparticles/engine';
 export function ParticleBackground() {
   const { theme } = useTheme();
   const [ready, setReady] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const containerRef = useRef<Container | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
+
+  // Detect mobile viewport and prefers-reduced-motion
+  useEffect(() => {
+    const updateMobile = () => setIsMobile(window.innerWidth < 768);
+    updateMobile();
+    window.addEventListener('resize', updateMobile);
+
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setPrefersReducedMotion(motionQuery.matches);
+    const onMotionChange = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    motionQuery.addEventListener('change', onMotionChange);
+
+    return () => {
+      window.removeEventListener('resize', updateMobile);
+      motionQuery.removeEventListener('change', onMotionChange);
+    };
+  }, []);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -20,6 +39,8 @@ export function ParticleBackground() {
 
   // Smooth parallax: lerp loop eases particles toward scroll target
   useEffect(() => {
+    if (prefersReducedMotion) return;
+
     let currentY = 0;
     let animId: number;
 
@@ -36,7 +57,7 @@ export function ParticleBackground() {
 
     animId = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animId);
-  }, []);
+  }, [prefersReducedMotion]);
 
   const handleLoaded = useCallback(async (container?: Container) => {
     containerRef.current = container ?? null;
@@ -52,7 +73,7 @@ export function ParticleBackground() {
       fpsLimit: 60,
       particles: {
         number: {
-          value: 80,
+          value: isMobile ? 35 : 80,
           density: {
             enable: true,
           },
@@ -71,7 +92,7 @@ export function ParticleBackground() {
         },
         links: {
           enable: true,
-          distance: 150,
+          distance: isMobile ? 100 : 150,
           color: linkColor,
           opacity: isDark ? 0.25 : 0.2,
           width: 1,
@@ -90,7 +111,7 @@ export function ParticleBackground() {
       interactivity: {
         events: {
           onHover: {
-            enable: true,
+            enable: !isMobile,
             mode: 'repulse',
           },
         },
@@ -103,8 +124,9 @@ export function ParticleBackground() {
       },
       detectRetina: true,
     };
-  }, [theme]);
+  }, [theme, isMobile]);
 
+  if (prefersReducedMotion) return null;
   if (!ready) return null;
 
   return (

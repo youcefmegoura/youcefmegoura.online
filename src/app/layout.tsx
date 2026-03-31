@@ -36,6 +36,14 @@ export const metadata: Metadata = {
       "Backend and DevOps Engineer with 6+ years of experience.",
     images: ["/og-cover.jpg"],
   },
+  keywords: [
+    "Backend Engineer", "DevOps Engineer", "Java Developer", "Kotlin",
+    "Spring Boot", "Kubernetes", "Docker", "CI/CD", "Rennes", "France",
+    "Microservices", "IoT", "Cloud Infrastructure",
+  ],
+  alternates: {
+    canonical: "https://youcefmegoura.online",
+  },
   robots: { index: true, follow: true },
 };
 
@@ -54,6 +62,38 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light')}else{document.documentElement.setAttribute('data-theme','dark')}}catch(e){document.documentElement.setAttribute('data-theme','dark')}})()`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Youcef MEGOURA",
+              jobTitle: "Backend & DevOps Engineer",
+              url: "https://youcefmegoura.online",
+              image: "https://youcefmegoura.online/images/profile/youcefmegoura.jpg",
+              email: "ymegoura@gmail.com",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Rennes",
+                addressCountry: "FR",
+              },
+              sameAs: [
+                "https://www.linkedin.com/in/youcefmegoura/",
+                "https://github.com/YoucefMegoura",
+              ],
+              knowsAbout: [
+                "Java", "Kotlin", "Spring Boot", "Kubernetes", "Docker",
+                "CI/CD", "Microservices", "IoT", "DevOps", "Cloud Infrastructure",
+                "PostgreSQL", "Kafka", "Helm", "Terraform", "Ansible",
+              ],
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "University of Constantine 2",
+              },
+            }),
           }}
         />
       </head>

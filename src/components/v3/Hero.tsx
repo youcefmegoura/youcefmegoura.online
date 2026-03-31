@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Download, Mail } from 'lucide-react';
+import { MapPin, Download, Mail, ChevronDown } from 'lucide-react';
 import { IconGitHub, IconLinkedIn, IconX } from './shared';
 import type { Profile, Meta, UIStrings, LocalizedString } from '@/lib/types';
 
@@ -75,26 +75,45 @@ export function Hero({ profile, meta, ui, t }: HeroProps) {
       </div>
 
       <div className="mx-auto w-full max-w-4xl px-5">
+        {/* LCP-critical: renders immediately without animation */}
+        <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:gap-8">
+          <img
+            src={profile.photo}
+            alt={profile.name}
+            width={112}
+            height={112}
+            loading="eager"
+            className="h-24 w-24 shrink-0 rounded-full object-cover ring-2 ring-cyan-500/40 ring-offset-2 ring-offset-zinc-50 dark:ring-offset-zinc-950 sm:h-28 sm:w-28"
+          />
+
+          <div className="text-center sm:text-left">
+            <p className="font-mono text-sm text-zinc-500">
+              <span className="text-green-500">~/portfolio</span>{' '}
+              <span className="text-zinc-400 dark:text-zinc-600">on</span>{' '}
+              <span className="text-cyan-400">main</span>{' '}
+              <span className="text-zinc-400 dark:text-zinc-600">via</span>{' '}
+              <span className="text-yellow-500">⬡ v1.0.0</span>
+            </p>
+
+            <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              <span className="text-zinc-900 dark:text-zinc-100">{profile.name.split(' ')[0]}</span>{' '}
+              <span className="text-cyan-400">
+                {profile.name.split(' ').slice(1).join(' ')}
+              </span>
+            </h1>
+
+            <p className="mt-2 font-mono text-lg text-zinc-500 dark:text-zinc-400 sm:text-xl">
+              {t(profile.title)}
+            </p>
+          </div>
+        </div>
+
+        {/* Animated secondary content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <p className="font-mono text-sm text-zinc-500">
-            <span className="text-green-500">~/portfolio</span>{' '}
-            <span className="text-zinc-400 dark:text-zinc-600">on</span>{' '}
-            <span className="text-cyan-400">main</span>{' '}
-            <span className="text-zinc-400 dark:text-zinc-600">via</span>{' '}
-            <span className="text-yellow-500">⬡ v1.0.0</span>
-          </p>
-
-          <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            <span className="text-zinc-900 dark:text-zinc-100">{profile.name.split(' ')[0]}</span>{' '}
-            <span className="text-cyan-400">
-              {profile.name.split(' ').slice(1).join(' ')}
-            </span>
-          </h1>
-
           <div className="mt-4 min-h-[3.5em] text-lg text-zinc-600 dark:text-zinc-400 sm:min-h-[2.5em] sm:text-xl">
             <span className="mr-2 text-green-500">{'>'}</span>
             <TypingText
@@ -149,6 +168,11 @@ export function Hero({ profile, meta, ui, t }: HeroProps) {
             ))}
           </div>
         </motion.div>
+      </div>
+
+      {/* scroll-down indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-zinc-400">
+        <ChevronDown className="h-5 w-5" />
       </div>
     </section>
   );
