@@ -18,23 +18,24 @@ export function ParticleBackground() {
     }).then(() => setReady(true));
   }, []);
 
-  // Parallax scroll: shift particles on scroll for a depth effect
+  // Smooth parallax: lerp loop eases particles toward scroll target
   useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          if (wrapperRef.current) {
-            const y = window.scrollY * 0.3;
-            wrapperRef.current.style.transform = `translateY(${y}px)`;
-          }
-          ticking = false;
-        });
-        ticking = true;
+    let currentY = 0;
+    let animId: number;
+
+    const animate = () => {
+      const targetY = window.scrollY * 0.15;
+      currentY += (targetY - currentY) * 0.05;
+
+      if (wrapperRef.current) {
+        wrapperRef.current.style.transform = `translateY(${currentY}px)`;
       }
+
+      animId = requestAnimationFrame(animate);
     };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    animId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animId);
   }, []);
 
   const handleLoaded = useCallback(async (container?: Container) => {
