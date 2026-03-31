@@ -96,7 +96,7 @@ export function Hero({ profile, meta, ui, t }: V3HeroProps) {
             </span>
           </h1>
 
-          <div className="mt-4 min-h-[2em] text-lg text-zinc-600 dark:text-zinc-400 sm:text-xl">
+          <div className="mt-4 min-h-[3.5em] text-lg text-zinc-600 dark:text-zinc-400 sm:min-h-[2.5em] sm:text-xl">
             <span className="mr-2 text-green-500">{'>'}</span>
             <TypingText
               texts={[
