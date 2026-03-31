@@ -4,12 +4,12 @@ import { ExternalLink } from 'lucide-react';
 import { Reveal, TerminalHeader, CodeBadge } from './shared';
 import type { Project, LocalizedString } from '@/lib/types';
 
-interface V3ProjectsProps {
+interface ProjectsProps {
   projects: Project[];
   t: (s: LocalizedString) => string;
 }
 
-export function Projects({ projects, t }: V3ProjectsProps) {
+export function Projects({ projects, t }: ProjectsProps) {
   return (
     <section
       id="projects"
@@ -32,7 +32,7 @@ export function Projects({ projects, t }: V3ProjectsProps) {
                       height={160}
                       className="h-full w-full object-cover opacity-60 transition-all duration-500 group-hover:scale-105 group-hover:opacity-80"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-zinc-900 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-white dark:from-zinc-900 to-transparent" />
                   </div>
                 )}
                 <div className="p-5">

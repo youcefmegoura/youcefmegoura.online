@@ -4,13 +4,13 @@ import { useCallback } from 'react';
 import { ArrowUp } from 'lucide-react';
 import type { UIStrings, LocalizedString } from '@/lib/types';
 
-interface V3FooterProps {
+interface FooterProps {
   name: string;
   ui: UIStrings;
   t: (s: LocalizedString) => string;
 }
 
-export function Footer({ name, ui, t }: V3FooterProps) {
+export function Footer({ name, ui, t }: FooterProps) {
   const handleScrollTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);

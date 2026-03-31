@@ -5,12 +5,12 @@ import { Award } from 'lucide-react';
 import { Reveal, TerminalHeader } from './shared';
 import type { Certification, LocalizedString } from '@/lib/types';
 
-interface V3CertificationsProps {
+interface CertificationsProps {
   certifications: Certification[];
   t: (s: LocalizedString) => string;
 }
 
-function V3CertificationsInner({ certifications, t }: V3CertificationsProps) {
+function CertificationsInner({ certifications, t }: CertificationsProps) {
   return (
     <section
       id="certifications"
@@ -51,4 +51,4 @@ function V3CertificationsInner({ certifications, t }: V3CertificationsProps) {
   );
 }
 
-export const Certifications = React.memo(V3CertificationsInner);
+export const Certifications = React.memo(CertificationsInner);

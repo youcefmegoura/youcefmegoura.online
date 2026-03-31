@@ -3,13 +3,13 @@
 import { Reveal, TerminalHeader } from './shared';
 import type { Profile, UIStrings, LocalizedString } from '@/lib/types';
 
-interface V3AboutProps {
+interface AboutProps {
   profile: Profile;
   ui: UIStrings;
   t: (s: LocalizedString) => string;
 }
 
-export function About({ profile, ui, t }: V3AboutProps) {
+export function About({ profile, ui, t }: AboutProps) {
   const stats = [
     {
       val: `${profile.stats.years_experience}+`,

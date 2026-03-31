@@ -50,14 +50,14 @@ function TypingText({
   );
 }
 
-interface V3HeroProps {
+interface HeroProps {
   profile: Profile;
   meta: Meta;
   ui: UIStrings;
   t: (s: LocalizedString) => string;
 }
 
-export function Hero({ profile, meta, ui, t }: V3HeroProps) {
+export function Hero({ profile, meta, ui, t }: HeroProps) {
   const socialLinks = [
     { href: meta.social.github, icon: IconGitHub, label: 'GitHub' },
     { href: meta.social.linkedin, icon: IconLinkedIn, label: 'LinkedIn' },
@@ -72,7 +72,7 @@ export function Hero({ profile, meta, ui, t }: V3HeroProps) {
     >
       {/* subtle gradient glow */}
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-        <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/5 blur-[120px]" />
+        <div className="absolute left-1/2 top-1/3 h-125 w-125 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/5 blur-[120px]" />
       </div>
 
       <div className="mx-auto w-full max-w-4xl px-5">

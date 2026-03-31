@@ -3,12 +3,12 @@
 import { Reveal, TerminalHeader, SkillPill } from './shared';
 import type { SkillCategory, LocalizedString } from '@/lib/types';
 
-interface V3SkillsProps {
+interface SkillsProps {
   skills: SkillCategory[];
   t: (s: LocalizedString) => string;
 }
 
-export function Skills({ skills, t }: V3SkillsProps) {
+export function Skills({ skills, t }: SkillsProps) {
   return (
     <section
       id="skills"

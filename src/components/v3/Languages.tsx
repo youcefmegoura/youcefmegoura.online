@@ -4,12 +4,12 @@ import React from 'react';
 import { Reveal, TerminalHeader } from './shared';
 import type { Language, LocalizedString } from '@/lib/types';
 
-interface V3LanguagesProps {
+interface LanguagesProps {
   languages: Language[];
   t: (s: LocalizedString) => string;
 }
 
-function V3LanguagesInner({ languages, t }: V3LanguagesProps) {
+function LanguagesInner({ languages, t }: LanguagesProps) {
   return (
     <section
       id="languages"
@@ -42,4 +42,4 @@ function V3LanguagesInner({ languages, t }: V3LanguagesProps) {
   );
 }
 
-export const Languages = React.memo(V3LanguagesInner);
+export const Languages = React.memo(LanguagesInner);

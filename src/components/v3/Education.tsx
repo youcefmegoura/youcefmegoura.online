@@ -4,13 +4,13 @@ import React from 'react';
 import { Reveal, TerminalHeader, formatPeriod } from './shared';
 import type { Education as EducationData, UIStrings, LocalizedString } from '@/lib/types';
 
-interface V3EducationProps {
+interface EducationProps {
   education: EducationData[];
   ui: UIStrings;
   t: (s: LocalizedString) => string;
 }
 
-function V3EducationInner({ education, ui, t }: V3EducationProps) {
+function EducationInner({ education, ui, t }: EducationProps) {
   return (
     <section
       id="education"
@@ -77,4 +77,4 @@ function V3EducationInner({ education, ui, t }: V3EducationProps) {
   );
 }
 
-export const Education = React.memo(V3EducationInner);
+export const Education = React.memo(EducationInner);

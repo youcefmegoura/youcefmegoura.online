@@ -6,7 +6,7 @@ import { ChevronDown } from 'lucide-react';
 import { Reveal, TerminalHeader, CodeBadge, formatPeriod } from './shared';
 import type { Experience as ExperienceData, UIStrings, LocalizedString } from '@/lib/types';
 
-interface V3ExperienceProps {
+interface ExperienceProps {
   experience: ExperienceData[];
   ui: UIStrings;
   t: (s: LocalizedString) => string;
@@ -93,7 +93,7 @@ function ExperienceCard({
   );
 }
 
-export function Experience({ experience, ui, t }: V3ExperienceProps) {
+export function Experience({ experience, ui, t }: ExperienceProps) {
   return (
     <section
       id="experience"

@@ -3,13 +3,13 @@
 import { Reveal, TerminalHeader } from './shared';
 import type { Meta, LocalizedString } from '@/lib/types';
 
-interface V3ContactProps {
+interface ContactProps {
   meta: Meta;
   locale: string;
   t: (s: LocalizedString) => string;
 }
 
-export function Contact({ meta, locale }: V3ContactProps) {
+export function Contact({ meta, locale }: ContactProps) {
   return (
     <section
       id="contact"

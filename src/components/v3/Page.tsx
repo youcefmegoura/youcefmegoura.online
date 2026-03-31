@@ -16,7 +16,7 @@ import { Contact } from './Contact';
 import { Footer } from './Footer';
 
 /* ─── lazy-loaded below-the-fold sections ─── */
-const V3Projects = dynamic(
+const Projects = dynamic(
   () => import('./Projects').then((m) => ({ default: m.Projects })),
   {
     loading: () => (
@@ -37,7 +37,7 @@ const V3Projects = dynamic(
   },
 );
 
-const V3Languages = dynamic(
+const Languages = dynamic(
   () => import('./Languages').then((m) => ({ default: m.Languages })),
   {
     loading: () => (
@@ -58,7 +58,7 @@ const V3Languages = dynamic(
   },
 );
 
-const V3Certifications = dynamic(
+const Certifications = dynamic(
   () =>
     import('./Certifications').then((m) => ({
       default: m.Certifications,
@@ -112,9 +112,9 @@ export function Page({ data }: { data: SiteData }) {
         <Skills skills={data.skills} t={t} />
         <Experience experience={data.experience} ui={data.ui} t={t} />
         <Education education={data.education} ui={data.ui} t={t} />
-        <V3Projects projects={data.projects} t={t} />
-        <V3Languages languages={data.languages} t={t} />
-        <V3Certifications certifications={data.certifications} t={t} />
+        <Projects projects={data.projects} t={t} />
+        <Languages languages={data.languages} t={t} />
+        <Certifications certifications={data.certifications} t={t} />
         <Contact meta={data.meta} locale={locale} t={t} />
       </main>
 

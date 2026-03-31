@@ -4,7 +4,7 @@ import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Globe, Terminal, Menu, X } from 'lucide-react';
 
-interface V3NavbarProps {
+interface NavbarProps {
   locale: string;
   onToggleLocale: () => void;
   theme: string;
@@ -24,7 +24,7 @@ export function Navbar({
   onToggleLocale,
   theme,
   onToggleTheme,
-}: V3NavbarProps) {
+}: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleToggleMenu = useCallback(() => {
@@ -44,7 +44,7 @@ export function Navbar({
       aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
-        <a href="#hero" className="group flex items-center gap-2">
+        <a href="/" className="group flex items-center gap-2">
           <Terminal className="h-4 w-4 text-cyan-400" />
           <span className="text-sm font-medium text-zinc-600 dark:text-zinc-400 transition-colors group-hover:text-cyan-400">
             ~/youcefmegoura
