@@ -137,6 +137,7 @@ export default function GlobalError({
             >
               ↻ Try Again
             </button>
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- Root error boundary cannot use Next.js router */}
             <a
               href="/"
               style={{

@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, Home } from 'lucide-react';
+import { Home } from 'lucide-react';
 import Link from 'next/link';
 import { useTranslation } from '@/lib/i18n';
 import {
@@ -8,7 +8,6 @@ import {
   TerminalWindow,
   errorStrings,
   btnPrimary,
-  btnSecondary,
 } from '@/components/v3/ErrorShared';
 
 export default function NotFound() {

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Download, Mail, ChevronDown } from 'lucide-react';
-import { IconGitHub, IconLinkedIn, IconX } from './shared';
+import { IconGitHub, IconLinkedIn } from './shared';
 import type { Profile, Meta, UIStrings, LocalizedString } from '@/lib/types';
 
 /* ─── typing cursor animation ─── */

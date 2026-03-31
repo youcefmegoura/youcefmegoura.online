@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Globe, Terminal, Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 interface NavbarProps {
   locale: string;
@@ -63,12 +64,12 @@ export function Navbar({
       aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
-        <a href="/" className="group flex items-center gap-2">
+        <Link href="/" className="group flex items-center gap-2">
           <Terminal className="h-4 w-4 text-cyan-400" />
           <span className="text-sm font-medium text-zinc-600 dark:text-zinc-400 transition-colors group-hover:text-cyan-400">
             ~/youcefmegoura
           </span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-5 md:flex">
