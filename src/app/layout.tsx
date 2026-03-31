@@ -37,10 +37,6 @@ export const metadata: Metadata = {
     images: ["/og-cover.jpg"],
   },
   robots: { index: true, follow: true },
-  icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
-  },
 };
 
 export default function RootLayout({
