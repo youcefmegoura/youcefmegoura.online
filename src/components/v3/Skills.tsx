@@ -8,11 +8,11 @@ interface V3SkillsProps {
   t: (s: LocalizedString) => string;
 }
 
-export function V3Skills({ skills, t }: V3SkillsProps) {
+export function Skills({ skills, t }: V3SkillsProps) {
   return (
     <section
       id="skills"
-      className="border-t border-zinc-800/50 py-24"
+      className="border-t border-zinc-200/50 dark:border-zinc-800/50 py-24"
       aria-label="Skills"
     >
       <div className="mx-auto max-w-5xl px-5">

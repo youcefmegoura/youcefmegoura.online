@@ -57,7 +57,7 @@ interface V3HeroProps {
   t: (s: LocalizedString) => string;
 }
 
-export function V3Hero({ profile, meta, ui, t }: V3HeroProps) {
+export function Hero({ profile, meta, ui, t }: V3HeroProps) {
   const socialLinks = [
     { href: meta.social.github, icon: IconGitHub, label: 'GitHub' },
     { href: meta.social.linkedin, icon: IconLinkedIn, label: 'LinkedIn' },
@@ -83,20 +83,20 @@ export function V3Hero({ profile, meta, ui, t }: V3HeroProps) {
         >
           <p className="font-mono text-sm text-zinc-500">
             <span className="text-green-500">~/portfolio</span>{' '}
-            <span className="text-zinc-600">on</span>{' '}
+            <span className="text-zinc-400 dark:text-zinc-600">on</span>{' '}
             <span className="text-cyan-400">main</span>{' '}
-            <span className="text-zinc-600">via</span>{' '}
-            <span className="text-yellow-500">⬡ v18</span>
+            <span className="text-zinc-400 dark:text-zinc-600">via</span>{' '}
+            <span className="text-yellow-500">⬡ v1.0.0</span>
           </p>
 
           <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            <span className="text-zinc-100">{profile.name.split(' ')[0]}</span>{' '}
+            <span className="text-zinc-900 dark:text-zinc-100">{profile.name.split(' ')[0]}</span>{' '}
             <span className="text-cyan-400">
               {profile.name.split(' ').slice(1).join(' ')}
             </span>
           </h1>
 
-          <div className="mt-4 text-lg text-zinc-400 sm:text-xl">
+          <div className="mt-4 min-h-[2em] text-lg text-zinc-600 dark:text-zinc-400 sm:text-xl">
             <span className="mr-2 text-green-500">{'>'}</span>
             <TypingText
               texts={[
@@ -104,14 +104,14 @@ export function V3Hero({ profile, meta, ui, t }: V3HeroProps) {
                 t(profile.tagline),
                 `📍 ${profile.location}`,
               ]}
-              className="text-zinc-300"
+              className="text-zinc-700 dark:text-zinc-300"
             />
           </div>
 
           <div className="mt-3 flex items-center gap-2 text-sm text-zinc-500">
             <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
             <span>{t(profile.availability)}</span>
-            <span className="text-zinc-700">·</span>
+            <span className="text-zinc-300 dark:text-zinc-700">·</span>
             <MapPin className="h-3 w-3" />
             <span>{profile.location}</span>
           </div>
@@ -128,7 +128,7 @@ export function V3Hero({ profile, meta, ui, t }: V3HeroProps) {
             </a>
             <a
               href={`mailto:${meta.social.email}`}
-              className="inline-flex items-center gap-2 rounded-lg border border-zinc-700 px-5 py-2.5 font-mono text-sm text-zinc-400 transition-all hover:border-zinc-500 hover:text-zinc-200"
+              className="inline-flex items-center gap-2 rounded-lg border border-zinc-300 dark:border-zinc-700 px-5 py-2.5 font-mono text-sm text-zinc-600 dark:text-zinc-400 transition-all hover:border-zinc-400 dark:hover:border-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200"
             >
               <Mail className="h-4 w-4" />
               {t(ui.contact)}
@@ -144,7 +144,7 @@ export function V3Hero({ profile, meta, ui, t }: V3HeroProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-800 text-zinc-500 transition-colors hover:border-cyan-500/40 hover:text-cyan-400"
+                className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-500 transition-colors hover:border-cyan-500/40 hover:text-cyan-400"
               >
                 <s.icon className="h-4 w-4" />
               </a>

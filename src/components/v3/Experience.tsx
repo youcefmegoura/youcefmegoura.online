@@ -4,10 +4,10 @@ import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Reveal, TerminalHeader, CodeBadge, formatPeriod } from './shared';
-import type { Experience, UIStrings, LocalizedString } from '@/lib/types';
+import type { Experience as ExperienceData, UIStrings, LocalizedString } from '@/lib/types';
 
 interface V3ExperienceProps {
-  experience: Experience[];
+  experience: ExperienceData[];
   ui: UIStrings;
   t: (s: LocalizedString) => string;
 }
@@ -18,7 +18,7 @@ function ExperienceCard({
   t,
   delay,
 }: {
-  exp: Experience;
+  exp: ExperienceData;
   ui: UIStrings;
   t: (s: LocalizedString) => string;
   delay: number;
@@ -31,10 +31,10 @@ function ExperienceCard({
 
   return (
     <Reveal delay={delay}>
-      <div className="group rounded-xl border border-zinc-800/60 bg-zinc-900/30 p-6 transition-all hover:border-cyan-500/20 hover:bg-zinc-900/50">
+      <div className="group rounded-xl border border-zinc-200/60 dark:border-zinc-800/60 bg-zinc-50 dark:bg-zinc-900/30 p-6 transition-all hover:border-cyan-500/20 hover:bg-zinc-100/50 dark:hover:bg-zinc-900/50">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <h3 className="text-base font-semibold text-zinc-200">
+            <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-200">
               {t(exp.role)}
             </h3>
             <p className="text-sm text-cyan-400">{t(exp.company)}</p>
@@ -43,12 +43,12 @@ function ExperienceCard({
             <span>
               {formatPeriod(exp.period.start, exp.period.end, t, ui)}
             </span>
-            <span className="text-zinc-700">|</span>
+            <span className="text-zinc-300 dark:text-zinc-700">|</span>
             <span>{exp.location}</span>
           </div>
         </div>
 
-        <p className="mt-3 text-sm text-zinc-400">{t(exp.short)}</p>
+        <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">{t(exp.short)}</p>
 
         {/* Expandable details */}
         <button
@@ -93,11 +93,11 @@ function ExperienceCard({
   );
 }
 
-export function V3Experience({ experience, ui, t }: V3ExperienceProps) {
+export function Experience({ experience, ui, t }: V3ExperienceProps) {
   return (
     <section
       id="experience"
-      className="border-t border-zinc-800/50 py-24"
+      className="border-t border-zinc-200/50 dark:border-zinc-800/50 py-24"
       aria-label="Experience"
     >
       <div className="mx-auto max-w-5xl px-5">

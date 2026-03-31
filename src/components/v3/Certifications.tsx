@@ -14,7 +14,7 @@ function V3CertificationsInner({ certifications, t }: V3CertificationsProps) {
   return (
     <section
       id="certifications"
-      className="border-t border-zinc-800/50 py-24"
+      className="border-t border-zinc-200/50 dark:border-zinc-800/50 py-24"
       aria-label="Certifications"
     >
       <div className="mx-auto max-w-5xl px-5">
@@ -22,11 +22,11 @@ function V3CertificationsInner({ certifications, t }: V3CertificationsProps) {
         <div className="grid gap-6 sm:grid-cols-2">
           {certifications.map((cert, i) => (
             <Reveal key={cert.title} delay={i * 0.08}>
-              <div className="rounded-xl border border-zinc-800/60 bg-zinc-900/30 p-6 transition-all hover:border-green-500/20">
+              <div className="rounded-xl border border-zinc-200/60 dark:border-zinc-800/60 bg-zinc-50 dark:bg-zinc-900/30 p-6 transition-all hover:border-green-500/20">
                 <div className="flex items-start gap-3">
                   <Award className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />
                   <div>
-                    <h3 className="text-sm font-semibold text-zinc-200">
+                    <h3 className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">
                       {cert.title}
                     </h3>
                     <p className="mt-0.5 text-xs text-cyan-400">
@@ -36,7 +36,7 @@ function V3CertificationsInner({ certifications, t }: V3CertificationsProps) {
                       {t(cert.description)}
                     </p>
                     {cert.date && (
-                      <p className="mt-2 font-mono text-[10px] text-zinc-600">
+                      <p className="mt-2 font-mono text-[10px] text-zinc-400 dark:text-zinc-600">
                         issued: {cert.date}
                       </p>
                     )}
@@ -51,4 +51,4 @@ function V3CertificationsInner({ certifications, t }: V3CertificationsProps) {
   );
 }
 
-export const V3Certifications = React.memo(V3CertificationsInner);
+export const Certifications = React.memo(V3CertificationsInner);

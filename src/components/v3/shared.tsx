@@ -58,7 +58,7 @@ export function Reveal({
 export function DotGrid() {
   return (
     <div
-      className="pointer-events-none fixed inset-0 -z-10 opacity-[0.03]"
+      className="pointer-events-none fixed inset-0 -z-10 opacity-[0.05] dark:opacity-[0.03]"
       aria-hidden="true"
     >
       <svg width="100%" height="100%">
@@ -90,7 +90,7 @@ export function TerminalHeader({
     <Reveal className={className}>
       <h2 className="mb-10 font-mono text-sm font-normal tracking-wider text-zinc-500 md:text-base">
         <span className="text-green-500">$</span>{' '}
-        <span className="text-zinc-300">{command}</span>
+        <span className="text-zinc-700 dark:text-zinc-300">{command}</span>
         <span className="ml-1 animate-pulse text-cyan-400">_</span>
       </h2>
     </Reveal>
@@ -100,7 +100,7 @@ export function TerminalHeader({
 /* ─── code badge ─── */
 export function CodeBadge({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-block rounded-md border border-zinc-700/50 bg-zinc-800 px-2.5 py-1 font-mono text-xs text-cyan-400">
+    <span className="inline-block rounded-md border border-zinc-300/50 dark:border-zinc-700/50 bg-zinc-200 dark:bg-zinc-800 px-2.5 py-1 font-mono text-xs text-cyan-400">
       {children}
     </span>
   );
@@ -109,7 +109,7 @@ export function CodeBadge({ children }: { children: React.ReactNode }) {
 /* ─── skill pill ─── */
 export function SkillPill({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-block rounded-full border border-zinc-700/50 bg-zinc-800/80 px-3 py-1.5 font-mono text-xs text-zinc-300 transition-all hover:border-cyan-500/40 hover:text-cyan-400 hover:shadow-[0_0_12px_rgba(6,182,212,0.1)]">
+    <span className="inline-block rounded-full border border-zinc-300/50 dark:border-zinc-700/50 bg-zinc-200/80 dark:bg-zinc-800/80 px-3 py-1.5 font-mono text-xs text-zinc-700 dark:text-zinc-300 transition-all hover:border-cyan-500/40 hover:text-cyan-400 hover:shadow-[0_0_12px_rgba(6,182,212,0.1)]">
       {children}
     </span>
   );

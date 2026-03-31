@@ -9,7 +9,7 @@ interface V3AboutProps {
   t: (s: LocalizedString) => string;
 }
 
-export function V3About({ profile, ui, t }: V3AboutProps) {
+export function About({ profile, ui, t }: V3AboutProps) {
   const stats = [
     {
       val: `${profile.stats.years_experience}+`,
@@ -24,8 +24,8 @@ export function V3About({ profile, ui, t }: V3AboutProps) {
       <div className="mx-auto max-w-5xl px-5">
         <TerminalHeader command="cat about.md" />
         <Reveal>
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 md:p-8">
-            <p className="text-base leading-relaxed text-zinc-400 md:text-lg">
+          <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-100/50 dark:bg-zinc-900/50 p-6 md:p-8">
+            <p className="text-base leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-lg">
               {t(profile.summary)}
             </p>
             <div className="mt-8 grid grid-cols-3 gap-4">

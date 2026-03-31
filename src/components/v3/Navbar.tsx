@@ -19,7 +19,7 @@ const NAV_ITEMS = [
   { id: 'contact', label: '// contact' },
 ];
 
-export function V3Navbar({
+export function Navbar({
   locale,
   onToggleLocale,
   theme,
@@ -40,13 +40,13 @@ export function V3Navbar({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="fixed inset-x-0 top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur-xl"
+      className="fixed inset-x-0 top-0 z-50 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl"
       aria-label="Main navigation"
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
         <a href="#hero" className="group flex items-center gap-2">
           <Terminal className="h-4 w-4 text-cyan-400" />
-          <span className="text-sm font-medium text-zinc-400 transition-colors group-hover:text-cyan-400">
+          <span className="text-sm font-medium text-zinc-600 dark:text-zinc-400 transition-colors group-hover:text-cyan-400">
             ~/youcefmegoura
           </span>
         </a>
@@ -67,14 +67,15 @@ export function V3Navbar({
         <div className="flex items-center gap-1.5">
           <button
             onClick={onToggleLocale}
-            className="rounded-md p-2 text-zinc-500 transition-colors hover:bg-zinc-800 hover:text-zinc-300"
+            className="flex items-center gap-1 rounded-md px-2 py-1.5 font-mono text-xs text-zinc-500 transition-colors hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:text-zinc-700 dark:hover:text-zinc-300"
             aria-label={`Switch to ${locale === 'fr' ? 'English' : 'French'}`}
           >
             <Globe className="h-3.5 w-3.5" />
+            <span className="uppercase tracking-wider">{locale === 'fr' ? 'FR' : 'EN'}</span>
           </button>
           <button
             onClick={onToggleTheme}
-            className="rounded-md p-2 text-zinc-500 transition-colors hover:bg-zinc-800 hover:text-zinc-300"
+            className="rounded-md p-2 text-zinc-500 transition-colors hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:text-zinc-700 dark:hover:text-zinc-300"
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
           >
             {theme === 'dark' ? (
@@ -87,7 +88,7 @@ export function V3Navbar({
           {/* Mobile hamburger */}
           <button
             onClick={handleToggleMenu}
-            className="rounded-md p-2 text-zinc-500 transition-colors hover:bg-zinc-800 hover:text-zinc-300 md:hidden"
+            className="rounded-md p-2 text-zinc-500 transition-colors hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:text-zinc-700 dark:hover:text-zinc-300 md:hidden"
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
           >
@@ -108,7 +109,7 @@ export function V3Navbar({
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="overflow-hidden border-t border-zinc-800/50 md:hidden"
+            className="overflow-hidden border-t border-zinc-200/50 dark:border-zinc-800/50 md:hidden"
           >
             <div className="flex flex-col gap-1 px-5 py-4">
               {NAV_ITEMS.map((n) => (
@@ -116,7 +117,7 @@ export function V3Navbar({
                   key={n.id}
                   href={`#${n.id}`}
                   onClick={handleNavClick}
-                  className="rounded-md px-3 py-2 font-mono text-sm text-zinc-400 transition-colors hover:bg-zinc-800 hover:text-cyan-400"
+                  className="rounded-md px-3 py-2 font-mono text-sm text-zinc-600 dark:text-zinc-400 transition-colors hover:bg-zinc-200 dark:hover:bg-zinc-800 hover:text-cyan-400"
                 >
                   {n.label}
                 </a>

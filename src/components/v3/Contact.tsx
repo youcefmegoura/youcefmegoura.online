@@ -9,33 +9,33 @@ interface V3ContactProps {
   t: (s: LocalizedString) => string;
 }
 
-export function V3Contact({ meta, locale }: V3ContactProps) {
+export function Contact({ meta, locale }: V3ContactProps) {
   return (
     <section
       id="contact"
-      className="border-t border-zinc-800/50 py-24"
+      className="border-t border-zinc-200/50 dark:border-zinc-800/50 py-24"
       aria-label="Contact"
     >
       <div className="mx-auto max-w-5xl px-5">
         <TerminalHeader command="echo $CONTACT_INFO" />
         <Reveal>
           <div className="mx-auto max-w-2xl">
-            <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 md:p-8">
+            <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-100/50 dark:bg-zinc-900/50 p-6 md:p-8">
               {/* terminal window chrome */}
-              <div className="mb-6 flex items-center gap-2 border-b border-zinc-800 pb-4">
+              <div className="mb-6 flex items-center gap-2 border-b border-zinc-200 dark:border-zinc-800 pb-4">
                 <span className="h-3 w-3 rounded-full bg-red-500/80" aria-hidden="true" />
                 <span className="h-3 w-3 rounded-full bg-yellow-500/80" aria-hidden="true" />
                 <span className="h-3 w-3 rounded-full bg-green-500/80" aria-hidden="true" />
-                <span className="ml-3 font-mono text-xs text-zinc-600">
+                <span className="ml-3 font-mono text-xs text-zinc-400 dark:text-zinc-600">
                   contact.sh
                 </span>
               </div>
 
               <div className="space-y-3 font-mono text-sm">
                 <p>
-                  <span className="text-zinc-600">{'>'}</span>{' '}
+                  <span className="text-zinc-400 dark:text-zinc-600">{'>'}</span>{' '}
                   <span className="text-cyan-400">email</span>{' '}
-                  <span className="text-zinc-600">=</span>{' '}
+                  <span className="text-zinc-400 dark:text-zinc-600">=</span>{' '}
                   <a
                     href={`mailto:${meta.social.email}`}
                     className="text-green-400 hover:underline"
@@ -44,9 +44,9 @@ export function V3Contact({ meta, locale }: V3ContactProps) {
                   </a>
                 </p>
                 <p>
-                  <span className="text-zinc-600">{'>'}</span>{' '}
+                  <span className="text-zinc-400 dark:text-zinc-600">{'>'}</span>{' '}
                   <span className="text-cyan-400">phone</span>{' '}
-                  <span className="text-zinc-600">=</span>{' '}
+                  <span className="text-zinc-400 dark:text-zinc-600">=</span>{' '}
                   <a
                     href={`tel:${meta.social.phone}`}
                     className="text-green-400 hover:underline"
@@ -55,9 +55,9 @@ export function V3Contact({ meta, locale }: V3ContactProps) {
                   </a>
                 </p>
                 <p>
-                  <span className="text-zinc-600">{'>'}</span>{' '}
+                  <span className="text-zinc-400 dark:text-zinc-600">{'>'}</span>{' '}
                   <span className="text-cyan-400">linkedin</span>{' '}
-                  <span className="text-zinc-600">=</span>{' '}
+                  <span className="text-zinc-400 dark:text-zinc-600">=</span>{' '}
                   <a
                     href={meta.social.linkedin}
                     target="_blank"
@@ -68,9 +68,9 @@ export function V3Contact({ meta, locale }: V3ContactProps) {
                   </a>
                 </p>
                 <p>
-                  <span className="text-zinc-600">{'>'}</span>{' '}
+                  <span className="text-zinc-400 dark:text-zinc-600">{'>'}</span>{' '}
                   <span className="text-cyan-400">github</span>{' '}
-                  <span className="text-zinc-600">=</span>{' '}
+                  <span className="text-zinc-400 dark:text-zinc-600">=</span>{' '}
                   <a
                     href={meta.social.github}
                     target="_blank"
@@ -82,7 +82,7 @@ export function V3Contact({ meta, locale }: V3ContactProps) {
                 </p>
               </div>
 
-              <div className="mt-6 border-t border-zinc-800 pt-4">
+              <div className="mt-6 border-t border-zinc-200 dark:border-zinc-800 pt-4">
                 <p className="text-xs text-zinc-500">
                   <span className="text-green-500">$</span>{' '}
                   {locale === 'fr'
