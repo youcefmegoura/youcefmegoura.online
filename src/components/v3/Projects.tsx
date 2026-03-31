@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
 import { Reveal, TerminalHeader, CodeBadge } from './shared';
 import type { Project, LocalizedString } from '@/lib/types';
@@ -24,12 +25,13 @@ export function Projects({ projects, t }: ProjectsProps) {
               <div className="group overflow-hidden rounded-xl border border-zinc-200/60 dark:border-zinc-800/60 bg-zinc-50 dark:bg-zinc-900/30 transition-all hover:border-cyan-500/30 hover:shadow-[0_0_30px_rgba(6,182,212,0.05)]">
                 {p.image && (
                   <div className="relative h-40 overflow-hidden">
-                    <img
+                    <Image
                       src={p.image}
                       alt={t(p.title)}
                       loading="lazy"
                       width={400}
                       height={160}
+                      unoptimized
                       className="h-full w-full object-cover opacity-60 transition-all duration-500 group-hover:scale-105 group-hover:opacity-80"
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-white dark:from-zinc-900 to-transparent" />

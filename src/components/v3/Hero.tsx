@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { MapPin, Download, Mail, ChevronDown } from 'lucide-react';
 import { IconGitHub, IconLinkedIn } from './shared';
 import type { Profile, Meta, UIStrings, LocalizedString } from '@/lib/types';
@@ -35,8 +36,10 @@ function TypingText({
         30,
       );
     } else if (deleting && displayed.length === 0) {
-      setDeleting(false);
-      setIndex((i) => (i + 1) % texts.length);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setIndex((i) => (i + 1) % texts.length);
+      }, 0);
     }
 
     return () => clearTimeout(timeout);
@@ -77,12 +80,13 @@ export function Hero({ profile, meta, ui, t }: HeroProps) {
       <div className="mx-auto w-full max-w-4xl px-5">
         {/* LCP-critical: renders immediately without animation */}
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:gap-8">
-          <img
+          <Image
             src={profile.photo}
             alt={profile.name}
             width={112}
             height={112}
-            loading="eager"
+            priority
+            unoptimized
             className="h-24 w-24 shrink-0 rounded-full object-cover ring-2 ring-cyan-500/40 ring-offset-2 ring-offset-zinc-50 dark:ring-offset-zinc-950 sm:h-28 sm:w-28"
           />
 
