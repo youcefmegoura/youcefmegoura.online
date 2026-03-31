@@ -75,7 +75,7 @@ export function Hero({ profile, meta, ui, t }: V3HeroProps) {
         <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/5 blur-[120px]" />
       </div>
 
-      <div className="mx-auto max-w-4xl px-5">
+      <div className="mx-auto w-full max-w-4xl px-5">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
