@@ -97,7 +97,7 @@ export function Hero({ profile, meta, ui, t }: HeroProps) {
 
             <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
               <span className="text-zinc-900 dark:text-zinc-100">{profile.name.split(' ')[0]}</span>{' '}
-              <span className="text-cyan-400">
+              <span className="bg-gradient-to-b from-cyan-400 to-transparent bg-clip-text text-transparent">
                 {profile.name.split(' ').slice(1).join(' ')}
               </span>
             </h1>

@@ -40,10 +40,7 @@ export default function NotFound() {
           <Home className="h-4 w-4" />
           {t(errorStrings.backHome)}
         </Link>
-        <button onClick={() => window.history.back()} className={btnSecondary}>
-          <ArrowLeft className="h-4 w-4" />
-          {t(errorStrings.goBack)}
-        </button>
+
       </div>
     </ErrorPageShell>
   );
