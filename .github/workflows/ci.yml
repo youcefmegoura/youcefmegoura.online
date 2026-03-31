@@ -6,20 +6,58 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+  deployments: write
+  id-token: write # Required for OIDC authentication
+
 jobs:
-  build:
+  validation:
+    name: '🛡️ Quality Guard'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
         with:
-          node-version: '24'
+          fetch-depth: 0
+
+      - name: Validate Commit Messages
+        uses: wagoid/commitlint-github-action@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
           cache: 'npm'
-      - run: npm ci
-      - run: npm audit --audit-level=moderate
-      - run: npm run lint
-      - run: npm run build
-      - uses: actions/upload-artifact@v4
+
+      - name: Install & Verify
+        run: |
+          npm ci
+          npm audit --audit-level=moderate
+          npm run lint
+          npm run build
+  build:
+    needs: validation
+    name: '🏗️ Build'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Upload Build Output
+        uses: actions/upload-artifact@v4
         with:
           name: build-output
           path: out/
@@ -28,33 +66,23 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    name: '🚀 Deploy on netlify'
     if: github.ref == 'refs/heads/main'
     permissions:
       contents: read
       deployments: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - uses: actions/checkout@v6
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v4
         with:
           name: build-output
           path: out/
-      - uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy out/ --project-name=youcefmegoura-portfolio
 
-  docker:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    steps:
-      - uses: actions/checkout@v4
-      - uses: docker/setup-buildx-action@v3
-      - uses: docker/build-push-action@v6
+      - name: Deploy to Netlify
+        uses: jsmrcaga/action-netlify-deploy@v2.4.0
         with:
-          context: .
-          push: false
-          tags: youcefmegoura-portfolio:latest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_TO_PROD: true

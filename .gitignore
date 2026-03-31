@@ -23,5 +23,5 @@ qa-investigate.mjs
 Thumbs.db
 
 # agent
-.agents/qa-*.png
+.agents/
 test-*.png

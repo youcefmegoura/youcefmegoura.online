@@ -325,7 +325,7 @@ All other version routes removed.
 # Multi-stage build
 FROM node:24-alpine AS builder
 WORKDIR /app
-COPY . .
+COPY ../.. .
 RUN npm ci && npm run build
 
 FROM nginx:alpine

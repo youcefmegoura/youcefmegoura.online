@@ -419,8 +419,8 @@ The only external requests are to user-initiated links:
 
 **Dockerfile (multi-stage):**
 ```dockerfile
-FROM node:24-alpine AS builder    # Build stage
-FROM nginx:alpine                 # Runtime stage
+FROM node:24-alpine AS builder    
+FROM nginx:alpine
 ```
 
 - ✅ Multi-stage build (minimal final image)
