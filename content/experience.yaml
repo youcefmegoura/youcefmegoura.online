@@ -138,30 +138,32 @@
     fr: "Freelance"
     en: "Freelance"
   role:
-    fr: "Développeur Web/Mobile & Designer"
-    en: "Web/Mobile Developer & Designer"
+    fr: "Développeur Web/Mobile & Designer Graphique"
+    en: "Web/Mobile Developer & Graphic Designer"
   type: "freelance"
   period:
     start: "2017-01"
     end: "2020-08"
   location: "Constantine, Algérie"
   short:
-    fr: "Développement web et mobile freelance. Sites web, applications Android, design graphique."
-    en: "Freelance web and mobile development. Websites, Android apps, graphic design."
+    fr: "Développement web/mobile et design graphique en freelance. Sites web, applications Android, identité visuelle, affiches et supports de communication."
+    en: "Freelance web/mobile development and graphic design. Websites, Android apps, visual identity, posters, and marketing materials."
   detailed:
     fr: |
-      Contexte: Travail indépendant sur diverses plateformes freelance et projets directs.
+      Contexte: Travail indépendant sur diverses plateformes freelance (Khamsat, Mostaqil) et projets directs pour startups et entreprises.
       Missions:
-      - Développement de sites web responsive (HTML, CSS, JavaScript, PHP)
+      - Développement de sites web responsive (HTML, CSS, JavaScript, PHP, WordPress)
       - Création d'applications Android natives
-      - Design graphique et UI/UX
+      - Design graphique : logos, affiches événementielles, identités visuelles, supports marketing
+      - UI/UX design pour applications web et mobile
       - Gestion de projets clients de bout en bout
     en: |
-      Context: Independent work on various freelance platforms and direct projects.
+      Context: Independent work on various freelance platforms (Khamsat, Mostaqil) and direct projects for startups and companies.
       Missions:
-      - Responsive website development (HTML, CSS, JavaScript, PHP)
+      - Responsive website development (HTML, CSS, JavaScript, PHP, WordPress)
       - Native Android application development
-      - Graphic design and UI/UX
+      - Graphic design: logos, event posters, visual identities, marketing materials
+      - UI/UX design for web and mobile applications
       - End-to-end client project management
   environment:
     - HTML/CSS

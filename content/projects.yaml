@@ -1,103 +1,59 @@
-dev:
-  - id: lx-connect
-    title:
-      fr: "LX Connect — Plateforme IoT"
-      en: "LX Connect — IoT Platform"
-    description:
-      fr: "Plateforme IoT pour la gestion d'équipements connectés industriels"
-      en: "IoT platform for industrial connected equipment management"
-    tech: [Java, Kotlin, Spring Boot, Kafka, Kubernetes, Helm]
-    image: "/images/projects/lx-connect.jpg"
-    link: null
-    type: "professional"
+- id: lx-connect
+  title:
+    fr: "LX Connect — Plateforme IoT"
+    en: "LX Connect — IoT Platform"
+  description:
+    fr: "Plateforme IoT pour la gestion d'équipements connectés industriels"
+    en: "IoT platform for industrial connected equipment management"
+  tech: [Java, Kotlin, Spring Boot, Kafka, Kubernetes, Helm]
+  image: "/images/projects/lx-connect.jpg"
+  link: null
+  type: "professional"
 
-  - id: keutt-infra
-    title:
-      fr: "Keutt — Infrastructure Startup"
-      en: "Keutt — Startup Infrastructure"
-    description:
-      fr: "Infrastructure complète pour startup avec Docker, Traefik et CI/CD"
-      en: "Complete startup infrastructure with Docker, Traefik and CI/CD"
-    tech: [Docker, Ansible, Terraform, Kubernetes, Traefik, GitHub Actions]
-    image: "/images/projects/keutt.jpg"
-    link: null
-    type: "professional"
+- id: keutt-infra
+  title:
+    fr: "Keutt — Infrastructure Startup"
+    en: "Keutt — Startup Infrastructure"
+  description:
+    fr: "Infrastructure complète pour startup avec Docker, Traefik et CI/CD"
+    en: "Complete startup infrastructure with Docker, Traefik and CI/CD"
+  tech: [Docker, Ansible, Terraform, Kubernetes, Traefik, GitHub Actions]
+  image: "/images/projects/keutt.jpg"
+  link: null
+  type: "professional"
 
-  - id: sphinx-kids
-    title:
-      fr: "SphinxKids — App Android"
-      en: "SphinxKids — Android App"
-    description:
-      fr: "Application Android éducative pour enfants"
-      en: "Educational Android app for kids"
-    tech: [Android, Java]
-    image: "/images/projects/sphinx-kids.jpg"
-    link: "https://github.com/YoucefMegoura/SphinxKids"
-    type: "personal"
+- id: sphinx-kids
+  title:
+    fr: "SphinxKids — App Android"
+    en: "SphinxKids — Android App"
+  description:
+    fr: "Application Android éducative pour enfants"
+    en: "Educational Android app for kids"
+  tech: [Android, Java]
+  image: "/images/projects/sphinx-kids.jpg"
+  link: "https://github.com/YoucefMegoura/SphinxKids"
+  type: "personal"
 
-  - id: ebatata
-    title:
-      fr: "eBatata — App Android"
-      en: "eBatata — Android App"
-    description:
-      fr: "Application mobile de commerce"
-      en: "Mobile commerce application"
-    tech: [Android, Java]
-    image: "/images/projects/ebatata.jpg"
-    link: "https://github.com/YoucefMegoura/eBatata"
-    type: "personal"
+- id: ebatata
+  title:
+    fr: "eBatata — App Android"
+    en: "eBatata — Android App"
+  description:
+    fr: "Application mobile de commerce"
+    en: "Mobile commerce application"
+  tech: [Android, Java]
+  image: "/images/projects/ebatata.jpg"
+  link: "https://github.com/YoucefMegoura/eBatata"
+  type: "personal"
 
-  - id: cornchain
-    title:
-      fr: "CornChain — Blockchain"
-      en: "CornChain — Blockchain"
-    description:
-      fr: "Projet blockchain expérimental"
-      en: "Experimental blockchain project"
-    tech: [Java, Blockchain]
-    image: "/images/projects/cornchain.jpg"
-    link: "https://github.com/YoucefMegoura/CornChain"
-    type: "personal"
-
-design:
-  - id: poster-01
-    title:
-      fr: "Design graphique — Portfolio"
-      en: "Graphic Design — Portfolio"
-    image: "/images/design/portfolio20.jpg"
-    tools: [Photoshop, Illustrator]
-
-  - id: poster-02
-    title:
-      fr: "Affiche événementielle"
-      en: "Event poster"
-    image: "/images/design/portfolio19.jpg"
-    tools: [Photoshop, Illustrator]
-
-  - id: poster-03
-    title:
-      fr: "Design de logo"
-      en: "Logo design"
-    image: "/images/design/portfolio5.jpg"
-    tools: [Illustrator]
-
-  - id: poster-04
-    title:
-      fr: "Affiche publicitaire"
-      en: "Advertisement poster"
-    image: "/images/design/portfolio12.jpg"
-    tools: [Photoshop]
-
-  - id: poster-05
-    title:
-      fr: "Design web"
-      en: "Web design"
-    image: "/images/design/portfolio2.jpg"
-    tools: [Photoshop]
-
-  - id: poster-06
-    title:
-      fr: "Design graphique"
-      en: "Graphic design"
-    image: "/images/design/portfolio7.jpg"
-    tools: [Photoshop, Illustrator]
+- id: cornchain
+  title:
+    fr: "CornChain — Blockchain"
+    en: "CornChain — Blockchain"
+  description:
+    fr: "Projet blockchain expérimental"
+    en: "Experimental blockchain project"
+  tech: [Java, Blockchain]
+  image: "/images/projects/cornchain.jpg"
+  link: "https://github.com/YoucefMegoura/CornChain"
+  type: "personal"

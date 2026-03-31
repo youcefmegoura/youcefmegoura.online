@@ -21,3 +21,6 @@ qa-investigate.mjs
 # misc
 .DS_Store
 Thumbs.db
+
+# agent
+.agents/qa-*.png

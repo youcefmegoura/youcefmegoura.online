@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
-import type { Profile, Experience, SkillCategory, Education, Projects, Language, Certification, Meta, UIStrings, SiteData } from './types';
+import type { Profile, Experience, SkillCategory, Education, Project, Language, Certification, Meta, UIStrings, SiteData } from './types';
 
 const contentDir = path.join(process.cwd(), 'content');
 
@@ -27,8 +27,8 @@ export function getEducation(): Education[] {
   return loadYaml<Education[]>('education.yaml');
 }
 
-export function getProjects(): Projects {
-  return loadYaml<Projects>('projects.yaml');
+export function getProjects(): Project[] {
+  return loadYaml<Project[]>('projects.yaml');
 }
 
 export function getLanguages(): Language[] {

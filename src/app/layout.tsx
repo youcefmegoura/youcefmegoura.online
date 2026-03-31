@@ -16,6 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://youcefmegoura.online"),
   title: "Youcef Megoura — Backend & DevOps Engineer | Rennes, France",
   description:
     "Backend and DevOps Engineer with 6+ years of experience. Java, Spring Boot, Kotlin, Kubernetes, Docker.",

@@ -40,12 +40,6 @@ certifications:
 contact:
   fr: "Contact"
   en: "Contact"
-development:
-  fr: "Développement"
-  en: "Development"
-design:
-  fr: "Design"
-  en: "Design"
 present:
   fr: "Présent"
   en: "Present"
@@ -61,6 +55,4 @@ projects_count:
 all_rights_reserved:
   fr: "Tous droits réservés"
   en: "All rights reserved"
-version_select:
-  fr: "Choisir une version"
-  en: "Select a version"
+

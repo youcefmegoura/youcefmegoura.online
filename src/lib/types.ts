@@ -59,7 +59,7 @@ export interface Education {
 }
 
 // Projects
-export interface DevProject {
+export interface Project {
   id: string;
   title: LocalizedString;
   description: LocalizedString;
@@ -67,18 +67,6 @@ export interface DevProject {
   image: string;
   link: string | null;
   type: 'professional' | 'personal';
-}
-
-export interface DesignProject {
-  id: string;
-  title: LocalizedString;
-  image: string;
-  tools: string[];
-}
-
-export interface Projects {
-  dev: DevProject[];
-  design: DesignProject[];
 }
 
 // Languages
@@ -122,7 +110,7 @@ export interface SiteData {
   experience: Experience[];
   skills: SkillCategory[];
   education: Education[];
-  projects: Projects;
+  projects: Project[];
   languages: Language[];
   certifications: Certification[];
   meta: Meta;

@@ -47,7 +47,7 @@ export function V3Navbar({
         <a href="#hero" className="group flex items-center gap-2">
           <Terminal className="h-4 w-4 text-cyan-400" />
           <span className="text-sm font-medium text-zinc-400 transition-colors group-hover:text-cyan-400">
-            ~/youcef
+            ~/youcefmegoura
           </span>
         </a>
 
