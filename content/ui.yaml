@@ -55,4 +55,25 @@ projects_count:
 all_rights_reserved:
   fr: "Tous droits réservés"
   en: "All rights reserved"
+error_page_not_found:
+  fr: "Page introuvable"
+  en: "Page Not Found"
+error_404_description:
+  fr: "La page que vous recherchez n'existe pas ou a été déplacée."
+  en: "The page you're looking for doesn't exist or has been moved."
+error_back_home:
+  fr: "Retour à l'accueil"
+  en: "Back to Home"
+error_occurred:
+  fr: "Une erreur est survenue"
+  en: "Something Went Wrong"
+error_description:
+  fr: "Une erreur inattendue s'est produite. Veuillez réessayer."
+  en: "An unexpected error occurred. Please try again."
+error_try_again:
+  fr: "Réessayer"
+  en: "Try Again"
+error_report_issue:
+  fr: "Signaler un problème"
+  en: "Report Issue"
 
