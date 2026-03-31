@@ -102,7 +102,6 @@ export function Hero({ profile, meta, ui, t }: HeroProps) {
               texts={[
                 t(profile.title),
                 t(profile.tagline),
-                `📍 ${profile.location}`,
               ]}
               className="text-zinc-700 dark:text-zinc-300"
             />
