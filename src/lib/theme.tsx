@@ -19,17 +19,19 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     const stored = localStorage.getItem('theme') as Theme | null;
     if (stored && (stored === 'light' || stored === 'dark')) {
       setThemeState(stored);
-      document.documentElement.classList.toggle('dark', stored === 'dark');
+      document.documentElement.setAttribute('data-theme', stored);
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setThemeState('dark');
-      document.documentElement.classList.add('dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }, []);
 
   const setTheme = useCallback((newTheme: Theme) => {
     setThemeState(newTheme);
     localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    document.documentElement.setAttribute('data-theme', newTheme);
   }, []);
 
   const toggleTheme = useCallback(() => {

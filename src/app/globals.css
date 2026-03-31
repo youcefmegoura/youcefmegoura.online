@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-/* ── Class-based dark mode for Tailwind v4 ── */
-@custom-variant dark (&:where(.dark, .dark *));
+/* ── Class-based dark mode for Tailwind v4 (uses data attribute to avoid React className conflicts) ── */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 /* ── Light mode (default) ── */
 :root {
@@ -19,7 +19,7 @@
 }
 
 /* ── Dark mode ── */
-.dark {
+[data-theme="dark"] {
   --color-background: #0a0a0a;
   --color-foreground: #ededed;
   --color-muted: #a1a1aa;
