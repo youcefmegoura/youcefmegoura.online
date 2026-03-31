@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { useI18n } from '@/lib/i18n';
 import { useTheme } from '@/lib/theme';
@@ -89,6 +89,25 @@ export function Page({ data }: { data: SiteData }) {
   const handleToggleLocale = useCallback(() => {
     setLocale(locale === 'fr' ? 'en' : 'fr');
   }, [locale, setLocale]);
+
+  useEffect(() => {
+    console.log(
+      '%c👋 Hey there, curious developer!',
+      'color:#22d3ee;font-size:20px;font-weight:bold;',
+    );
+    console.log(
+      '%cThis portfolio is built with Next.js, Tailwind CSS & Framer Motion.\nFeel free to poke around — clean code is the best documentation. 🚀',
+      'color:#a1a1aa;font-size:13px;line-height:1.6;',
+    );
+    console.log(
+      '%c📬 Let\'s connect!',
+      'color:#22d3ee;font-size:15px;font-weight:bold;margin-top:4px;',
+    );
+    console.log(
+      '%c  LinkedIn → https://linkedin.com/in/youcefmegoura\n  GitHub   → https://github.com/YoucefMegoura\n  Email    → ymegoura@gmail.com',
+      'color:#a1a1aa;font-size:12px;line-height:1.8;',
+    );
+  }, []);
 
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950 font-mono text-zinc-900 dark:text-zinc-100 selection:bg-cyan-500/30">
