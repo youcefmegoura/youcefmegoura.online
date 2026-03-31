@@ -99,8 +99,9 @@ export function formatPeriod(
   ui: UIStrings,
 ) {
   const fmt = (d: string) => {
-    const [y, m] = d.split('-');
-    return `${m}/${y}`;
+    const parts = d.split('-');
+    if (parts.length === 1) return parts[0]; // year only
+    return `${parts[1]}/${parts[0]}`;
   };
   return `${fmt(start)} → ${end ? fmt(end) : t(ui.present)}`;
 }
