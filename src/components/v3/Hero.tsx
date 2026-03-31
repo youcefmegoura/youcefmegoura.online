@@ -61,7 +61,6 @@ export function Hero({ profile, meta, ui, t }: HeroProps) {
   const socialLinks = [
     { href: meta.social.github, icon: IconGitHub, label: 'GitHub' },
     { href: meta.social.linkedin, icon: IconLinkedIn, label: 'LinkedIn' },
-    { href: meta.social.twitter, icon: IconX, label: 'X (Twitter)' },
   ];
 
   return (

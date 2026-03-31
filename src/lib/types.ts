@@ -88,7 +88,6 @@ export interface Certification {
 export interface Meta {
   site_url: string;
   cv_download_url: string;
-  detailed_experience_url: string;
   social: {
     linkedin: string;
     github: string;
