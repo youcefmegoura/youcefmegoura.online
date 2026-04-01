@@ -11,7 +11,7 @@
   period:
     start: "2018"
     end: "2020"
-  location: "Constantine, Algérie"
+  location: "Algeria"
   primary: true
 
 - id: licence
@@ -27,5 +27,5 @@
   period:
     start: "2015"
     end: "2018"
-  location: "Constantine, Algérie"
+  location: "Algeria"
   primary: false

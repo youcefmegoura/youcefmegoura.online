@@ -1,46 +1,28 @@
-- title: "Cisco CCNA"
-  issuer: "Cisco"
+- title: "HTML5 et CSS3"
+  issuer: "OpenClassRooms"
   description:
-    fr: "Certificat Cisco CCNA Routing and Switching"
-    en: "Cisco CCNA Routing and Switching Certificate"
-  date: "2019"
-  link: null
-  pinned: true
-
-- title: "Docker Mastery: with Kubernetes + Swarm from a Docker Captain"
-  issuer: "Udemy"
-  description:
-    fr: "Créez, testez et déployez des conteneurs grâce à la meilleure formation complète sur Docker, Kubernetes, Compose et GitHub Actions CI avec DevOps."
-    en: "Build, test, deploy containers with the best mega-course on Docker, Kubernetes, Compose, GitHub Actions CI using DevOps"
-  date: "2023"
-  link: null
-  pinned: true
+    fr: "Créer votre site web avec HTML5 et CSS3"
+    en: "Create your website with HTML5 and CSS3"
+  date: "2013"
+  link: "https://drive.google.com/file/d/1E1NHjbPelyQJ_MAyrMd1A6wM08snEl3p/view"
+  pinned: false
 
 - title: "PHP et MySQL"
   issuer: "OpenClassRooms"
   description:
     fr: "Concevez votre site web avec PHP et MySQL"
     en: "Design your website with PHP and MySQL"
-  date: null
-  link: null
-  pinned: false
-
-- title: "HTML5 et CSS3"
-  issuer: "OpenClassRooms"
-  description:
-    fr: "Créer votre site web avec HTML5 et CSS3"
-    en: "Create your website with HTML5 and CSS3"
-  date: null
-  link: null
+  date: "2017"
+  link: "https://drive.google.com/file/d/1-qHVA446pf16ul8hCnn6x9bNkCrGtcSC/view?usp=sharing"
   pinned: false
 
 - title: "JavaScript"
-  issuer: "OpenClassRooms"
+  issuer: "Openclassrooms"
   description:
     fr: "Apprenez à coder avec JavaScript"
     en: "Learn to code with JavaScript"
-  date: null
-  link: null
+  date: "2017"
+  link: "https://drive.google.com/file/d/1r2ZAIaIUejvkifwgY85Y2UK4Crewxx5i/view"
   pinned: false
 
 - title: "Reprenez le contrôle à l'aide de Linux !"
@@ -48,8 +30,17 @@
   description:
     fr: "Reprenez le contrôle à l'aide de Linux !"
     en: "Take back control with Linux!"
-  date: "2020"
-  link: null
+  date: "2018"
+  link: "https://drive.google.com/file/d/1Hbw3lW4343ddBnEFfAIlic-EVZ_fXw_i/view"
+  pinned: false
+
+- title: "Cisco CCNA Routing and Switching"
+  issuer: "Cisco"
+  description:
+    fr: "Certificat Cisco CCNA Routing and Switching"
+    en: "Cisco CCNA Routing and Switching Certificate"
+  date: "2019"
+  link: "https://drive.google.com/file/d/1cT2fORBulm9oRZ8NAzeeLEZv_TzFI5rq/view"
   pinned: false
 
 - title: "Construisez des microservices"
@@ -58,16 +49,7 @@
     fr: "Construisez des microservices"
     en: "Build microservices"
   date: "2021"
-  link: null
-  pinned: false
-
-- title: "Concevez votre site web avec PHP et MySQL"
-  issuer: "Openclassrooms"
-  description:
-    fr: "Concevez votre site web avec PHP et MySQL"
-    en: "Design your website with PHP and MySQL"
-  date: "2017"
-  link: null
+  link: "https://drive.google.com/file/d/12P_nhjdfh2KwmMw-OHO2HYnCUwePIILy/view"
   pinned: false
 
 - title: "Réalisez des sites modernes et beaux grâce à WordPress"
@@ -76,7 +58,7 @@
     fr: "Réalisez des sites modernes et beaux grâce à WordPress"
     en: "Create modern and beautiful websites with WordPress"
   date: "2019"
-  link: null
+  link: "https://drive.google.com/file/d/1DEKVgRT0WFVleYpPAOyhcVC7bbgasy7F/view"
   pinned: false
 
 - title: "Gérez votre code avec Git et GitHub"
@@ -85,7 +67,7 @@
     fr: "Gérez votre code avec Git et GitHub"
     en: "Manage your code with Git and GitHub"
   date: "2019"
-  link: null
+  link: "https://drive.google.com/file/d/1saZ9e6mSC0m9V75acIxBwDYeU-Ct3Fvp/view"
   pinned: false
 
 - title: "Développez votre première application Android"
@@ -94,34 +76,16 @@
     fr: "Développez votre première application Android"
     en: "Develop your first Android application"
   date: "2018"
-  link: null
+  link: "https://drive.google.com/file/d/1HcQ8GlmtZrYJGtCVP8Rooh2ljLYDBEhe/view"
   pinned: false
 
-- title: "Apprenez à coder avec JavaScript"
-  issuer: "Openclassrooms"
+- title: "Docker Mastery: with Kubernetes + Swarm from a Docker Captain"
+  issuer: "Udemy"
   description:
-    fr: "Apprenez à coder avec JavaScript"
-    en: "Learn to code with JavaScript"
-  date: "2017"
-  link: null
-  pinned: false
-
-- title: "Créez votre site web avec HTML5 et CSS3"
-  issuer: "Openclassrooms"
-  description:
-    fr: "Créez votre site web avec HTML5 et CSS3"
-    en: "Create your website with HTML5 and CSS3"
-  date: "2014"
-  link: null
-  pinned: false
-
-- title: "Comprendre le Web"
-  issuer: "Openclassrooms"
-  description:
-    fr: "Comprendre le Web"
-    en: "Understand the Web"
-  date: "2017"
-  link: null
+    fr: "Créez, testez et déployez des conteneurs grâce à la meilleure formation complète sur Docker, Kubernetes, Compose et GitHub Actions CI avec DevOps."
+    en: "Build, test, deploy containers with the best mega-course on Docker, Kubernetes, Compose, GitHub Actions CI using DevOps"
+  date: "2021"
+  link: "https://www.udemy.com/certificate/UC-a24d152c-1fdc-4ab7-badf-eb6b6003d1a5/"
   pinned: false
 
 - title: "Sécurisez votre réseau grâce aux VPN et Firewall"
@@ -130,5 +94,52 @@
     fr: "Sécurisez votre réseau grâce aux VPN et Firewall"
     en: "Secure your network with VPN and Firewall"
   date: "2019"
-  link: null
+  link: "https://drive.google.com/file/d/19QCzYJlRdvhe--TH2WXk1iVvDVWCnczV/view"
+  pinned: false
+
+- title: "The Complete Flutter Development Bootcamp with Dart"
+  issuer: "Udemy"
+  description:
+    fr: "Officiellement créé en collaboration avec l'équipe Flutter de Google."
+    en: "Officially created in collaboration with the Google Flutter team."
+  date: "2021"
+  link: "https://www.udemy.com/certificate/UC-53163237-6ef8-4f58-ab7d-30db67be17ed/"
+  pinned: false
+
+
+- title: "Kubernetes Certified Application Developer (CKAD) with Tests"
+  issuer: "Udemy"
+  description:
+    fr: "Apprenez les concepts et pratiquez la certification Kubernetes avec des labs interactifs dans votre navigateur - DevOps - CKAD"
+    en: "Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser - DevOps - CKAD"
+  date: "2023"
+  link: "https://www.udemy.com/certificate/UC-8a02a54a-19ba-4b73-842a-1bdde5863e84/"
+  pinned: false
+
+
+- title: "Master the Coding Interview: Data Structures + Algorithms"
+  issuer: "Udemy"
+  description:
+    fr: "Maitrisez la structures de données et les algorithmes"
+    en: "Master the Data Structures and Algorithms"
+  date: "2023"
+  link: "https://www.udemy.com/certificate/UC-c889f3fc-fff6-4fbb-8527-1ff2f6ab5186/"
+  pinned: false
+
+- title: "Decoding DevOps – From Basics to Advanced Projects"
+  issuer: "Udemy"
+  description:
+    en: "Master DevOps with AI, AWS, GCP, Linux, Jenkins, Gitlab, GithubActions, Docker, Kubernetes, Terraform, Ansible & GitOps"
+    fr: "Maitrisez DevOps avec AI, AWS, GCP, Linux, Jenkins, Gitlab, GithubActions, Docker, Kubernetes, Terraform, Ansible & GitOps"
+  date: "2026"
+  link: "https://www.udemy.com/certificate/UC-8644323e-5676-4b7e-83dc-9ae1974b6313/"
+  pinned: false
+
+- title: "Real world DevOps project from start to finish"
+  issuer: "Udemy"
+  description:
+    en: "Real world DevOps project from start to finish"
+    fr: "Projet réel DevOps de début à fin"
+  date: "2026"
+  link: "https://www.udemy.com/certificate/UC-0af72fdc-645a-4961-a184-f2f8e6f4e065/"
   pinned: false

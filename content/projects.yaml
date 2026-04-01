@@ -1,19 +1,43 @@
 - id: lx-connect
   title:
-    fr: "LX Connect — Plateforme IoT"
-    en: "LX Connect — IoT Platform"
+    fr: "LX Connect SaaS — Plateforme IoT"
+    en: "LX Connect SaaS — IoT Platform"
   description:
     fr: "Plateforme IoT pour la gestion d'équipements connectés industriels"
     en: "IoT platform for industrial connected equipment management"
-  tech: [Java, Kotlin, Spring Boot, Kafka, Kubernetes, Helm]
-  image: "/images/projects/lx-connect.jpg"
-  link: null
+  tech: [Java, Kotlin, Spring Boot, Kafka, Keycloak, Docker, Kubernetes, Helm, Gitlab CI, Postgresql, Timescale, Redis, OpenTelemetry, SigNoz]
+  image: "https://cdn.franceenvironnement.com/images-produits/57198/T2/4545557198a75b92821b3f74c68c09278d365b76d8655e0b5473aae.webp"
+  link: "https://www.lacroix-environment.com/telemetry-solutions/offers/centralized-and-supervisory-platforms/lx-connect-water-networks/"
   type: "professional"
 
-- id: keutt-infra
+- id: apiz-solution
   title:
-    fr: "Keutt — Infrastructure Startup"
-    en: "Keutt — Startup Infrastructure"
+    fr: "Apiz solution SaaS — Progiciel"
+    en: "Apiz solution SaaS — ERP"
+  description:
+    fr: "Plateforme ERP pour la gestion des entreprise"
+    en: "ERP platform for enterprise management"
+  tech: [Java, Spring Boot, Angular, JasperReports, Keycloak, Docker, Kubernetes, Helm, Gitlab CI, AWS, Postgresql, Oracle, Grafana, Prometheus]
+  image: "https://www.apiz-erp.com/wp-content/uploads/2019/06/capabilities-04-login-profils.jpg"
+  link: "https://www.apiz-erp.com/"
+  type: "professional"
+
+- id: compiere
+  title:
+    fr: "Compiere — Progiciel"
+    en: "Compiere — ERP"
+  description:
+    fr: "Plateforme ERP pour la gestion des entreprise"
+    en: "ERP platform for enterprise management"
+  tech: [Java, Spring Boot, Angular, JasperReports, Keycloak, Docker, Kubernetes, Helm, Gitlab CI, AWS, Postgresql, Oracle, Grafana, Prometheus]
+  image: "https://www.apiz-erp.com/wp-content/uploads/2019/06/capabilities-04-login-profils.jpg"
+  link: "https://www.apiz-erp.com/"
+  type: "professional"
+
+- id: keutt
+  title:
+    fr: "Keutt"
+    en: "Keutt"
   description:
     fr: "Infrastructure complète pour startup avec Docker, Traefik et CI/CD"
     en: "Complete startup infrastructure with Docker, Traefik and CI/CD"
@@ -44,7 +68,7 @@
   tech: [Android, Java]
   image: "/images/projects/ebatata.jpg"
   link: "https://github.com/YoucefMegoura/eBatata"
-  type: "personal"
+  type: "professional"
 
 - id: cornchain
   title:

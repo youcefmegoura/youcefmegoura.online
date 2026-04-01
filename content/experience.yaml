@@ -3,173 +3,262 @@
     fr: "Keutt (Startup)"
     en: "Keutt (Startup)"
   role:
-    fr: "DevOps & LeadTech"
-    en: "DevOps & LeadTech"
+    fr: "DevOps & Lead Tech"
+    en: "DevOps & Tech Lead"
   type: "part-time"
   period:
     start: "2026-01"
-    end: null
+    end: "2026-03"
   location: "Paris, France"
   short:
-    fr: "Structuration infra d'une startup. Docker, Traefik, Ansible, CI/CD GitHub Actions."
-    en: "Built startup infrastructure from scratch. Docker, Traefik, Ansible, CI/CD GitHub Actions."
+    fr: "Structuration complète de l'infrastructure d'une startup : CI/CD, conteneurisation, automatisation, supervision et déploiement sur VPS."
+    en: "Built a startup's infrastructure from scratch: CI/CD, containerization, automation, monitoring, and deployment on VPS."
   detailed:
     fr: |
-      Contexte: Participation à la structuration technique d'une startup avec backend, frontend web et mobile Flutter.
-      Missions:
-      - Conception et mise en place de l'infrastructure serveur
-      - Conteneurisation des applications avec Docker
-      - Mise en place de reverse proxy avec Traefik
-      - Automatisation des déploiements avec Ansible
-      - Pipeline CI/CD avec GitHub Actions
+      Contexte : Participation à la structuration technique d'une startup disposant d'applications backend, frontend web et mobiles Flutter, mais sans infrastructure de déploiement ni processus industrialisés.
+      Objectif : mettre en place une plateforme de delivery fiable, automatisée, économique et adaptée aux contraintes budgétaires d'une jeune entreprise.
+
+      Missions :
+      - Conception et mise en place d'une infrastructure complète sur VPS, en alternative au cloud public pour des raisons de coût.
+      - Conteneurisation des différentes applications et services avec Docker.
+      - Mise en place d'un reverse proxy et du routage applicatif avec Traefik.
+      - Automatisation de la configuration serveur et des déploiements avec Ansible.
+      - Mise en place de pipelines CI/CD pour compiler, versionner et générer automatiquement les images Docker.
+      - Intégration d'une stratégie de release basée sur la sémantique de version et le trunk-based development.
+      - Administration des environnements via Portainer, permettant aux développeurs d'installer et de gérer visuellement les versions souhaitées.
+      - Déploiement et maintenance de services internes (Nextcloud, Kimai, Portainer, OpenProject, etc.) sous Docker.
+      - Automatisation des mises à jour de sécurité, de la maintenance applicative et du cycle de vie des services.
+      - Mise en place de sauvegardes automatisées vers S3 pour les données et services critiques.
+      - Référent technique pour les équipes backend, frontend web et mobile.
+      - Accompagnement et formation des développeurs aux bonnes pratiques de livraison et de déploiement.
     en: |
-      Context: Technical structuring of a startup with backend, frontend web and mobile Flutter apps.
+      Context: Contributed to the technical structuring of a startup with backend, web frontend, and Flutter mobile applications, but no deployment infrastructure or industrialized delivery process.
+      Goal: build a reliable, automated, cost-efficient delivery platform adapted to the budget constraints of an early-stage company.
+
       Missions:
-      - Server infrastructure design and setup
-      - Application containerization with Docker
-      - Reverse proxy setup with Traefik
-      - Deployment automation with Ansible
-      - CI/CD pipeline with GitHub Actions
+      - Designed and implemented a complete VPS-based infrastructure as a cost-effective alternative to public cloud services.
+      - Containerized applications and internal services with Docker.
+      - Set up reverse proxying and application routing with Traefik.
+      - Automated server configuration and deployments with Ansible.
+      - Built CI/CD pipelines to compile, version, and automatically generate Docker images.
+      - Introduced a release strategy based on semantic versioning and trunk-based development.
+      - Administered environments via Portainer, allowing developers to visually install and manage the desired versions.
+      - Deployed and maintained internal services (Nextcloud, Kimai, Portainer, OpenProject, etc.) using Docker.
+      - Automated security patching, service maintenance, and application lifecycle operations.
+      - Implemented automated backups to S3 for critical services and data.
+      - Acted as technical reference for backend, frontend web, and mobile teams.
+      - Supported and trained developers on delivery and deployment best practices.
   environment:
     - Docker
     - Ansible
     - Terraform
+    - Kops
     - Kubernetes
     - Traefik
-    - GitHub Actions
     - Linux
+    - GitHub Actions
+    - Portainer
+    - AWS
+    - OpenProject
 
 - id: lacroix
   company:
-    fr: "Lacroix Electronics (IoT)"
-    en: "Lacroix Electronics (IoT)"
+    fr: "Lacroix Groupe"
+    en: "Lacroix Group"
   role:
-    fr: "Ingénieur Backend & DevOps"
-    en: "Backend & DevOps Engineer"
+    fr: "Développeur Backend Senior"
+    en: "Senior Backend Developer"
   type: "full-time"
   period:
-    start: "2021-09"
-    end: "2025-12"
+    start: "2023-07"
+    end: "2025-11"
   location: "Rennes, France"
   short:
-    fr: "Développement de la plateforme IoT LX Connect. Microservices Java/Kotlin, Kubernetes, CI/CD."
-    en: "Developed LX Connect IoT platform. Java/Kotlin microservices, Kubernetes, CI/CD."
+    fr: "Développement de LX Connect, plateforme IoT industrielle générique. Microservices Java/Kotlin, architecture événementielle, Kubernetes et CI/CD."
+    en: "Development of LX Connect, a generic industrial IoT platform. Java/Kotlin microservices, event-driven architecture, Kubernetes, and CI/CD."
   detailed:
     fr: |
-      Contexte: Développement de la plateforme IoT LX Connect pour la gestion d'équipements connectés industriels.
-      Missions:
-      - Développement de microservices en Java et Kotlin avec Spring Boot
-      - Architecture événementielle avec Kafka
-      - Déploiement sur Kubernetes avec Helm Charts
-      - Mise en place de pipelines CI/CD avec GitLab CI
-      - Monitoring avec Prometheus, Grafana et OpenTelemetry
-      - Protocoles IoT: LwM2M, FOTA, CoAP, MQTT
-      - Sécurité: Keycloak, SonarQube, Trivy, BlackDuck
+      Contexte : Contribution au développement et à l’évolution de LX Connect, une plateforme IoT dédiée à la supervision en temps réel d’équipements connectés pour des clients industriels multi-secteurs.
+      L’équipe projet rassemblait une vingtaine de collaborateurs (backend, frontend, mobile, DevOps, QA et produit) autour d’une solution robuste, scalable et maintenable.
+
+      Missions :
+      - Conception, développement et maintenance de microservices et bibliothèques backend en Java 17 et Kotlin 2.x avec Spring Boot 3.
+      - Développement de modules clés de la plateforme : BFF, RSql Library, Device Twin, Operation Manager.
+      - Mise en place d’une architecture microservices orientée scalabilité, résilience et découplage fonctionnel.
+      - Intégration de Keycloak pour centraliser l’authentification et la sécurisation des services.
+      - Développement de fonctionnalités de pilotage d’équipements connectés via plusieurs protocoles : HTTP, LwM2M, MQTT et CoAP.
+      - Implémentation d’une architecture orientée événements avec Kafka pour le traitement temps réel des flux métier.
+      - Gestion des données applicatives avec PostgreSQL, JSONB et TimescaleDB pour les besoins spatio-temporels.
+      - Mise en place de mécanismes de cache avec Redis afin d’optimiser les performances des services.
+      - Application des principes TDD et rédaction de tests unitaires avec JUnit, Mockito et AssertJ.
+      - Renforcement de la qualité logicielle via SonarQube, Trivy et BlackDuck.
+      - Mise en place et maintenance de pipelines CI/CD avec GitLab CI.
+      - Conteneurisation et déploiement des services avec Docker, Kubernetes, Helm et Helmfile.
+      - Mise en place du monitoring et de l’observabilité avec OpenTelemetry et SigNoz.
+      - Travail en environnement Agile avec suivi des activités via Jira.
     en: |
-      Context: Development of the LX Connect IoT platform for industrial connected equipment management.
+      Context: Contributed to the development and evolution of LX Connect, an IoT platform designed for real-time monitoring of connected equipment for industrial clients across multiple sectors.
+      The project team included around twenty contributors across backend, frontend, mobile, DevOps, QA, and product, building a robust, scalable, and maintainable solution.
+
       Missions:
-      - Microservices development in Java and Kotlin with Spring Boot
-      - Event-driven architecture with Kafka
-      - Kubernetes deployment with Helm Charts
-      - CI/CD pipeline setup with GitLab CI
-      - Monitoring with Prometheus, Grafana and OpenTelemetry
-      - IoT protocols: LwM2M, FOTA, CoAP, MQTT
-      - Security: Keycloak, SonarQube, Trivy, BlackDuck
+      - Designed, developed, and maintained backend microservices and libraries in Java 17 and Kotlin 2.x with Spring Boot 3.
+      - Developed key platform modules: BFF, RSql Library, Device Twin, and Operation Manager.
+      - Implemented a microservices architecture focused on scalability, resilience, and functional decoupling.
+      - Integrated Keycloak to centralize authentication and service security.
+      - Built device control features using multiple communication protocols: HTTP, LwM2M, MQTT, and CoAP.
+      - Implemented an event-driven architecture with Kafka for real-time business flow processing.
+      - Managed application data with PostgreSQL, JSONB, and TimescaleDB for spatio-temporal use cases.
+      - Introduced Redis caching mechanisms to improve service performance.
+      - Applied TDD principles and wrote unit tests with JUnit, Mockito, and AssertJ.
+      - Improved software quality with SonarQube, Trivy, and BlackDuck.
+      - Built and maintained CI/CD pipelines with GitLab CI.
+      - Containerized and deployed services using Docker, Kubernetes, Helm, and Helmfile.
+      - Set up monitoring and observability with OpenTelemetry and SigNoz.
+      - Worked in an Agile environment and tracked delivery through Jira.
   environment:
-    - Java
-    - Kotlin
-    - Spring Boot
+    - Java 17
+    - Kotlin 2.x
+    - Spring Boot 3
     - Kafka
-    - Kubernetes
-    - Helm
-    - Docker
-    - GitLab CI
-    - Prometheus
-    - Grafana
-    - OpenTelemetry
+    - Keycloak
     - PostgreSQL
+    - JSONB
     - TimescaleDB
     - Redis
-    - Keycloak
+    - Docker
+    - Kubernetes
+    - Helm
+    - Helmfile
+    - GitLab CI
+    - OpenTelemetry
+    - SigNoz
+    - SonarQube
+    - Trivy
+    - BlackDuck
+    - JUnit
+    - Mockito
+    - AssertJ
 
 - id: audaxis
   company:
-    fr: "Audaxis (ERP)"
-    en: "Audaxis (ERP)"
+    fr: "Audaxis"
+    en: "Audaxis"
   role:
-    fr: "Développeur Backend Java"
-    en: "Java Backend Developer"
+    fr: "Ingénieur Full-Stack Java & DevOps"
+    en: "Full-Stack Java Angular & DevOps Engineer"
   type: "full-time"
   period:
-    start: "2020-09"
-    end: "2021-08"
+    start: "2020-11"
+    end: "2023-06"
   location: "Paris, France"
   short:
-    fr: "Développement backend sur l'ERP Odoo et intégrations Java. Migration de données et API REST."
-    en: "Backend development on Odoo ERP and Java integrations. Data migration and REST APIs."
+    fr: "Évolution de développeur backend à Lead Tech/DevOps. Modernisation d'ERP legacy vers des architectures microservices et migration Docker Swarm vers Kubernetes."
+    en: "Progressed from backend developer to Tech Lead/DevOps. Modernized legacy ERPs to microservices architectures and migrated Docker Swarm to Kubernetes."
   detailed:
     fr: |
-      Contexte: Intégration et développement sur la plateforme ERP Odoo pour des clients enterprise.
-      Missions:
-      - Développement de modules backend en Java
-      - Intégrations API REST avec des systèmes tiers
-      - Migration de données depuis des systèmes legacy
-      - Optimisation des performances des requêtes SQL
-      - Support technique et documentation
+      Contexte : Évolution progressive au sein d'un éditeur ERP/CRM, du support de niveau 3 (MCO) jusqu'au rôle de Lead Technique et DevOps pour des clients grands comptes (Yves Rocher, LePlombFrancais, Rail Europe, OSG).
+      
+      Missions :
+      - Refonte et Migration : Migration de solutions monolithiques legacy (Java 5/6, Tapestry, Compiere) vers des architectures modernes (Spring Boot, Angular, JDK 17).
+      - Bases de données : Pilotage de la migration complexe de bases de données d'Oracle vers PostgreSQL (Ora2PG, Orafce) et optimisation des requêtes.
+      - Cloud & DevOps : Migration de l'infrastructure de Docker Swarm vers Kubernetes (Helm) sur AWS. Mise en place de pipelines GitLab CI/CD.
+      - Conception Backend : Développement de nouvelles applications (ex: système de facturation électronique avec Spring Boot et RabbitMQ).
+      - Leadership : Rôle de Lead Technique post-production, conduite d'entretiens de recrutement, onboarding et animation de formations techniques.
     en: |
-      Context: Integration and development on the Odoo ERP platform for enterprise clients.
+      Context: Progressed within an ERP/CRM provider from L3 support to Tech Lead and DevOps roles, supporting major enterprise clients (Yves Rocher, LePlombFrancais, Rail Europe, OSG).
+      
       Missions:
-      - Backend module development in Java
-      - REST API integrations with third-party systems
-      - Data migration from legacy systems
-      - SQL query performance optimization
-      - Technical support and documentation
+      - Architecture Modernization: Migrated legacy monolithic solutions (Java 5/6, Tapestry, Compiere) to modern architectures (Spring Boot, Angular, JDK 17).
+      - Database Migration: Led complex database migrations from Oracle to PostgreSQL (Ora2PG, Orafce) and optimized SQL performance.
+      - Cloud & DevOps: Migrated infrastructure from Docker Swarm to Kubernetes (Helm) on AWS. Built and maintained GitLab CI/CD pipelines.
+      - Backend Engineering: Designed and built applications from scratch (e.g., e-invoicing system using Spring Boot and RabbitMQ).
+      - Leadership: Acted as Tech Lead, conducted technical interviews, and mentored team members through technical training and onboarding.
   environment:
-    - Java
-    - Spring Boot
-    - PostgreSQL
-    - Oracle
-    - REST API
-    - Docker
-    - Git
+    - Java (8 to 17)
+    - Spring Boot 2
+    - Angular
+    - PostgreSQL & Oracle (11g/12c)
+    - Docker, Kubernetes & Helm
+    - AWS
+    - GitLab CI
+    - RabbitMQ
 
-- id: freelance
+- id: freelance-dev
   company:
     fr: "Freelance"
     en: "Freelance"
   role:
-    fr: "Développeur Web/Mobile & Designer Graphique"
-    en: "Web/Mobile Developer & Graphic Designer"
+    fr: "Développeur Web & Mobile"
+    en: "Web & Mobile Developer"
   type: "freelance"
   period:
-    start: "2017-01"
-    end: "2020-08"
-  location: "Constantine, Algérie"
+    start: "2018"
+    end: "2020"
+  location: "Algeria"
   short:
-    fr: "Développement web/mobile et design graphique en freelance. Sites web, applications Android, identité visuelle, affiches et supports de communication."
-    en: "Freelance web/mobile development and graphic design. Websites, Android apps, visual identity, posters, and marketing materials."
+    fr: "Conception, développement et maintenance de sites web et d'applications mobiles Android sur mesure."
+    en: "Designed, developed, and maintained custom responsive websites and native Android mobile applications."
   detailed:
     fr: |
-      Contexte: Travail indépendant sur diverses plateformes freelance (Khamsat, Mostaqil) et projets directs pour startups et entreprises.
-      Missions:
-      - Développement de sites web responsive (HTML, CSS, JavaScript, PHP, WordPress)
-      - Création d'applications Android natives
-      - Design graphique : logos, affiches événementielles, identités visuelles, supports marketing
-      - UI/UX design pour applications web et mobile
-      - Gestion de projets clients de bout en bout
+      Contexte : Réalisation de projets sur mesure pour des clients locaux et internationaux.
+      
+      Missions :
+      - Développement full-stack de sites web responsives et dynamiques (vitrines, plateformes sur mesure, CMS).
+      - Conception et développement d'applications mobiles Android natives.
+      - Maintenance évolutive, optimisation des performances et résolution de bugs.
+      - Élaboration des maquettes (UI/UX) pour garantir une expérience utilisateur fluide et moderne.
+      - Pilotage complet des projets : recueil des besoins, chiffrage, développement et déploiement.
     en: |
-      Context: Independent work on various freelance platforms (Khamsat, Mostaqil) and direct projects for startups and companies.
+      Context: Delivered custom projects for local and international clients.
+      
       Missions:
-      - Responsive website development (HTML, CSS, JavaScript, PHP, WordPress)
-      - Native Android application development
-      - Graphic design: logos, event posters, visual identities, marketing materials
-      - UI/UX design for web and mobile applications
-      - End-to-end client project management
+      - Developed full-stack responsive and dynamic websites (corporate sites, custom platforms, CMS).
+      - Designed and engineered native Android mobile applications.
+      - Performed evolutionary maintenance, performance optimization, and bug resolution.
+      - Created UI/UX wireframes to ensure seamless and modern user experiences.
+      - Managed end-to-end projects: requirements gathering, estimation, development, and deployment.
   environment:
-    - HTML/CSS
-    - JavaScript
+    - HTML5 / CSS3 / JavaScript
     - PHP
-    - Android
-    - Photoshop
-    - Illustrator
+    - Android (Java)
     - WordPress
+    - Trello
+
+- id: freelance-design
+  company:
+    fr: "Freelance"
+    en: "Freelance"
+  role:
+    fr: "Designer Graphique & UI/UX"
+    en: "Graphic & UI/UX Designer"
+  type: "freelance"
+  period:
+    start: "2016"
+    end: "2018"
+  location: "Algeria"
+  short:
+    fr: "Conception d'identités visuelles percutantes et d'interfaces web/mobiles (UI/UX) pour divers clients."
+    en: "Designed impactful visual identities and intuitive web/mobile interfaces (UI/UX) for diverse clients."
+  detailed:
+    fr: |
+      Contexte : Accompagnement complet de clients et des associations dans leur stratégie visuelle et digitale.
+      
+      Missions :
+      - Conception d'identités visuelles complètes et de chartes graphiques pour renforcer l'image de marque.
+      - Création de maquettes interactives et optimisation des parcours utilisateurs (UX/UI).
+      - Réalisation de supports de communication digitaux et montage vidéo pour des campagnes marketing.
+      - Gestion de projet autonome, de la prise de brief client jusqu'à la livraison finale.
+    en: |
+      Context: Provided comprehensive visual and digital strategy support for clients and associations.
+      
+      Missions:
+      - Designed full visual identities and brand guidelines to strengthen brand awareness.
+      - Created interactive wireframes and optimized user journeys (UX/UI).
+      - Produced digital communication assets and edited videos for marketing campaigns.
+      - Managed projects autonomously from initial client briefing to final delivery.
+  environment:
+    - Adobe Illustrator
+    - Adobe Photoshop
+    - Adobe Premiere Pro
+    - Adobe XD
+    - Trello
