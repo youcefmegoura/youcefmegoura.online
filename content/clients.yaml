@@ -1,6 +1,6 @@
 - id: lacroix
   name: "Lacroix Group"
-  logo: "/images/clients/lacroix.png"
+  logo: "https://www.lacroix-group.com/wp-content/uploads/1/2025/01/27/logo.webp"
   role:
     fr: "Développeur Backend Senior"
     en: "Senior Backend Developer"

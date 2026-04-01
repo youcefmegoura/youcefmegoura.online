@@ -3,12 +3,15 @@ title:
   fr: "Ingénieur Backend & DevOps"
   en: "Backend & DevOps Engineer"
 tagline:
-  - fr: "Ingénieur Backend & DevOps | 7+ ans d'expérience"
-    en: "Backend & DevOps Engineer | 7+ Years Experience"
-  - fr: "Java · Spring Boot · Kotlin · Kubernetes"
-    en: "Java · Spring Boot · Kotlin · Kubernetes"
-  - fr: "Architecture distribuée & Cloud"
-    en: "Distributed Architecture & Cloud"
+  - fr: "Ingenieur Logiciels"
+    en: "Software Engineer"
+  - fr: "Java · Spring Boot · Kotlin · JS· Angular · NextJs"
+    en: "Java · Spring Boot · Kotlin · JS· Angular · NextJs"
+  - fr: "Ingenieur DevOps & Cloud"
+    en: "DevOps & Cloud Engineer"
+  - fr: "Docker · Kubernetes · AWS · Ansible· Terraform"
+    en: "Docker · Kubernetes · AWS · Ansible· Terraform"
+
 summary:
   fr: |
     Ingénieur Backend et DevOps avec plus de 7 ans d’expérience dans la conception, l’industrialisation et l’exploitation de plateformes distribuées. 

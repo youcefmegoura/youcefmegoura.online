@@ -121,7 +121,7 @@ export function Hero({ profile, meta, ui, t }: HeroProps) {
           <div className="mt-4 min-h-[3.5em] text-lg text-zinc-600 dark:text-zinc-400 sm:min-h-[2.5em] sm:text-xl">
             <span className="mr-2 text-green-500">{'>'}</span>
             <TypingText
-              texts={[t(profile.title), ...profile.tagline.map(t)]}
+              texts={[...profile.tagline.map(t)]}
               className="text-zinc-700 dark:text-zinc-300"
             />
           </div>
