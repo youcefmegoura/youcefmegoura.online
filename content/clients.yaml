@@ -17,7 +17,7 @@
 
 - id: audaxis
   name: "Audaxis"
-  logo: "/images/clients/audaxis.png"
+  logo: ""
   role:
     fr: "Ingénieur Full-Stack Java & DevOps"
     en: "Full-Stack Java Angular & DevOps Engineer"
@@ -40,7 +40,7 @@
 
 - id: keutt
   name: "Keutt"
-  logo: "/images/clients/keutt.png"
+  logo: ""
   role:
     fr: "DevOps & Lead Tech"
     en: "DevOps & Tech Lead"
@@ -57,7 +57,7 @@
 
 - id: freelance
   name: "Freelance"
-  logo: "/images/clients/freelance.png"
+  logo: ""
   role:
     fr: "Développeur Web & Mobile / Designer"
     en: "Web & Mobile Developer / Designer"
