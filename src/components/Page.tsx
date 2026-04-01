@@ -37,6 +37,22 @@ const Projects = dynamic(
   },
 );
 
+const Clients = dynamic(
+  () => import('./Clients').then((m) => ({ default: m.Clients })),
+  {
+    loading: () => (
+      <section className="border-t border-zinc-200/50 dark:border-zinc-800/50 py-24">
+        <div className="mx-auto max-w-5xl px-5">
+          <div className="h-6 w-36 animate-pulse rounded bg-zinc-200 dark:bg-zinc-800" />
+          <div className="mt-10 flex items-center justify-center">
+            <div className="h-80 w-full animate-pulse rounded-xl bg-zinc-100 dark:bg-zinc-900/50" />
+          </div>
+        </div>
+      </section>
+    ),
+  },
+);
+
 const Languages = dynamic(
   () => import('./Languages').then((m) => ({ default: m.Languages })),
   {
@@ -68,7 +84,7 @@ const Certifications = dynamic(
       <section className="border-t border-zinc-200/50 dark:border-zinc-800/50 py-24">
         <div className="mx-auto max-w-5xl px-5">
           <div className="h-6 w-36 animate-pulse rounded bg-zinc-200 dark:bg-zinc-800" />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {[1, 2].map((n) => (
               <div
                 key={n}
@@ -104,7 +120,7 @@ export function Page({ data }: { data: SiteData }) {
       'color:#22d3ee;font-size:15px;font-weight:bold;margin-top:4px;',
     );
     console.log(
-      '%c  LinkedIn → https://linkedin.com/in/youcefmegoura\n  GitHub   → https://github.com/YoucefMegoura\n  Email    → ymegoura@gmail.com',
+      '%c  LinkedIn → https://linkedin.com/in/youcefmegoura\n  GitHub   → https://github.com/youcefmegoura\n  Email    → ymegoura@gmail.com',
       'color:#a1a1aa;font-size:12px;line-height:1.8;',
     );
   }, []);
@@ -121,23 +137,26 @@ export function Page({ data }: { data: SiteData }) {
       />
 
       <main>
-        <Hero
-          profile={data.profile}
-          meta={data.meta}
-          ui={data.ui}
-          t={t}
-        />
-        <About profile={data.profile} ui={data.ui} t={t} />
-        <Skills skills={data.skills} t={t} />
-        <Experience experience={data.experience} ui={data.ui} t={t} />
-        <Education education={data.education} ui={data.ui} t={t} />
-        <Projects projects={data.projects} t={t} />
-        <Languages languages={data.languages} t={t} />
-        <Certifications certifications={data.certifications} t={t} />
-        <Contact meta={data.meta} locale={locale} t={t} />
+        {data.sections.hero !== false && (
+          <Hero
+            profile={data.profile}
+            meta={data.meta}
+            ui={data.ui}
+            t={t}
+          />
+        )}
+        {data.sections.about !== false && <About profile={data.profile} ui={data.ui} t={t} />}
+        {data.sections.skills !== false && <Skills skills={data.skills} t={t} />}
+        {data.sections.experience !== false && <Experience experience={data.experience} ui={data.ui} t={t} />}
+        {data.sections.education !== false && <Education education={data.education} ui={data.ui} t={t} />}
+        {data.sections.projects !== false && <Projects projects={data.projects} ui={data.ui} t={t} />}
+        {data.sections.clients !== false && <Clients clients={data.clients} t={t} />}
+        {data.sections.languages !== false && <Languages languages={data.languages} t={t} />}
+        {data.sections.certifications !== false && <Certifications certifications={data.certifications} ui={data.ui} t={t} />}
+        {data.sections.contact !== false && <Contact meta={data.meta} locale={locale} t={t} />}
       </main>
 
-      <Footer name={data.profile.name} ui={data.ui} t={t} />
+      {data.sections.footer !== false && <Footer name={data.profile.name} ui={data.ui} t={t} />}
     </div>
   );
 }

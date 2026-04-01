@@ -1,13 +1,25 @@
 - category:
-    fr: "Backend & Dev"
-    en: "Backend & Dev"
+    fr: "Backend"
+    en: "Backend"
   skills:
     - Java
     - Kotlin
     - Spring Boot
-    - Python
-    - REST API
-    - GraphQL
+
+- category:
+    fr: "Frontend"
+    en: "Frontend"
+  skills:
+    - TypeScript
+    - Angular
+    - Tailwind CSS
+
+- category:
+    fr: "Mobile"
+    en: "Mobile"
+  skills:
+    - Android
+    - Flutter
 
 - category:
     fr: "DevOps & Cloud"
@@ -16,18 +28,22 @@
     - Docker
     - Kubernetes
     - Helm
+    - AWS
     - Ansible
     - Terraform
+    - Kops
     - Traefik
-    - CI/CD
     - GitHub Actions
     - GitLab CI
     - Jenkins
+    - Portainer
     - Linux
+    - Python
+    - Sops/Git-crypt
 
 - category:
-    fr: "Bases de données"
-    en: "Databases"
+    fr: "Data"
+    en: "Data"
   skills:
     - PostgreSQL
     - Oracle
@@ -36,25 +52,17 @@
     - Kafka
     - RabbitMQ
     - TimescaleDB
+    - Warp10
 
 - category:
     fr: "IoT & Protocoles"
     en: "IoT & Protocols"
   skills:
     - LwM2M
-    - FOTA
     - CoAP
     - MQTT
-
-- category:
-    fr: "Frontend & Mobile"
-    en: "Frontend & Mobile"
-  skills:
-    - Angular
-    - React
-    - Tailwind CSS
-    - Flutter
-    - Android
+    - HTTP
+    - Protobuf
 
 - category:
     fr: "Monitoring"
@@ -66,9 +74,10 @@
     - SigNoz
 
 - category:
-    fr: "Outils"
-    en: "Tools"
+    fr: "Others"
+    en: "Autres"
   skills:
+    - Linux
     - Keycloak
     - Jira
     - Git

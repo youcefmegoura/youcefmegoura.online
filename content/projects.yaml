@@ -1,59 +1,116 @@
 - id: lx-connect
   title:
-    fr: "LX Connect — Plateforme IoT"
-    en: "LX Connect — IoT Platform"
+    fr: "LX Connect SaaS — Plateforme IoT"
+    en: "LX Connect SaaS — IoT Platform"
   description:
-    fr: "Plateforme IoT pour la gestion d'équipements connectés industriels"
-    en: "IoT platform for industrial connected equipment management"
-  tech: [Java, Kotlin, Spring Boot, Kafka, Kubernetes, Helm]
-  image: "/images/projects/lx-connect.jpg"
+    fr: "Plateforme IoT dédiée à la gestion et à la supervision d’équipements industriels connectés."
+    en: "IoT platform for managing and monitoring industrial connected equipment."
+  tech: [Java, Kotlin, Spring Boot, Kafka, Keycloak, Docker, Kubernetes, Helm, GitLab CI, PostgreSQL, TimescaleDB, Redis, OpenTelemetry, SigNoz]
+  image: "https://cdn.franceenvironnement.com/images-produits/57198/T2/4545557198a75b92821b3f74c68c09278d365b76d8655e0b5473aae.webp"
+  link: "https://www.lacroix-environment.com/telemetry-solutions/offers/centralized-and-supervisory-platforms/lx-connect-water-networks/"
+  type: "professional"
+  date: "2023-07"
+
+- id: apiz-solution
+  title:
+    fr: "Apiz Solution SaaS — Progiciel"
+    en: "Apiz Solution SaaS — ERP"
+  description:
+    fr: "Plateforme ERP dédiée à la gestion des entreprises."
+    en: "ERP platform for enterprise management."
+  tech: [Java, Spring Boot, Angular, JasperReports, Keycloak, Docker, Kubernetes, Helm, GitLab CI, AWS, PostgreSQL, Oracle, Grafana, Prometheus]
+  image: "https://www.apiz-erp.com/wp-content/uploads/2019/06/capabilities-04-login-profils.jpg"
+  link: "https://www.apiz-erp.com/"
+  type: "professional"
+  date: "2020-11"
+
+- id: compiere
+  title:
+    fr: "Compiere — Progiciel"
+    en: "Compiere — ERP"
+  description:
+    fr: "Progiciel ERP dédié à la gestion des entreprises."
+    en: "ERP software for enterprise management."
+  tech: [Java, Google Web Toolkit, JasperReports, PostgreSQL, Oracle, Nagios, Linux]
+  image: "/images/projects/compiere.jpg"
   link: null
   type: "professional"
+  date: "2020-11"
 
-- id: keutt-infra
+- id: keutt
   title:
-    fr: "Keutt — Infrastructure Startup"
-    en: "Keutt — Startup Infrastructure"
+    fr: "Keutt"
+    en: "Keutt"
   description:
-    fr: "Infrastructure complète pour startup avec Docker, Traefik et CI/CD"
-    en: "Complete startup infrastructure with Docker, Traefik and CI/CD"
+    fr: "Infrastructure complète pour startup avec Docker, Traefik et CI/CD."
+    en: "Complete startup infrastructure with Docker, Traefik, and CI/CD."
   tech: [Docker, Ansible, Terraform, Kubernetes, Traefik, GitHub Actions]
   image: "/images/projects/keutt.jpg"
+  link: "https://keutt.com"
+  type: "professional"
+  date: "2026-01"
+
+- id: itgc
+  title:
+    fr: "Institut Technique des Grandes Cultures d’Algérie — WordPress"
+    en: "Technical Institute of Field Crops of Algeria — WordPress"
+  description:
+    fr: "Refonte d’un ancien site web Joomla vers WordPress, avec reprise de la charte graphique et des logos."
+    en: "Website redesign from Joomla to WordPress, including visual identity and logo refresh."
+  tech: [WordPress, Adobe Photoshop, Adobe Illustrator, Trello]
+  image: "/images/projects/itgc.jpg"
+  link: "https://itgc.dz"
+  type: "professional"
+  date: "2018"
+
+- id: guerioune
+  title:
+    fr: "Guerioune — Usine d’eau de source | WordPress"
+    en: "Guerioune — Natural Spring Water Factory | WordPress"
+  description:
+    fr: "Conception de la charte graphique et développement du site web sous WordPress."
+    en: "Designed the visual identity and developed the website with WordPress."
+  tech: [WordPress, Adobe Photoshop, Adobe Illustrator, Trello]
+  image: "/images/projects/guerioune.jpg"
   link: null
   type: "professional"
+  date: "2018"
 
 - id: sphinx-kids
   title:
     fr: "SphinxKids — App Android"
     en: "SphinxKids — Android App"
   description:
-    fr: "Application Android éducative pour enfants"
-    en: "Educational Android app for kids"
+    fr: "Application Android éducative open source pour enfants."
+    en: "Open-source educational Android app for children."
   tech: [Android, Java]
-  image: "/images/projects/sphinx-kids.jpg"
-  link: "https://github.com/YoucefMegoura/SphinxKids"
+  image: "/images/projects/sphinx.jpg"
+  link: "https://github.com/youcefmegoura/SphinxKids"
   type: "personal"
+  date: "2019"
 
 - id: ebatata
   title:
     fr: "eBatata — App Android"
     en: "eBatata — Android App"
   description:
-    fr: "Application mobile de commerce"
-    en: "Mobile commerce application"
+    fr: "Application mobile de gestion commerciale."
+    en: "Mobile business management application."
   tech: [Android, Java]
   image: "/images/projects/ebatata.jpg"
-  link: "https://github.com/YoucefMegoura/eBatata"
-  type: "personal"
+  link: "https://github.com/youcefmegoura/eBatata"
+  type: "professional"
+  date: "2019"
 
 - id: cornchain
   title:
-    fr: "CornChain — Blockchain"
-    en: "CornChain — Blockchain"
+    fr: "CornChain — Projet Blockchain & IoT"
+    en: "CornChain — Blockchain & IoT Project"
   description:
-    fr: "Projet blockchain expérimental"
-    en: "Experimental blockchain project"
-  tech: [Java, Blockchain]
+    fr: "Projet expérimental combinant blockchain, IoT et applications mobiles."
+    en: "Experimental project combining blockchain, IoT, and mobile applications."
+  tech: [Node.js, React, Web3.js, Android, Arduino, Ethereum Blockchain, Solidity, Truffle Suite]
   image: "/images/projects/cornchain.jpg"
-  link: "https://github.com/YoucefMegoura/CornChain"
+  link: "https://github.com/youcefmegoura/CornChain"
   type: "personal"
+  date: "2019"

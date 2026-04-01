@@ -1,0 +1,85 @@
+- id: lacroix
+  name: "Lacroix Group"
+  logo: "https://www.lacroix-group.com/wp-content/uploads/1/2025/01/27/logo.webp"
+  role:
+    fr: "Développeur Backend Senior"
+    en: "Senior Backend Developer"
+  description:
+    fr: "Plateforme IoT industrielle pour la supervision d'équipements connectés"
+    en: "Industrial IoT platform for monitoring connected equipment"
+  projects:
+    - name:
+        fr: "LX Connect SaaS — Plateforme IoT"
+        en: "LX Connect SaaS — IoT Platform"
+      description:
+        fr: "Microservices Java/Kotlin, architecture événementielle Kafka, Kubernetes"
+        en: "Java/Kotlin microservices, Kafka event-driven architecture, Kubernetes"
+
+- id: audaxis
+  name: "Audaxis"
+  logo: ""
+  role:
+    fr: "Ingénieur Full-Stack Java & DevOps"
+    en: "Full-Stack Java Angular & DevOps Engineer"
+  description:
+    fr: "Modernisation de solutions ERP legacy et migration vers le cloud"
+    en: "Legacy ERP modernization and cloud migration"
+  projects:
+    - name:
+        fr: "Apiz Solution SaaS — Progiciel"
+        en: "Apiz Solution SaaS — ERP"
+      description:
+        fr: "Plateforme ERP, migration Oracle vers PostgreSQL, Kubernetes"
+        en: "ERP platform, Oracle to PostgreSQL migration, Kubernetes"
+    - name:
+        fr: "Compiere — Progiciel"
+        en: "Compiere — ERP"
+      description:
+        fr: "Maintenance et évolution du progiciel ERP"
+        en: "ERP software maintenance and evolution"
+
+- id: keutt
+  name: "Keutt"
+  logo: ""
+  role:
+    fr: "DevOps & Lead Tech"
+    en: "DevOps & Tech Lead"
+  description:
+    fr: "Structuration complète de l'infrastructure d'une startup"
+    en: "Complete startup infrastructure setup"
+  projects:
+    - name:
+        fr: "Infrastructure DevOps"
+        en: "DevOps Infrastructure"
+      description:
+        fr: "CI/CD, conteneurisation Docker, automatisation Ansible, déploiement VPS"
+        en: "CI/CD, Docker containerization, Ansible automation, VPS deployment"
+
+- id: freelance
+  name: "Freelance"
+  logo: ""
+  role:
+    fr: "Développeur Web & Mobile / Designer"
+    en: "Web & Mobile Developer / Designer"
+  description:
+    fr: "Projets sur mesure pour clients locaux et internationaux"
+    en: "Custom projects for local and international clients"
+  projects:
+    - name:
+        fr: "ITGC — Site WordPress"
+        en: "ITGC — WordPress Site"
+      description:
+        fr: "Refonte site web Joomla vers WordPress"
+        en: "Website redesign from Joomla to WordPress"
+    - name:
+        fr: "Guerioune — Site WordPress"
+        en: "Guerioune — WordPress Site"
+      description:
+        fr: "Charte graphique et développement WordPress"
+        en: "Visual identity and WordPress development"
+    - name:
+        fr: "SphinxKids — App Android"
+        en: "SphinxKids — Android App"
+      description:
+        fr: "Application éducative open source pour enfants"
+        en: "Open-source educational app for children"

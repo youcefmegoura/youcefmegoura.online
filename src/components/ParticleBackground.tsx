@@ -9,18 +9,20 @@ import type { Container, ISourceOptions } from '@tsparticles/engine';
 export function ParticleBackground() {
   const { theme } = useTheme();
   const [ready, setReady] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
-    if (typeof window === 'undefined') return false;
-    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  });
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== 'undefined' ? window.innerWidth < 768 : false,
+  );
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() =>
+    typeof window !== 'undefined'
+      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      : false,
+  );
   const containerRef = useRef<Container | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
-  // Detect mobile viewport and prefers-reduced-motion changes
+  // Subscribe to viewport and reduced-motion changes
   useEffect(() => {
     const updateMobile = () => setIsMobile(window.innerWidth < 768);
-    updateMobile();
     window.addEventListener('resize', updateMobile);
 
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');

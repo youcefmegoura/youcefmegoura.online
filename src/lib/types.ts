@@ -10,7 +10,7 @@ export interface LocalizedString {
 export interface Profile {
   name: string;
   title: LocalizedString;
-  tagline: LocalizedString;
+  tagline: LocalizedString[];
   summary: LocalizedString;
   location: string;
   photo: string;
@@ -67,6 +67,7 @@ export interface Project {
   image: string;
   link: string | null;
   type: 'professional' | 'personal';
+  date: string | null;
 }
 
 // Languages
@@ -82,6 +83,8 @@ export interface Certification {
   issuer: string;
   description: LocalizedString;
   date: string | null;
+  link: string | null;
+  pinned: boolean;
 }
 
 // Meta
@@ -98,6 +101,27 @@ export interface Meta {
   og_image: string;
 }
 
+// Client projects (for graph)
+export interface ClientProject {
+  name: LocalizedString;
+  description: LocalizedString;
+}
+
+// Clients
+export interface Client {
+  id: string;
+  name: string;
+  logo: string;
+  role: LocalizedString;
+  description: LocalizedString;
+  projects: ClientProject[];
+}
+
+// Section visibility
+export interface SectionVisibility {
+  [key: string]: boolean;
+}
+
 // UI Strings
 export interface UIStrings {
   [key: string]: LocalizedString;
@@ -110,8 +134,10 @@ export interface SiteData {
   skills: SkillCategory[];
   education: Education[];
   projects: Project[];
+  clients: Client[];
   languages: Language[];
   certifications: Certification[];
   meta: Meta;
   ui: UIStrings;
+  sections: SectionVisibility;
 }

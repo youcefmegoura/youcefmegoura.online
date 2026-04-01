@@ -3,17 +3,30 @@ title:
   fr: "Ingénieur Backend & DevOps"
   en: "Backend & DevOps Engineer"
 tagline:
-  fr: "Ingénieur Backend & DevOps | 6+ ans d'expérience | Java, Spring Boot, Kubernetes, Docker"
-  en: "Backend & DevOps Engineer | 6+ Years Experience | Java, Spring Boot, Kubernetes, Docker"
+  - fr: "Ingenieur Logiciels"
+    en: "Software Engineer"
+  - fr: "Java · Spring Boot · Kotlin · JS· Angular · NextJs"
+    en: "Java · Spring Boot · Kotlin · JS· Angular · NextJs"
+  - fr: "Ingenieur DevOps & Cloud"
+    en: "DevOps & Cloud Engineer"
+  - fr: "Docker · Kubernetes · AWS · Ansible· Terraform"
+    en: "Docker · Kubernetes · AWS · Ansible· Terraform"
+
 summary:
-  fr: "Ingénieur Backend et DevOps avec plus de 6 ans d'expérience dans la conception et le déploiement de systèmes distribués, microservices et infrastructures cloud. Expertise en Java, Spring Boot, Kotlin, Kubernetes et Docker. Expérience dans les domaines IoT, ERP et startups."
-  en: "Backend and DevOps Engineer with 6+ years of experience designing and deploying distributed systems, microservices, and cloud infrastructure. Expertise in Java, Spring Boot, Kotlin, Kubernetes, and Docker. Experience across IoT, ERP, and startup domains."
+  fr: |
+    Ingénieur Backend et DevOps avec plus de 7 ans d’expérience dans la conception, l’industrialisation et l’exploitation de plateformes distribuées. 
+    Expertise en Java, Spring Boot, Kotlin, Kubernetes, Docker et CI/CD, avec une expérience solide en IoT industriel, ERP et environnements startup. 
+    Habitué à moderniser des applications legacy, automatiser les déploiements et accompagner les équipes techniques vers des architectures plus robustes et scalables.
+  en: |
+    Backend and DevOps Engineer with 7 years of experience designing, industrializing, and operating distributed platforms. 
+    Expertise in Java, Spring Boot, Kotlin, Kubernetes, Docker, and CI/CD, with strong experience in industrial IoT, ERP, and startup environments. 
+    Proven track record in modernizing legacy applications, automating deployments, and helping technical teams move toward more robust and scalable architectures.
 location: "Rennes, France"
 photo: "/images/profile/youcefmegoura.jpg"
 availability:
   fr: "Disponible"
   en: "Available"
 stats:
-  years_experience: 6
+  years_experience: 7
   clients: 10
   projects: 20
