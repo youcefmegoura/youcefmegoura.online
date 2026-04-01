@@ -82,6 +82,8 @@ export interface Certification {
   issuer: string;
   description: LocalizedString;
   date: string | null;
+  link: string | null;
+  pinned: boolean;
 }
 
 // Meta

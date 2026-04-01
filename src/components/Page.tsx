@@ -68,7 +68,7 @@ const Certifications = dynamic(
       <section className="border-t border-zinc-200/50 dark:border-zinc-800/50 py-24">
         <div className="mx-auto max-w-5xl px-5">
           <div className="h-6 w-36 animate-pulse rounded bg-zinc-200 dark:bg-zinc-800" />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {[1, 2].map((n) => (
               <div
                 key={n}
@@ -133,7 +133,7 @@ export function Page({ data }: { data: SiteData }) {
         <Education education={data.education} ui={data.ui} t={t} />
         <Projects projects={data.projects} t={t} />
         <Languages languages={data.languages} t={t} />
-        <Certifications certifications={data.certifications} t={t} />
+        <Certifications certifications={data.certifications} ui={data.ui} t={t} />
         <Contact meta={data.meta} locale={locale} t={t} />
       </main>
 

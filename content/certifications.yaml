@@ -4,6 +4,8 @@
     fr: "Certificat Cisco CCNA Routing and Switching"
     en: "Cisco CCNA Routing and Switching Certificate"
   date: "2019"
+  link: null
+  pinned: true
 
 - title: "Docker Mastery: with Kubernetes + Swarm from a Docker Captain"
   issuer: "Udemy"
@@ -11,6 +13,8 @@
     fr: "Créez, testez et déployez des conteneurs grâce à la meilleure formation complète sur Docker, Kubernetes, Compose et GitHub Actions CI avec DevOps."
     en: "Build, test, deploy containers with the best mega-course on Docker, Kubernetes, Compose, GitHub Actions CI using DevOps"
   date: "2023"
+  link: null
+  pinned: true
 
 - title: "PHP et MySQL"
   issuer: "OpenClassRooms"
@@ -18,6 +22,8 @@
     fr: "Concevez votre site web avec PHP et MySQL"
     en: "Design your website with PHP and MySQL"
   date: null
+  link: null
+  pinned: false
 
 - title: "HTML5 et CSS3"
   issuer: "OpenClassRooms"
@@ -25,6 +31,8 @@
     fr: "Créer votre site web avec HTML5 et CSS3"
     en: "Create your website with HTML5 and CSS3"
   date: null
+  link: null
+  pinned: false
 
 - title: "JavaScript"
   issuer: "OpenClassRooms"
@@ -32,6 +40,8 @@
     fr: "Apprenez à coder avec JavaScript"
     en: "Learn to code with JavaScript"
   date: null
+  link: null
+  pinned: false
 
 - title: "Reprenez le contrôle à l'aide de Linux !"
   issuer: "Openclassrooms"
@@ -39,6 +49,8 @@
     fr: "Reprenez le contrôle à l'aide de Linux !"
     en: "Take back control with Linux!"
   date: "2020"
+  link: null
+  pinned: false
 
 - title: "Construisez des microservices"
   issuer: "Openclassrooms"
@@ -46,6 +58,8 @@
     fr: "Construisez des microservices"
     en: "Build microservices"
   date: "2021"
+  link: null
+  pinned: false
 
 - title: "Concevez votre site web avec PHP et MySQL"
   issuer: "Openclassrooms"
@@ -53,6 +67,8 @@
     fr: "Concevez votre site web avec PHP et MySQL"
     en: "Design your website with PHP and MySQL"
   date: "2017"
+  link: null
+  pinned: false
 
 - title: "Réalisez des sites modernes et beaux grâce à WordPress"
   issuer: "Openclassrooms"
@@ -60,6 +76,8 @@
     fr: "Réalisez des sites modernes et beaux grâce à WordPress"
     en: "Create modern and beautiful websites with WordPress"
   date: "2019"
+  link: null
+  pinned: false
 
 - title: "Gérez votre code avec Git et GitHub"
   issuer: "Openclassrooms"
@@ -67,6 +85,8 @@
     fr: "Gérez votre code avec Git et GitHub"
     en: "Manage your code with Git and GitHub"
   date: "2019"
+  link: null
+  pinned: false
 
 - title: "Développez votre première application Android"
   issuer: "Openclassrooms"
@@ -74,6 +94,8 @@
     fr: "Développez votre première application Android"
     en: "Develop your first Android application"
   date: "2018"
+  link: null
+  pinned: false
 
 - title: "Apprenez à coder avec JavaScript"
   issuer: "Openclassrooms"
@@ -81,6 +103,8 @@
     fr: "Apprenez à coder avec JavaScript"
     en: "Learn to code with JavaScript"
   date: "2017"
+  link: null
+  pinned: false
 
 - title: "Créez votre site web avec HTML5 et CSS3"
   issuer: "Openclassrooms"
@@ -88,6 +112,8 @@
     fr: "Créez votre site web avec HTML5 et CSS3"
     en: "Create your website with HTML5 and CSS3"
   date: "2014"
+  link: null
+  pinned: false
 
 - title: "Comprendre le Web"
   issuer: "Openclassrooms"
@@ -95,6 +121,8 @@
     fr: "Comprendre le Web"
     en: "Understand the Web"
   date: "2017"
+  link: null
+  pinned: false
 
 - title: "Sécurisez votre réseau grâce aux VPN et Firewall"
   issuer: "Openclassrooms"
@@ -102,3 +130,5 @@
     fr: "Sécurisez votre réseau grâce aux VPN et Firewall"
     en: "Secure your network with VPN and Firewall"
   date: "2019"
+  link: null
+  pinned: false

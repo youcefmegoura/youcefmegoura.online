@@ -55,4 +55,13 @@ projects_count:
 all_rights_reserved:
   fr: "Tous droits réservés"
   en: "All rights reserved"
+show_more:
+  fr: "Voir plus"
+  en: "Show more"
+show_less:
+  fr: "Voir moins"
+  en: "Show less"
+verify:
+  fr: "Vérifier"
+  en: "Verify"
 
