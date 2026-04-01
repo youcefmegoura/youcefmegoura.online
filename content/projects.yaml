@@ -9,6 +9,7 @@
   image: "https://cdn.franceenvironnement.com/images-produits/57198/T2/4545557198a75b92821b3f74c68c09278d365b76d8655e0b5473aae.webp"
   link: "https://www.lacroix-environment.com/telemetry-solutions/offers/centralized-and-supervisory-platforms/lx-connect-water-networks/"
   type: "professional"
+  date: "2023-07"
 
 - id: apiz-solution
   title:
@@ -21,6 +22,7 @@
   image: "https://www.apiz-erp.com/wp-content/uploads/2019/06/capabilities-04-login-profils.jpg"
   link: "https://www.apiz-erp.com/"
   type: "professional"
+  date: "2020-11"
 
 - id: compiere
   title:
@@ -33,6 +35,7 @@
   image: "/images/projects/compiere.jpg"
   link: null
   type: "professional"
+  date: "2020-11"
 
 - id: keutt
   title:
@@ -45,6 +48,7 @@
   image: "/images/projects/keutt.jpg"
   link: "https://keutt.com"
   type: "professional"
+  date: "2026-01"
 
 - id: itgc
   title:
@@ -57,6 +61,7 @@
   image: "/images/projects/itgc.jpg"
   link: "https://itgc.dz"
   type: "professional"
+  date: "2018"
 
 - id: guerioune
   title:
@@ -69,6 +74,7 @@
   image: "/images/projects/guerioune.jpg"
   link: null
   type: "professional"
+  date: "2018"
 
 - id: sphinx-kids
   title:
@@ -81,6 +87,7 @@
   image: "/images/projects/sphinx.jpg"
   link: "https://github.com/youcefmegoura/SphinxKids"
   type: "personal"
+  date: "2019"
 
 - id: ebatata
   title:
@@ -93,6 +100,7 @@
   image: "/images/projects/ebatata.jpg"
   link: "https://github.com/youcefmegoura/eBatata"
   type: "professional"
+  date: "2019"
 
 - id: cornchain
   title:
@@ -105,3 +113,4 @@
   image: "/images/projects/cornchain.jpg"
   link: "https://github.com/youcefmegoura/CornChain"
   type: "personal"
+  date: "2019"
