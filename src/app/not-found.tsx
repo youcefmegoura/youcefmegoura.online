@@ -8,7 +8,7 @@ import {
   TerminalWindow,
   errorStrings,
   btnPrimary,
-} from '@/components/v3/ErrorShared';
+} from '@/components/ErrorShared';
 
 export default function NotFound() {
   const t = useTranslation();

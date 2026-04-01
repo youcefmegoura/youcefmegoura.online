@@ -10,7 +10,7 @@ import {
   errorStrings,
   btnPrimary,
   btnSecondary,
-} from '@/components/v3/ErrorShared';
+} from '@/components/ErrorShared';
 
 export default function ErrorPage({
   error,

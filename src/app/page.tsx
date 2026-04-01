@@ -1,5 +1,5 @@
 import { getAllData } from '@/lib/yaml-loader';
-import { Page } from '@/components/v3/Page';
+import { Page } from '@/components/Page';
 
 export default function HomePage() {
   const data = getAllData();
