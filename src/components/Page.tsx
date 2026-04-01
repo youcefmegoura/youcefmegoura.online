@@ -148,10 +148,10 @@ export function Page({ data }: { data: SiteData }) {
         {data.sections.about !== false && <About profile={data.profile} ui={data.ui} t={t} />}
         {data.sections.skills !== false && <Skills skills={data.skills} t={t} />}
         {data.sections.experience !== false && <Experience experience={data.experience} ui={data.ui} t={t} />}
-        {data.sections.education !== false && <Education education={data.education} ui={data.ui} t={t} />}
         {data.sections.projects !== false && <Projects projects={data.projects} ui={data.ui} t={t} />}
         {data.sections.clients !== false && <Clients clients={data.clients} t={t} />}
         {data.sections.languages !== false && <Languages languages={data.languages} t={t} />}
+        {data.sections.education !== false && <Education education={data.education} ui={data.ui} t={t} />}
         {data.sections.certifications !== false && <Certifications certifications={data.certifications} ui={data.ui} t={t} />}
         {data.sections.contact !== false && <Contact meta={data.meta} locale={locale} t={t} />}
       </main>
