@@ -2,14 +2,22 @@
     fr: "Français"
     en: "French"
   level:
-    fr: "C1 (Diplôme TCF SO)"
-    en: "C1 (TCF SO Diploma)"
+    fr: "C2"
+    en: "C2"
   flag: "🇫🇷"
 
 - language:
     fr: "Anglais"
     en: "English"
   level:
-    fr: "B2 (Utilisateur indépendant)"
-    en: "B2 (Independent user)"
+    fr: "B2"
+    en: "B2"
   flag: "🇬🇧"
+
+- language:
+    fr: "Arabe"
+    en: "Arabic"
+  level:
+    fr: "C1"
+    en: "C1"
+  flag: "🇦🇪"

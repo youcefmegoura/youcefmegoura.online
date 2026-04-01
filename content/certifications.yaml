@@ -3,14 +3,14 @@
   description:
     fr: "Certificat Cisco CCNA Routing and Switching"
     en: "Cisco CCNA Routing and Switching Certificate"
-  date: "2019-04"
+  date: "2019"
 
-- title: "Hacking Éthique"
+- title: "Docker Mastery: with Kubernetes + Swarm from a Docker Captain"
   issuer: "Udemy"
   description:
-    fr: "Tests d'intrusion et sécurité web"
-    en: "Penetration testing and web security"
-  date: null
+    fr: "Créez, testez et déployez des conteneurs grâce à la meilleure formation complète sur Docker, Kubernetes, Compose et GitHub Actions CI avec DevOps."
+    en: "Build, test, deploy containers with the best mega-course on Docker, Kubernetes, Compose, GitHub Actions CI using DevOps"
+  date: "2023"
 
 - title: "PHP et MySQL"
   issuer: "OpenClassRooms"
@@ -33,9 +33,72 @@
     en: "Learn to code with JavaScript"
   date: null
 
-- title: "Intelligence Artificielle"
-  issuer: "Udemy"
+- title: "Reprenez le contrôle à l'aide de Linux !"
+  issuer: "Openclassrooms"
   description:
-    fr: "Intelligence Artificielle de A à Z"
-    en: "Artificial Intelligence from A to Z"
-  date: null
+    fr: "Reprenez le contrôle à l'aide de Linux !"
+    en: "Take back control with Linux!"
+  date: "2020"
+
+- title: "Construisez des microservices"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Construisez des microservices"
+    en: "Build microservices"
+  date: "2021"
+
+- title: "Concevez votre site web avec PHP et MySQL"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Concevez votre site web avec PHP et MySQL"
+    en: "Design your website with PHP and MySQL"
+  date: "2017"
+
+- title: "Réalisez des sites modernes et beaux grâce à WordPress"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Réalisez des sites modernes et beaux grâce à WordPress"
+    en: "Create modern and beautiful websites with WordPress"
+  date: "2019"
+
+- title: "Gérez votre code avec Git et GitHub"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Gérez votre code avec Git et GitHub"
+    en: "Manage your code with Git and GitHub"
+  date: "2019"
+
+- title: "Développez votre première application Android"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Développez votre première application Android"
+    en: "Develop your first Android application"
+  date: "2018"
+
+- title: "Apprenez à coder avec JavaScript"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Apprenez à coder avec JavaScript"
+    en: "Learn to code with JavaScript"
+  date: "2017"
+
+- title: "Créez votre site web avec HTML5 et CSS3"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Créez votre site web avec HTML5 et CSS3"
+    en: "Create your website with HTML5 and CSS3"
+  date: "2014"
+
+- title: "Comprendre le Web"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Comprendre le Web"
+    en: "Understand the Web"
+  date: "2017"
+
+- title: "Sécurisez votre réseau grâce aux VPN et Firewall"
+  issuer: "Openclassrooms"
+  description:
+    fr: "Sécurisez votre réseau grâce aux VPN et Firewall"
+    en: "Secure your network with VPN and Firewall"
+  date: "2019"
