@@ -83,7 +83,7 @@ function ProjectsInner({ projects, ui, t }: ProjectsProps) {
                       </div>
                       {p.date && (
                         <p className="mt-1 font-mono text-[10px] text-zinc-400 dark:text-zinc-600">
-                          // {p.date}
+                          {'// '}{p.date}
                         </p>
                       )}
                       <p className="mt-2 line-clamp-2 text-xs text-zinc-500">
@@ -110,7 +110,7 @@ function ProjectsInner({ projects, ui, t }: ProjectsProps) {
                 onClick={handleShowMore}
                 className="inline-flex items-center gap-1 font-mono text-xs text-cyan-400/70 transition-colors hover:text-cyan-400"
               >
-                <span>// {t(ui.show_more)}</span>
+                <span>{'// '}{t(ui.show_more)}</span>
                 <ChevronDown className="h-3 w-3" />
               </button>
             ) : isExpanded ? (
@@ -118,7 +118,7 @@ function ProjectsInner({ projects, ui, t }: ProjectsProps) {
                 onClick={handleShowLess}
                 className="inline-flex items-center gap-1 font-mono text-xs text-cyan-400/70 transition-colors hover:text-cyan-400"
               >
-                <span>// {t(ui.show_less)}</span>
+                <span>{'// '}{t(ui.show_less)}</span>
                 <motion.span
                   animate={{ rotate: 180 }}
                   transition={{ duration: 0.2 }}

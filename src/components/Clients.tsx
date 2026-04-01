@@ -490,7 +490,7 @@ function ClientsInner({ clients, t }: ClientsProps) {
 
             {/* hint text */}
             <div className="absolute bottom-3 right-4 font-mono text-[10px] text-zinc-400/60 dark:text-zinc-600/60 select-none pointer-events-none">
-              // drag nodes to explore
+              {'// drag nodes to explore'}
             </div>
 
             {/* tooltip */}
@@ -508,7 +508,7 @@ function ClientsInner({ clients, t }: ClientsProps) {
                 </p>
                 {tooltip.role && (
                   <p className="mt-1 font-mono text-[10px] text-zinc-500">
-                    // {tooltip.role}
+                    {'// '}{tooltip.role}
                   </p>
                 )}
                 {tooltip.description && (

@@ -121,7 +121,7 @@ function CertificationsInner({ certifications, ui, t }: CertificationsProps) {
                 onClick={handleShowMore}
                 className="inline-flex items-center gap-1 font-mono text-xs text-cyan-400/70 transition-colors hover:text-cyan-400"
               >
-                <span>// {t(ui.show_more)}</span>
+                <span>{'// '}{t(ui.show_more)}</span>
                 <ChevronDown className="h-3 w-3" />
               </button>
             ) : isExpanded ? (
@@ -129,7 +129,7 @@ function CertificationsInner({ certifications, ui, t }: CertificationsProps) {
                 onClick={handleShowLess}
                 className="inline-flex items-center gap-1 font-mono text-xs text-cyan-400/70 transition-colors hover:text-cyan-400"
               >
-                <span>// {t(ui.show_less)}</span>
+                <span>{'// '}{t(ui.show_less)}</span>
                 <motion.span
                   animate={{ rotate: 180 }}
                   transition={{ duration: 0.2 }}
