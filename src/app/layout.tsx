@@ -82,7 +82,7 @@ export default function RootLayout({
               },
               sameAs: [
                 "https://www.linkedin.com/in/youcefmegoura/",
-                "https://github.com/YoucefMegoura",
+                "https://github.com/youcefmegoura",
               ],
               knowsAbout: [
                 "Java", "Kotlin", "Spring Boot", "Kubernetes", "Docker",

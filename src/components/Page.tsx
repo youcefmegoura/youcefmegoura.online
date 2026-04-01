@@ -104,7 +104,7 @@ export function Page({ data }: { data: SiteData }) {
       'color:#22d3ee;font-size:15px;font-weight:bold;margin-top:4px;',
     );
     console.log(
-      '%c  LinkedIn → https://linkedin.com/in/youcefmegoura\n  GitHub   → https://github.com/YoucefMegoura\n  Email    → ymegoura@gmail.com',
+      '%c  LinkedIn → https://linkedin.com/in/youcefmegoura\n  GitHub   → https://github.com/youcefmegoura\n  Email    → ymegoura@gmail.com',
       'color:#a1a1aa;font-size:12px;line-height:1.8;',
     );
   }, []);
