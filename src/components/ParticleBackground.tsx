@@ -10,10 +10,7 @@ export function ParticleBackground() {
   const { theme } = useTheme();
   const [ready, setReady] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
-    if (typeof window === 'undefined') return false;
-    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  });
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const containerRef = useRef<Container | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -24,6 +21,7 @@ export function ParticleBackground() {
     window.addEventListener('resize', updateMobile);
 
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setPrefersReducedMotion(motionQuery.matches);
     const onMotionChange = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
     motionQuery.addEventListener('change', onMotionChange);
 
