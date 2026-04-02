@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import {GoogleAnalytics} from '@next/third-parties/google'
+import {ClarityProvider} from "@/components/ClarityProvider";
 import {Inter, JetBrains_Mono} from "next/font/google";
 import {Providers} from "@/components/Providers";
 import "./globals.css";
@@ -101,9 +102,10 @@ export default function RootLayout({
         </head>
         <body className="font-sans bg-background text-foreground antialiased">
         <Providers>{children}</Providers>
-        </body>
         {process.env.NEXT_PUBLIC_GA_ID &&
             <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID}/>}
+        <ClarityProvider />
+        </body>
         </html>
     );
 }
