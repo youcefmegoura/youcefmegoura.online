@@ -102,9 +102,8 @@ export default function RootLayout({
         </head>
         <body className="font-sans bg-background text-foreground antialiased">
         <Providers>{children}</Providers>
-        {process.env.NEXT_PUBLIC_GA_ID &&
-            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID}/>}
-        <ClarityProvider />
+        {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID}/>}
+        {process.env.NEXT_PUBLIC_CLARITY_ID && <ClarityProvider/>}
         </body>
         </html>
     );
