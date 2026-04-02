@@ -39,7 +39,8 @@
     - Portainer
     - Linux
     - Python
-    - Sops/Git-crypt
+    - Sops
+    - Git-crypt
 
 - category:
     fr: "Data"
@@ -72,6 +73,7 @@
     - Grafana
     - OpenTelemetry
     - SigNoz
+    - Nagios
 
 - category:
     fr: "Others"
