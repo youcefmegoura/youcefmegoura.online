@@ -10,7 +10,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](#-license)
 
-[View Live Demo](#) · [Report Bug](#) · [Request Feature](#)
+[View Live Demo](https://youcefmegoura.online) · [Report Bug](https://github.com/youcefmegoura/youcefmegoura.online/issues) · [Request Feature](https://github.com/youcefmegoura/youcefmegoura.online/issues)
 </div>
 
 ---
@@ -28,12 +28,12 @@
 
 ## 🛠 Tech Stack
 
-| Category | Technologies |
-| --- | --- |
-| **Core** | Next.js 16.2, React 19.2, TypeScript 6.0 |
-| **Styling** | Tailwind CSS 4.2, Framer Motion, Lucide React |
-| **Visuals** | tsParticles, D3.js |
-| **Deployment** | Docker, Netlify, GitHub Actions |
+| Category       | Technologies                                  |
+|----------------|-----------------------------------------------|
+| **Core**       | Next.js 16.2, React 19.2, TypeScript 6.0      |
+| **Styling**    | Tailwind CSS 4.2, Framer Motion, Lucide React |
+| **Visuals**    | tsParticles, D3.js                            |
+| **Deployment** | Docker, Netlify, GitHub Actions               |
 
 ---
 

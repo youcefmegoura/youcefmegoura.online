@@ -1,6 +1,7 @@
 'use client';
 
-import type { CSSProperties } from 'react';
+import {CSSProperties, useEffect} from 'react';
+import * as Sentry from "@sentry/nextjs";
 
 /* ─── design tokens (inline — no Tailwind available in global error) ─── */
 const tokens = {
@@ -47,6 +48,9 @@ export default function GlobalError({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+    useEffect(() => {
+        Sentry.captureException(error);
+    }, [error]);
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>

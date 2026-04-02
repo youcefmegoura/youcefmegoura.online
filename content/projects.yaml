@@ -39,8 +39,8 @@
 
 - id: keutt
   title:
-    fr: "Keutt"
-    en: "Keutt"
+    fr: "Keutt - Infrastrucre"
+    en: "Keutt - Infrastrucre"
   description:
     fr: "Infrastructure complète pour startup avec Docker, Traefik et CI/CD."
     en: "Complete startup infrastructure with Docker, Traefik, and CI/CD."
@@ -65,8 +65,8 @@
 
 - id: guerioune
   title:
-    fr: "Guerioune — Usine d’eau de source | WordPress"
-    en: "Guerioune — Natural Spring Water Factory | WordPress"
+    fr: "Guerioune Usine d’eau de source - WordPress"
+    en: "Guerioune Natural Spring Water Factory - WordPress"
   description:
     fr: "Conception de la charte graphique et développement du site web sous WordPress."
     en: "Designed the visual identity and developed the website with WordPress."
