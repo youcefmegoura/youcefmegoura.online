@@ -42,11 +42,6 @@ export function useI18n() {
   }
   return context;
 }
-
-export function useLocale() {
-  return useI18n().locale;
-}
-
 export function useTranslation() {
   return useI18n().t;
 }

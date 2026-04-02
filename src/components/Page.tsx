@@ -137,7 +137,7 @@ export function Page({ data }: { data: SiteData }) {
       />
 
       <main>
-        {data.sections.hero !== false && (
+        {data.sections.hero && (
           <Hero
             profile={data.profile}
             meta={data.meta}
@@ -145,18 +145,18 @@ export function Page({ data }: { data: SiteData }) {
             t={t}
           />
         )}
-        {data.sections.about !== false && <About profile={data.profile} ui={data.ui} t={t} />}
-        {data.sections.skills !== false && <Skills skills={data.skills} t={t} />}
-        {data.sections.experience !== false && <Experience experience={data.experience} ui={data.ui} t={t} />}
-        {data.sections.projects !== false && <Projects projects={data.projects} ui={data.ui} t={t} />}
-        {data.sections.clients !== false && <Clients clients={data.clients} t={t} />}
-        {data.sections.languages !== false && <Languages languages={data.languages} t={t} />}
-        {data.sections.education !== false && <Education education={data.education} ui={data.ui} t={t} />}
-        {data.sections.certifications !== false && <Certifications certifications={data.certifications} ui={data.ui} t={t} />}
-        {data.sections.contact !== false && <Contact meta={data.meta} locale={locale} t={t} />}
+        {data.sections.about && <About profile={data.profile} ui={data.ui} t={t} />}
+        {data.sections.skills && <Skills skills={data.skills} t={t} />}
+        {data.sections.experience && <Experience experience={data.experience} ui={data.ui} t={t} />}
+        {data.sections.projects && <Projects projects={data.projects} ui={data.ui} t={t} />}
+        {data.sections.clients && <Clients clients={data.clients} t={t} />}
+        {data.sections.languages && <Languages languages={data.languages} t={t} />}
+        {data.sections.education && <Education education={data.education} ui={data.ui} t={t} />}
+        {data.sections.certifications && <Certifications certifications={data.certifications} ui={data.ui} t={t} />}
+        {data.sections.contact && <Contact meta={data.meta} locale={locale} t={t} />}
       </main>
 
-      {data.sections.footer !== false && <Footer name={data.profile.name} ui={data.ui} t={t} />}
+      {data.sections.footer && <Footer name={data.profile.name} ui={data.ui} t={t} />}
     </div>
   );
 }

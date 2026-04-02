@@ -8,3 +8,4 @@ clients: false
 languages: true
 certifications: true
 contact: true
+footer: true
