@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,13 +19,13 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://youcefmegoura.online"),
-  title: "Youcef Megoura — Backend & DevOps Engineer | Rennes, France",
+  title: ">_ ~/youcefmegoura",
   description:
-    "Backend and DevOps Engineer with 6+ years of experience. Java, Spring Boot, Kotlin, Kubernetes, Docker.",
+    "Backend and DevOps Engineer",
   openGraph: {
     title: "Youcef Megoura — Backend & DevOps Engineer",
     description:
-      "Backend and DevOps Engineer with 6+ years of experience designing distributed systems and cloud infrastructure.",
+      "Backend and DevOps Engineer.",
     url: "https://youcefmegoura.online",
     siteName: "Youcef Megoura",
     images: [{ url: "/og-cover.jpg", width: 1200, height: 630 }],
@@ -33,13 +35,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Youcef Megoura — Backend & DevOps Engineer",
     description:
-      "Backend and DevOps Engineer with 6+ years of experience.",
+      "Backend and DevOps Engineer.",
     images: ["/og-cover.jpg"],
   },
   keywords: [
     "Backend Engineer", "DevOps Engineer", "Java Developer", "Kotlin",
     "Spring Boot", "Kubernetes", "Docker", "CI/CD", "Rennes", "France",
-    "Microservices", "IoT", "Cloud Infrastructure",
+    "Microservices", "IoT", "Cloud Infrastructure", "Startup"
   ],
   alternates: {
     canonical: "https://youcefmegoura.online",
@@ -100,6 +102,7 @@ export default function RootLayout({
       <body className="font-sans bg-background text-foreground antialiased">
         <Providers>{children}</Providers>
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
     </html>
   );
 }
