@@ -1,39 +1,39 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import { useTheme } from '@/lib/theme';
 import type { Container, ISourceOptions } from '@tsparticles/engine';
 
+function subscribeResize(callback: () => void) {
+  window.addEventListener('resize', callback);
+  return () => window.removeEventListener('resize', callback);
+}
+
+function getIsMobileSnapshot() {
+  return window.innerWidth < 768;
+}
+
+function subscribeReducedMotion(callback: () => void) {
+  const query = window.matchMedia('(prefers-reduced-motion: reduce)');
+  query.addEventListener('change', callback);
+  return () => query.removeEventListener('change', callback);
+}
+
+function getReducedMotionSnapshot() {
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+const FALSE_SNAPSHOT = () => false;
+
 export function ParticleBackground() {
   const { theme } = useTheme();
   const [ready, setReady] = useState(false);
-  const [isMobile, setIsMobile] = useState(() =>
-    typeof window !== 'undefined' ? window.innerWidth < 768 : false,
-  );
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() =>
-    typeof window !== 'undefined'
-      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      : false,
-  );
+  const isMobile = useSyncExternalStore(subscribeResize, getIsMobileSnapshot, FALSE_SNAPSHOT);
+  const prefersReducedMotion = useSyncExternalStore(subscribeReducedMotion, getReducedMotionSnapshot, FALSE_SNAPSHOT);
   const containerRef = useRef<Container | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
-
-  // Subscribe to viewport and reduced-motion changes
-  useEffect(() => {
-    const updateMobile = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener('resize', updateMobile);
-
-    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const onMotionChange = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
-    motionQuery.addEventListener('change', onMotionChange);
-
-    return () => {
-      window.removeEventListener('resize', updateMobile);
-      motionQuery.removeEventListener('change', onMotionChange);
-    };
-  }, []);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {

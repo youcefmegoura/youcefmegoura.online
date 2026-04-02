@@ -20,7 +20,7 @@ function LanguagesInner({ languages, t }: LanguagesProps) {
         <TerminalHeader command="locale --list" />
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
           {languages.map((lang, i) => (
-            <Reveal key={t(lang.language)} delay={i * 0.08}>
+            <Reveal key={lang.language.en} delay={i * 0.08}>
               <div className="flex items-center gap-4 rounded-xl border border-zinc-200/60 dark:border-zinc-800/60 bg-zinc-50 dark:bg-zinc-900/30 p-5 transition-all hover:border-cyan-500/20">
                 <span className="text-2xl" role="img" aria-label={t(lang.language)}>
                   {lang.flag}

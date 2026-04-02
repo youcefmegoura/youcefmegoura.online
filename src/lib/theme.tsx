@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useSyncExternalStore, useCallback, type ReactNode } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -12,26 +12,41 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>(() => {
-    if (typeof window === 'undefined') return 'dark';
-    const stored = localStorage.getItem('theme');
-    return stored === 'light' || stored === 'dark' ? stored : 'dark';
-  });
+let themeListeners: (() => void)[] = [];
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
+function subscribeTheme(listener: () => void) {
+  themeListeners = [...themeListeners, listener];
+  return () => {
+    themeListeners = themeListeners.filter((l) => l !== listener);
+  };
+}
+
+function getThemeSnapshot(): Theme {
+  const stored = localStorage.getItem('theme');
+  return stored === 'light' ? 'light' : 'dark';
+}
+
+function getThemeServerSnapshot(): Theme {
+  return 'dark';
+}
+
+function emitThemeChange() {
+  themeListeners.forEach((l) => l());
+}
+
+export function ThemeProvider({ children }: { children: ReactNode }) {
+  const theme = useSyncExternalStore(subscribeTheme, getThemeSnapshot, getThemeServerSnapshot);
 
   const setTheme = useCallback((newTheme: Theme) => {
-    setThemeState(newTheme);
     localStorage.setItem('theme', newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
+    emitThemeChange();
   }, []);
 
   const toggleTheme = useCallback(() => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  }, [theme, setTheme]);
+    const newTheme: Theme = getThemeSnapshot() === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  }, [setTheme]);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>

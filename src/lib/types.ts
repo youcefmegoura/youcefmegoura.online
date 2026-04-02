@@ -94,7 +94,7 @@ export interface Meta {
   social: {
     linkedin: string;
     github: string;
-    twitter: string;
+    twitter?: string;
     email: string;
     phone: string;
   };

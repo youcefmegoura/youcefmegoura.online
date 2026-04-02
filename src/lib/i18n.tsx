@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useSyncExternalStore, useCallback, type ReactNode } from 'react';
 import type { Locale, LocalizedString } from './types';
 
 interface I18nContextType {
@@ -11,17 +11,35 @@ interface I18nContextType {
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
-export function I18nProvider({ children, defaultLocale = 'fr' }: { children: ReactNode; defaultLocale?: Locale }) {
-  const [locale, setLocaleState] = useState<Locale>(() => {
-    if (typeof window === 'undefined') return defaultLocale;
-    const stored = localStorage.getItem('locale');
-    return stored === 'fr' || stored === 'en' ? stored : defaultLocale;
-  });
+let localeListeners: (() => void)[] = [];
+
+function subscribeLocale(listener: () => void) {
+  localeListeners = [...localeListeners, listener];
+  return () => {
+    localeListeners = localeListeners.filter((l) => l !== listener);
+  };
+}
+
+function getLocaleSnapshot(): Locale {
+  const stored = localStorage.getItem('locale');
+  return stored === 'fr' || stored === 'en' ? stored : 'fr';
+}
+
+function getLocaleServerSnapshot(): Locale {
+  return 'fr';
+}
+
+function emitLocaleChange() {
+  localeListeners.forEach((l) => l());
+}
+
+export function I18nProvider({ children }: { children: ReactNode }) {
+  const locale = useSyncExternalStore(subscribeLocale, getLocaleSnapshot, getLocaleServerSnapshot);
 
   const setLocale = useCallback((newLocale: Locale) => {
-    setLocaleState(newLocale);
     localStorage.setItem('locale', newLocale);
     document.documentElement.lang = newLocale;
+    emitLocaleChange();
   }, []);
 
   const t = useCallback((localizedString: LocalizedString) => {

@@ -19,7 +19,7 @@ export function Skills({ skills, t }: SkillsProps) {
         <TerminalHeader command="ls --skills --all" />
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((cat, i) => (
-            <Reveal key={t(cat.category)} delay={i * 0.06}>
+            <Reveal key={cat.category.en} delay={i * 0.06}>
               <div className="group">
                 <h3 className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-cyan-400/80">
                   {`// ${t(cat.category)}`}
