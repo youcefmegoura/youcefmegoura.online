@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://youcefmegoura.online"),
-    title: ">_ ~/youcefmegoura",
+    title: "~/youcefmegoura",
     description:
         "Backend and DevOps Engineer",
     openGraph: {

@@ -188,8 +188,8 @@
     fr: "Freelance"
     en: "Freelance"
   role:
-    fr: "Développeur Web & Mobile"
-    en: "Web & Mobile Developer"
+    fr: "Développeur Web & Mobile Junior"
+    en: "Junior Web & Mobile Developer"
   type: "freelance"
   period:
     start: "2018"
@@ -229,8 +229,8 @@
     fr: "Freelance"
     en: "Freelance"
   role:
-    fr: "Designer Graphique & UI/UX"
-    en: "Graphic & UI/UX Designer"
+    fr: "Designer Graphique & UI/UX Junior"
+    en: "Junior Graphic & UI/UX Designer"
   type: "freelance"
   period:
     start: "2016"
