@@ -219,8 +219,8 @@
       - Managed end-to-end projects: requirements gathering, estimation, development, and deployment.
   environment:
     - HTML
-      CSS
-      JS
+    - CSS
+    - JS
     - PHP
     - Android (Java)
     - WordPress
