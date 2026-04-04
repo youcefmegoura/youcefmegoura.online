@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { Home, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
+import * as Sentry from '@sentry/nextjs';
 import { useTranslation } from '@/lib/i18n';
 import {
   ErrorPageShell,
@@ -22,7 +23,7 @@ export default function ErrorPage({
   const t = useTranslation();
 
   useEffect(() => {
-    console.error('[ErrorBoundary]', error);
+    Sentry.captureException(error);
   }, [error]);
 
   return (
