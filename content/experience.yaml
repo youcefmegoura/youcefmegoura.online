@@ -218,7 +218,9 @@
       - Created UI/UX wireframes to ensure seamless and modern user experiences.
       - Managed end-to-end projects: requirements gathering, estimation, development, and deployment.
   environment:
-    - HTML5 / CSS3 / JavaScript
+    - HTML
+      CSS
+      JS
     - PHP
     - Android (Java)
     - WordPress
