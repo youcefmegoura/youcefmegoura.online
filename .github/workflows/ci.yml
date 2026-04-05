@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -34,7 +34,7 @@ jobs:
           npm ci
           npm audit --audit-level=moderate
           npm run lint
-          npm run build
+
   build:
     needs: validation
     name: '🏗️ Build'
@@ -90,5 +90,47 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_DEPLOY_TO_PROD: true
-          build_command: "echo 'Build already completed'" #skips the redundant rebuild since the build job already built the project and passed artifacts via actions/upload-artifact
+          build_command: "echo 'Build already completed'"
+          install_command: "echo 'Skipping install'"
           build_directory: out
+
+  preview:
+    needs: build
+    runs-on: ubuntu-latest
+    name: '👁️ Deploy Preview'
+    if: github.event_name == 'pull_request'
+    permissions:
+      pull-requests: write
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: build-output
+          path: out/
+
+      - name: Deploy Preview to Netlify
+        id: netlify
+        uses: jsmrcaga/action-netlify-deploy@v2.4.0
+        with:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_TO_PROD: false
+          build_command: "echo 'Build already completed'"
+          install_command: "echo 'Skipping install'"
+          build_directory: out
+          deploy_alias: "pr-${{ github.event.pull_request.number }}"
+
+      - name: Comment Preview URL on PR
+        uses: marocchino/sticky-pull-request-comment@v3
+        with:
+          number: ${{ github.event.pull_request.number }}
+          header: preview-deploy
+          message: |
+            ### 🚀 Preview Deployment Ready
+            | | |
+            |---|---|
+            | 🔗 Preview URL | ${{ env.NETLIFY_PREVIEW_URL }} |
+            | 📦 Commit | `${{ github.event.pull_request.head.sha }}` |

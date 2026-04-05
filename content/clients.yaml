@@ -17,7 +17,7 @@
 
 - id: audaxis
   name: "Audaxis"
-  logo: ""
+  logo: "https://www.audaxis.com/wp-content/uploads/2025/07/Audaxis@4x-scaled-e1753200135531-1-e1754492898299.png"
   role:
     fr: "Ingénieur Full-Stack Java & DevOps"
     en: "Full-Stack Java Angular & DevOps Engineer"
@@ -40,7 +40,7 @@
 
 - id: keutt
   name: "Keutt"
-  logo: ""
+  logo: "https://keutt.com/assets/logo-df6v1KU8.png"
   role:
     fr: "DevOps & Lead Tech"
     en: "DevOps & Tech Lead"

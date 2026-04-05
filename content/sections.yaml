@@ -4,7 +4,7 @@ skills: true
 experience: true
 education: true
 projects: true
-clients: false
+clients: true
 languages: true
 certifications: true
 contact: true
