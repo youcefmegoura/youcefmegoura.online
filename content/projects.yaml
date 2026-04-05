@@ -50,6 +50,21 @@
   type: "professional"
   date: "2026-01"
 
+- id: consentia-teliem
+  title:
+    fr: "Consentia - Infrastrucre"
+    en: "Consentia - Infrastrucre"
+  description:
+    fr: "Infrastructure complète avec Proxmox, Docker et CI/CD."
+    en: "Complete startup infrastructure with Proxmox, Docker, and CI/CD."
+  tech: [Proxmos, Docker, Ansible, GitHub Actions]
+  image: "https://www.consentia.fr/assets/screenshot-patient-0VO-3eZL.png"
+  link: "https://consentia.fr"
+  type: "professional"
+  date: "2026-01"
+
+
+
 - id: itgc
   title:
     fr: "Institut Technique des Grandes Cultures d’Algérie — WordPress"
