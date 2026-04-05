@@ -63,7 +63,18 @@
   type: "professional"
   date: "2026-01"
 
-
+- id: aromatherapy-photogenia
+  title:
+    fr: "Aromathérapie by Photogenia - Mobile et Web App"
+    en: "Aromatherapy by Photogenia - Mobile and Web App"
+  description:
+    fr: "Creation d'une application mobile avec Flutter et web admin et Angular et Firebase."
+    en: "Creation of a mobile application with Flutter and a web admin using Angular and Firebase."
+  tech: [Flutter, Angular, Firebase]
+  image: "/images/projects/aromatherapy.jpg"
+  link: "https://github.com/phytogenia"
+  type: "personal"
+  date: "2025-01"
 
 - id: itgc
   title:
