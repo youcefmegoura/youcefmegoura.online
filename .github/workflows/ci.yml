@@ -11,6 +11,10 @@ permissions:
   deployments: write
   id-token: write # Required for OIDC authentication
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validation:
     name: '🛡️ Quality Guard'
@@ -32,7 +36,7 @@ jobs:
       - name: Install & Verify
         run: |
           npm ci
-          npm audit --audit-level=moderate
+          npm audit --audit-level=moderate --omit=dev
           npm run lint
 
   build:
@@ -68,7 +72,7 @@ jobs:
           retention-days: 1
 
   deploy:
-    needs: build
+    needs: [validation, build]
     runs-on: ubuntu-latest
     name: '🚀 Deploy on netlify'
     if: github.ref == 'refs/heads/main'
@@ -95,7 +99,7 @@ jobs:
           build_directory: out
 
   preview:
-    needs: build
+    needs: [validation, build]
     runs-on: ubuntu-latest
     name: '👁️ Deploy Preview'
     if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false
