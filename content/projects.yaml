@@ -62,6 +62,32 @@
   link: "https://consentia.fr"
   type: "professional"
   date: "2026-01"
+  
+- id: yves-rocher-samy
+  title:
+    fr: "YvesRocher SAMY - Web App"
+    en: "YvesRocher SAMY - Web App"
+  description:
+    fr: "Application web de gestion commerciale pour Yves Rocher."
+    en: "Commercial management web application for Yves Rocher."
+  tech: [Java, Spring Boot, Angular, JasperReports]
+  image: "/images/projects/yvesrocher-samy.png"
+  link: "https://samy-yrfr.yves-rocher.com/app/login"
+  type: "professional"
+  date: "2022"
+
+- id: yves-rocher-samy
+  title:
+    fr: "OSG TicketBai System - API"
+    en: "OSG TicketBai System - API"
+  description:
+    fr: "Application web de gestion commerciale pour Yves Rocher."
+    en: "Commercial management web application for Yves Rocher."
+  tech: [Java, Spring Boot, Angular, JasperReports]
+  image: "/images/projects/yvesrocher-samy.png"
+  link: "https://samy-yrfr.yves-rocher.com/app/login"
+  type: "professional"
+  date: "2023"
 
 - id: aromatherapy-photogenia
   title:
@@ -139,4 +165,4 @@
   image: "/images/projects/cornchain.jpg"
   link: "https://github.com/youcefmegoura/CornChain"
   type: "personal"
-  date: "2019"
+  date: "2020"

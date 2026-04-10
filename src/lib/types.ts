@@ -105,13 +105,16 @@ export interface Meta {
 export interface ClientProject {
   name: LocalizedString;
   description: LocalizedString;
+  link: string | null;
+  logo: string | null;
 }
 
 // Clients
 export interface Client {
   id: string;
   name: string;
-  logo: string;
+  logo: string | null;
+  link: string | null;
   role: LocalizedString;
   description: LocalizedString;
   projects: ClientProject[];
