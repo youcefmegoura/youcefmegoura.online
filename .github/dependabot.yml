@@ -19,7 +19,9 @@ updates:
       - dependency-name: 'react'
         versions: ['19.x']
 
-  # Enable version updates for GitHub Actions
+  # Enable version updates for GitHub Actions.
+  # No `include: 'scope'` here — GitHub Actions identifiers (e.g. actions/checkout)
+  # serve as the commit subject, making an extra scope redundant.
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:

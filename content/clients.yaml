@@ -1,85 +1,190 @@
 - id: lacroix
   name: "Lacroix Group"
-  logo: "https://www.lacroix-group.com/wp-content/uploads/1/2025/01/27/logo.webp"
+  logo: "/images/clients/lacroix.jpg"
+  link: "https://www.lacroix.fr"
   role:
     fr: "Développeur Backend Senior"
     en: "Senior Backend Developer"
   description:
-    fr: "Plateforme IoT industrielle pour la supervision d'équipements connectés"
-    en: "Industrial IoT platform for monitoring connected equipment"
+    fr: "Plateforme IoT industrielle dédiée à la supervision et au pilotage d'équipements connectés"
+    en: "Industrial IoT platform for the supervision and remote management of connected equipment"
   projects:
     - name:
-        fr: "LX Connect SaaS — Plateforme IoT"
-        en: "LX Connect SaaS — IoT Platform"
+        fr: "SOFREL"
+        en: "SOFREL"
+      role:
+        fr: "Développeur Backend"
+        en: "Backend Developer"
       description:
-        fr: "Microservices Java/Kotlin, architecture événementielle Kafka, Kubernetes"
-        en: "Java/Kotlin microservices, Kafka event-driven architecture, Kubernetes"
+        fr: "Conception et développement de personnalisations métier sur la plateforme LX Connect"
+        en: "Design and development of business customizations on the LX Connect platform"
+      link: "https://www.lacroix-environment.com/fr/"
+      logo: "/images/clients/sofrel.jpg"
+    - name:
+        fr: "Airwell"
+        en: "Airwell"
+      role:
+        fr: "Développeur Backend"
+        en: "Backend Developer"
+      description:
+        fr: "Intégration et développement de personnalisations spécifiques sur la plateforme LX Connect"
+        en: "Integration and development of client-specific customizations on the LX Connect platform"
+      link: "https://www.airwell.com"
+      logo: "/images/clients/airwell.jpg"
 
 - id: audaxis
   name: "Audaxis"
-  logo: ""
+  logo: "/images/clients/audaxis.jpg"
+  link: "https://www.audaxis.com"
   role:
-    fr: "Ingénieur Full-Stack Java & DevOps"
-    en: "Full-Stack Java Angular & DevOps Engineer"
+    fr: "Ingénieur Full-Stack & DevOps"
+    en: "Full-Stack & DevOps Engineer"
   description:
-    fr: "Modernisation de solutions ERP legacy et migration vers le cloud"
-    en: "Legacy ERP modernization and cloud migration"
+    fr: "Éditeur et intégrateur de solutions ERP à destination des entreprises"
+    en: "Publisher and integrator of enterprise ERP solutions"
   projects:
     - name:
-        fr: "Apiz Solution SaaS — Progiciel"
-        en: "Apiz Solution SaaS — ERP"
+        fr: "Yves Rocher"
+        en: "Yves Rocher"
+      role:
+        fr: "Développeur Backend"
+        en: "Backend Developer"
       description:
-        fr: "Plateforme ERP, migration Oracle vers PostgreSQL, Kubernetes"
-        en: "ERP platform, Oracle to PostgreSQL migration, Kubernetes"
+        fr: "Conception d'une application web de gestion commerciale intégrée au progiciel Compiere"
+        en: "Design of a commercial management web application integrated with the Compiere ERP"
+      logo: "/images/clients/yvesrocher.jpg"
+      link: "https://www.yves-rocher.fr"
     - name:
-        fr: "Compiere — Progiciel"
-        en: "Compiere — ERP"
+        fr: "OSG"
+        en: "OSG"
+      role:
+        fr: "Développeur Backend"
+        en: "Backend Developer"
       description:
-        fr: "Maintenance et évolution du progiciel ERP"
-        en: "ERP software maintenance and evolution"
+        fr: "Maintenance, évolution du progiciel Compiere et développement des APIs d'intégration associées"
+        en: "Maintenance, enhancement of the Compiere ERP and development of its integration APIs"
+      logo: "/images/clients/osg.jpg"
+      link: "https://fr.osgeurope.com/"
+    - name:
+        fr: "Le Plomb Français"
+        en: "Le Plomb Français"
+      role:
+        fr: "Développeur Full-Stack"
+        en: "Full-Stack Developer"
+      description:
+        fr: "Migration de Compiere vers la solution Apiz"
+        en: "Migration from Compiere to the Apiz solution"
+      logo: "/images/clients/leplombfrancais.jpg"
+      link: "http://www.leplombfrancais.fr/"
+    - name:
+        fr: "Rail Europe"
+        en: "Rail Europe"
+      role:
+        fr: "Développeur Full-Stack"
+        en: "Full-Stack Developer"
+      description:
+        fr: "Migration de Compiere vers la solution Apiz"
+        en: "Migration from Compiere to the Apiz solution"
+      logo: "/images/clients/raileurope.jpg"
+      link: "https://www.raileurope.com"
+    - name:
+        fr: "Les Scouts"
+        en: "Les Scouts"
+      role:
+        fr: "Développeur Full-Stack"
+        en: "Full-Stack Developer"
+      description:
+        fr: "Migration de Compiere vers la solution Apiz"
+        en: "Migration from Compiere to the Apiz solution"
+      logo: "/images/clients/lesscouts.jpg"
+      link: "https://www.lesscouts.be/fr"
+    - name:
+        fr: "Les Guides"
+        en: "Les Guides"
+      role:
+        fr: "Développeur Full-Stack"
+        en: "Full-Stack Developer"
+      description:
+        fr: "Migration de Compiere vers la solution Apiz"
+        en: "Migration from Compiere to the Apiz solution"
+      logo: "/images/clients/lesguides.jpg"
+      link: "https://www.guides.be/"
+    - name:
+        fr: "Metafranc"
+        en: "Metafranc"
+      role:
+        fr: "Développeur Backend"
+        en: "Backend Developer"
+      description:
+        fr: "Maintenance et développement de nouvelles fonctionnalités sur le progiciel Compiere"
+        en: "Maintenance and feature development on the Compiere ERP"
+      logo: "/images/clients/metafranc.jpg"
+      link: "https://www.metafranc.com/"
+    - name:
+        fr: "Samvaz"
+        en: "Samvaz"
+      role:
+        fr: "Développeur Backend"
+        en: "Backend Developer"
+      description:
+        fr: "Développement de fonctionnalités métier sur le progiciel Apiz Solutions"
+        en: "Business feature development on the Apiz Solutions ERP"
+      logo: "/images/clients/samvaz.jpg"
+      link: "https://www.samvaz.ch/"
 
 - id: keutt
   name: "Keutt"
-  logo: ""
+  logo: "/images/clients/keutt.jpg"
+  link: "https://www.keutt.com"
   role:
     fr: "DevOps & Lead Tech"
     en: "DevOps & Tech Lead"
   description:
-    fr: "Structuration complète de l'infrastructure d'une startup"
-    en: "Complete startup infrastructure setup"
-  projects:
-    - name:
-        fr: "Infrastructure DevOps"
-        en: "DevOps Infrastructure"
-      description:
-        fr: "CI/CD, conteneurisation Docker, automatisation Ansible, déploiement VPS"
-        en: "CI/CD, Docker containerization, Ansible automation, VPS deployment"
+    fr: "Mise en place et structuration complète de l'infrastructure technique d'une startup en phase d'amorçage"
+    en: "End-to-end design and setup of the technical infrastructure for an early-stage startup"
+  projects: []
 
 - id: freelance
   name: "Freelance"
-  logo: ""
+  logo: "/images/clients/freelance.jpg"
+  link: null
   role:
-    fr: "Développeur Web & Mobile / Designer"
-    en: "Web & Mobile Developer / Designer"
+    fr: "Développeur Web & Mobile Junior"
+    en: "Junior Web & Mobile Developer"
   description:
-    fr: "Projets sur mesure pour clients locaux et internationaux"
-    en: "Custom projects for local and international clients"
+    fr: "Réalisation de projets sur mesure pour des clients locaux et internationaux"
+    en: "Delivery of tailor-made projects for local and international clients"
   projects:
     - name:
-        fr: "ITGC — Site WordPress"
-        en: "ITGC — WordPress Site"
+        fr: "ITGC — Institut Technique des Grandes Cultures d'Algérie"
+        en: "ITGC — Technical Institute for Field Crops of Algeria"
+      role:
+        fr: "Développeur WordPress"
+        en: "WordPress Developer"
       description:
-        fr: "Refonte site web Joomla vers WordPress"
-        en: "Website redesign from Joomla to WordPress"
+        fr: "Refonte complète du site web avec migration de Joomla vers WordPress"
+        en: "Full website redesign with migration from Joomla to WordPress"
+      link: "https://www.itgc.dz"
+      logo: "/images/clients/itgc.jpg"
     - name:
-        fr: "Guerioune — Site WordPress"
-        en: "Guerioune — WordPress Site"
+        fr: "Guerioune"
+        en: "Guerioune"
+      role:
+        fr: "Développeur WordPress & UX/UI Designer"
+        en: "WordPress Developer & UX/UI Designer"
       description:
-        fr: "Charte graphique et développement WordPress"
-        en: "Visual identity and WordPress development"
+        fr: "Création de la charte graphique et développement du site sous WordPress"
+        en: "Visual identity creation and WordPress website development"
+      link: null
+      logo: "/images/clients/guerioune.jpg"
     - name:
-        fr: "SphinxKids — App Android"
-        en: "SphinxKids — Android App"
+        fr: "Phytogenia"
+        en: "Phytogenia"
+      role:
+        fr: "Développeur Web & Mobile"
+        en: "Web & Mobile Developer"
       description:
-        fr: "Application éducative open source pour enfants"
-        en: "Open-source educational app for children"
+        fr: "Développement d'une application mobile Flutter et d'une interface d'administration web avec Angular, le tout connecté à Firebase"
+        en: "Development of a Flutter mobile application and an Angular-based admin dashboard, both powered by Firebase"
+      link: "https://www.phytogenia.com"
+      logo: "/images/clients/phytogenia.jpg"
