@@ -25,7 +25,10 @@ jobs:
           fetch-depth: 0
 
       - name: Validate Commit Messages
+        if: github.actor != 'dependabot[bot]'
         uses: wagoid/commitlint-github-action@v6
+        with:
+          configFile: commitlint.config.mjs
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
