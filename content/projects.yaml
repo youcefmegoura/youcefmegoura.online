@@ -71,21 +71,21 @@
     fr: "Application web de gestion commerciale pour Yves Rocher."
     en: "Commercial management web application for Yves Rocher."
   tech: [Java, Spring Boot, Angular, JasperReports]
-  image: "/images/projects/yvesrocher-samy.png"
+  image: "/images/projects/yvesrocher-samy.jpg"
   link: "https://samy-yrfr.yves-rocher.com/app/login"
   type: "professional"
   date: "2022"
 
-- id: yves-rocher-samy
+- id: osg-ticketbai
   title:
     fr: "OSG TicketBai System - API"
     en: "OSG TicketBai System - API"
   description:
-    fr: "Application web de gestion commerciale pour Yves Rocher."
-    en: "Commercial management web application for Yves Rocher."
-  tech: [Java, Spring Boot, Angular, JasperReports]
-  image: "/images/projects/yvesrocher-samy.png"
-  link: "https://samy-yrfr.yves-rocher.com/app/login"
+    fr: "Développement d'un système de traçabilité fiscale des factures conforme au standard TicketBai, à destination du marché espagnol."
+    en: "Development of a fiscal invoice traceability system compliant with the TicketBai standard, targeting the Spanish market."
+  tech: [Java, Spring Boot, JasperReports]
+  image: "/images/projects/ticketbai.jpg"
+  link: ""
   type: "professional"
   date: "2023"
 
