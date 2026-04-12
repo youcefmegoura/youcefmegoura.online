@@ -105,6 +105,7 @@ export interface Meta {
 export interface ClientProject {
   name: LocalizedString;
   description: LocalizedString;
+  role: LocalizedString | null;
   link: string | null;
   logo: string | null;
 }
@@ -115,7 +116,7 @@ export interface Client {
   name: string;
   logo: string | null;
   link: string | null;
-  role: LocalizedString;
+  role: LocalizedString | null;
   description: LocalizedString;
   projects: ClientProject[];
 }
