@@ -29,7 +29,7 @@ export default function ErrorPage({
   return (
     <ErrorPageShell glowColor="red">
       <TerminalWindow
-        command="npm run build"
+        command="pnpm build"
         output={<>Error: {t(errorStrings.errorOccurred)}</>}
       />
 

@@ -46,11 +46,14 @@ Get the project up and running locally in under a minute.
 git clone https://github.com/youcefmegoura/youcefmegoura.online.git
 cd youcefmegoura.online
 
-# 2. Install dependencies
-npm install
+# 2. Enable pnpm (bundled with Node.js via Corepack)
+corepack enable
 
-# 3. Start development server
-npm run dev
+# 3. Install dependencies
+pnpm install
+
+# 4. Start development server
+pnpm dev
 ```
 
 Your site is now running at http://localhost:3000
@@ -87,7 +90,7 @@ docker-compose up -d
 The project is configured for static export. Simply push to the main branch to trigger the GitHub Actions CI/CD pipeline, or build manually:
 
 ```bash
-npm run build
+pnpm build
 # Deploy the generated `out/` directory to any static host
 ```
 

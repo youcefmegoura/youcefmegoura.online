@@ -2,6 +2,7 @@
   "name": "youcefmegoura-portfolio",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@11.15.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,6 +13,7 @@
     "@microsoft/clarity": "^1.0.2",
     "@next/third-parties": "^16.2.3",
     "@sentry/nextjs": "^10.49.0",
+    "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
     "@types/d3": "^7.4.3",
@@ -23,11 +25,8 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.5"
   },
-  "overrides": {
-    "postcss": "$postcss",
-    "sharp": "^0.35.0"
-  },
   "devDependencies": {
+    "@commitlint/types": "^21.2.0",
     "@tailwindcss/postcss": "^4.2.2",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^25.5.0",
@@ -35,6 +34,7 @@
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.3",
     "postcss": "^8.5.10",
+    "postcss-load-config": "^6.0.1",
     "tailwindcss": "^4.2.2",
     "typescript": "^6.0.2"
   }

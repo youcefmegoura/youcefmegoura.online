@@ -1,6 +1,7 @@
 version: 2
 updates:
-  # Enable version updates for npm dependencies
+  # Enable version updates for Node.js dependencies. Dependabot has no separate
+  # 'pnpm' value — its 'npm' ecosystem covers pnpm-lock.yaml (v9) too.
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:

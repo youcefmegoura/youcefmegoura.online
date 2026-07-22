@@ -1,10 +1,10 @@
 # Stage 1: Build
 FROM node:24-alpine AS builder
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm ci
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+RUN corepack enable && pnpm install --frozen-lockfile
 COPY . .
-RUN npm run build
+RUN pnpm build
 
 # Stage 2: Serve with nginx (non-root)
 FROM nginx:alpine

@@ -1,0 +1,24 @@
+# Dependency version overrides.
+#
+# Both entries patch transitive dependencies that `next` pins itself, so no
+# amount of bumping `next` resolves them:
+#   - postcss: next depends on an exact 8.4.31, vulnerable to GHSA-qx2v-qp2m-jg93.
+#   - sharp:   next declares it as an optional `^0.34.5`, vulnerable to
+#              GHSA-f88m-g3jw-g9cj. Unused here anyway — `next.config.ts` sets
+#              `images.unoptimized` with `output: "export"` — but it still lands
+#              in the lockfile, so it still trips `pnpm audit`.
+overrides:
+  postcss: ^8.5.10
+  sharp: ^0.35.0
+
+# pnpm blocks dependency install scripts by default, and errors on any it has
+# no ruling for, so every package that wants one must be listed either way.
+# @sentry/cli's postinstall fetches the binary the build's source-map upload
+# depends on; sharp and @tsparticles/engine ship native/prebuilt assets.
+# unrs-resolver (eslint-config-next's resolver) resolves its native binding
+# from per-platform optional deps, so it needs no build step of its own.
+allowBuilds:
+  '@sentry/cli': true
+  '@tsparticles/engine': true
+  sharp: true
+  unrs-resolver: false
