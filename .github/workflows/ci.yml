@@ -118,7 +118,6 @@ jobs:
     name: '👁️ Deploy Preview'
     if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false && github.actor != 'dependabot[bot]'
     permissions:
-      pull-requests: write
       contents: read
       deployments: write
     steps:
@@ -141,14 +140,19 @@ jobs:
           build_directory: out
           deploy_alias: "pr-${{ github.event.pull_request.number }}"
 
-      - name: Comment Preview URL on PR
-        uses: marocchino/sticky-pull-request-comment@v3
-        with:
-          number: ${{ github.event.pull_request.number }}
-          header: preview-deploy
-          message: |
-            ### 🚀 Preview Deployment Ready
-            | | |
-            |---|---|
-            | 🔗 Preview URL | ${{ env.NETLIFY_PREVIEW_URL }} |
-            | 📦 Commit | `${{ github.event.pull_request.head.sha }}` |
+      # Written to the run summary rather than posted as a PR comment: it needs
+      # no `pull-requests: write` and no third-party action. Values are passed
+      # through env rather than interpolated into the script to avoid injection.
+      - name: Publish Preview URL
+        env:
+          PREVIEW_URL: ${{ env.NETLIFY_PREVIEW_URL }}
+          COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          {
+            echo "### 🚀 Preview Deployment Ready"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| 🔗 Preview URL | $PREVIEW_URL |"
+            echo "| 📦 Commit | \`$COMMIT_SHA\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
