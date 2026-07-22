@@ -31,7 +31,7 @@
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
-    "eslint": "^9.39.4",
+    "eslint": "^10.7.0",
     "eslint-config-next": "^16.2.3",
     "postcss": "^8.5.10",
     "postcss-load-config": "^6.0.1",
