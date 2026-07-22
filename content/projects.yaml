@@ -1,3 +1,16 @@
+- id: rimay
+  title:
+    fr: "RIMAY Menu — SaaS multi-tenant pour la restauration"
+    en: "RIMAY Menu — Multi-tenant Restaurant SaaS"
+  description:
+    fr: "SaaS bilingue FR/AR (RTL) pour la restauration en Algérie : carte digitale, commande à table par QR, assistant IA et back-office gérant/admin. Conception et développement full-stack de bout en bout : monorepo Next.js 16 + NestJS 11, multi-tenant sécurisé par RLS PostgreSQL, sessions opaques révocables, paiements Chargily Pay (CIB/EDAHABIA), jobs durables BullMQ, CI/CD et déploiement conteneurisé sur Dokploy."
+    en: "Bilingual FR/AR (RTL) SaaS for the Algerian restaurant industry: digital menu, QR table ordering, AI assistant, and manager/admin back-office. End-to-end design and full-stack build: Next.js 16 + NestJS 11 monorepo, multi-tenancy enforced by PostgreSQL RLS, revocable opaque sessions, Chargily Pay payments (CIB/EDAHABIA), durable BullMQ jobs, CI/CD and containerized deployment on Dokploy."
+  tech: [TypeScript, Next.js, React, Tailwind CSS, SWR, NestJS, Node.js, Prisma, PostgreSQL, Redis, BullMQ, Zod, OpenAPI, MinIO, Chargily Pay, OpenRouter, Vitest, Playwright, Testcontainers, Docker, Docker Compose, Dokploy, Traefik, GitHub Actions, SOPS, Sentry, Pino]
+  image: "/images/projects/rimay.jpg"
+  link: "https://dev1.core.apps.rimay.food"
+  type: "professional"
+  date: "2026-06"
+
 - id: lx-connect
   title:
     fr: "LX Connect SaaS — Plateforme IoT"
