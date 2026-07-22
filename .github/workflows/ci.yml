@@ -30,17 +30,25 @@ jobs:
         with:
           configFile: commitlint.config.mjs
 
+      # Must precede setup-node so its `cache: 'pnpm'` can find the binary.
+      # Version comes from package.json's `packageManager` field.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: 'npm'
+          cache: 'pnpm'
 
-      - name: Install & Verify
-        run: |
-          npm ci
-          npm audit --audit-level=moderate --omit=dev
-          npm run lint
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Audit Dependencies
+        run: pnpm audit --audit-level moderate
+
+      - name: Lint
+        run: pnpm lint
 
   build:
     needs: validation
@@ -51,17 +59,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: 'npm'
+          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build Project
-        run: npm run build
+        run: pnpm build
         env:
           NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
           NEXT_PUBLIC_CLARITY_ID: ${{ secrets.NEXT_PUBLIC_CLARITY_ID }}

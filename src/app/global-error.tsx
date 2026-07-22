@@ -94,7 +94,7 @@ export default function GlobalError({
             </div>
             <p style={{ fontSize: 14, color: tokens.muted, margin: 0 }}>
               <span style={{ color: tokens.green }}>$</span>{' '}
-              <span style={{ color: '#d4d4d8' }}>npm run build</span>
+              <span style={{ color: '#d4d4d8' }}>pnpm build</span>
             </p>
             <p style={{ fontSize: 14, color: tokens.red, margin: '0.5rem 0 0' }}>
               <span style={{ color: tokens.muted }}>{'>'}</span> Fatal: Something went wrong
