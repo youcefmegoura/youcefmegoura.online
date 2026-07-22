@@ -1,18 +1,101 @@
+
+- id: rimay
+  company:
+    fr: "RIMAY (Startup)"
+    en: "RIMAY (Startup)"
+  role:
+    fr: "Développeur Full-Stack & Cofondateur"
+    en: "Full-Stack Developer & Cofounder"
+  type: "part-time"
+  period:
+    start: "2026-06"
+    end: null
+  location: "Rennes, France"
+  short:
+    fr: "Conception et développement d'un SaaS multi-tenant bilingue FR/AR pour la restauration : menu digital, commande à table et assistant IA. Backend NestJS, frontend Next.js et développement agentique avec Claude Code."
+    en: "Designed and built a bilingual FR/AR multi-tenant restaurant SaaS: digital menu, table ordering, and AI assistant. NestJS backend, Next.js frontend, and agentic development with Claude Code."
+  detailed:
+    fr: |
+      Contexte : Conception et développement de RIMAY Menu, un SaaS multi-tenant destiné aux restaurants : menu digital bilingue français/arabe avec support RTL, commande à table par QR code, assistant IA et back-offices gérant et administrateur.
+      Produit mené de bout en bout, du prototype à la mise en production, en pilotant l'ensemble du développement de manière agentique avec Claude Code.
+
+      Missions :
+      - Développement du backend en NestJS 11 et TypeScript strict : API REST versionnée, architecture modulaire, DTO et validation runtime avec Zod (nestjs-zod), document OpenAPI généré depuis les DTO.
+      - Modélisation et accès aux données avec Prisma 7 et PostgreSQL 17 : multi-tenancy par restaurant, Row-Level Security en défense en profondeur, contenu bilingue en jsonb, numérotation de factures sans trou allouée dans la même transaction que l'enregistrement.
+      - Authentification par sessions serveur opaques (PostgreSQL + cache Redis) réellement révocables, gardes RBAC et multi-tenant, rate limiting Redis.
+      - Traitement asynchrone avec BullMQ et Redis : worker dédié aux envois d'e-mails, à la réconciliation des paiements et aux tâches planifiées de maintenance.
+      - Intégration des paiements.
+      - Intégration d'un assistant IA via la passerelle OpenRouter, ancré sur les données du restaurant (plats, ingrédients, allergènes) et dont le modèle est sélectionnable depuis le back-office.
+      - Gestion des médias avec un stockage objet compatible S3 (MinIO en développement) et traitement d'images via sharp.
+      - Développement du frontend en Next.js 16 (App Router) et React 19 : consoles convive, gérant et administrateur, Tailwind CSS 4, SWR, internationalisation FR/AR et mise en page RTL.
+      - Structuration en monorepo pnpm avec client d'API typé généré depuis l'OpenAPI du backend, garantissant que le contrat entre les deux applications ne dérive jamais.
+      - Stratégie de test complète : Vitest, Testing Library, Supertest, Testcontainers (PostgreSQL, Redis) et Playwright pour les parcours de bout en bout.
+      - Mise en place de la CI/CD GitHub Actions : quality guard (lint, build, tests, couverture), migrations guard (base vierge → migrate → seed avec détection de dérive de schéma), build et publication des images sur GHCR, releases automatiques avec semantic-release et Conventional Commits en trunk-based.
+      - Déploiement conteneurisé via Portainer, avec configuration multi-environnements (dev, staging, production) et secrets chiffrés SOPS/age versionnés dans Git.
+      - Observabilité et exploitation : suivi des erreurs avec Sentry.
+      - Développement agentique avec Claude Code : spécifications exécutables (AGENTS.md, contrat backend), skills et sous-agents spécialisés, exécution de tâches en parallèle via git worktrees, revues de code et audits qualité, sécurité et architecture automatisés.
+    en: |
+      Context: Designed and built RIMAY Menu, a multi-tenant SaaS for restaurants: a bilingual French/Arabic digital menu with RTL support, QR-code table ordering, an AI assistant, and manager and admin back-offices.
+      Took the product end to end, from prototype to production, driving the whole development process agentically with Claude Code.
+
+      Missions:
+      - Built the backend in NestJS 11 and strict TypeScript: versioned REST API, modular architecture, DTOs and runtime validation with Zod (nestjs-zod), and an OpenAPI document generated from the DTOs.
+      - Modeled and accessed data with Prisma 7 and PostgreSQL 17: per-restaurant multi-tenancy, Row-Level Security as defense in depth, bilingual content stored as jsonb, and gap-free invoice numbering allocated in the same transaction as the record.
+      - Implemented authentication with opaque, genuinely revocable server sessions (PostgreSQL + Redis cache), RBAC and tenant guards, and Redis-backed rate limiting.
+      - Built asynchronous processing with BullMQ and Redis: a dedicated worker for transactional email, payment reconciliation, and scheduled maintenance jobs.
+      - Integrated payments.
+      - Integrated an AI assistant through the OpenRouter gateway, grounded in each restaurant's own menu data (dishes, ingredients, allergens), with the model selectable from the admin back-office.
+      - Handled media with S3-compatible object storage (MinIO in development) and image processing with sharp.
+      - Built the frontend in Next.js 16 (App Router) and React 19: diner, manager, and admin consoles, Tailwind CSS 4, SWR, FR/AR internationalization, and RTL layout.
+      - Structured the codebase as a pnpm monorepo with a typed API client generated from the backend's OpenAPI document, so the contract between the two apps never drifts.
+      - Established a full testing strategy: Vitest, Testing Library, Supertest, Testcontainers (PostgreSQL, Redis), and Playwright for end-to-end journeys.
+      - Set up GitHub Actions CI/CD: a quality guard (lint, build, tests, coverage), a migrations guard (empty database → migrate → seed with schema drift detection), image builds published to GHCR, and automated releases with semantic-release and Conventional Commits on a trunk-based flow.
+      - Deployed containerized workloads via Dokploy, with multi-environment configuration (dev, staging, production) and SOPS/age-encrypted secrets versioned in Git.
+      - Set up observability and operations: error tracking with Sentry.
+      - Practiced agentic development with Claude Code: executable specifications (AGENTS.md, backend contract), dedicated skills and subagents, parallel task execution through git worktrees, and automated code reviews and quality, security, and architecture audits.
+  environment:
+    - TypeScript
+    - NestJS 11
+    - Next.js 16
+    - React 19
+    - Prisma 7
+    - PostgreSQL 17
+    - Redis 8
+    - BullMQ
+    - Zod
+    - Tailwind CSS 4
+    - pnpm
+    - Docker
+    - GitHub Actions
+    - GHCR
+    - SOPS
+    - OpenRouter
+    - S3 / MinIO
+    - Vitest
+    - Playwright
+    - Testcontainers
+    - Sentry
+    - Claude Code
+    - Docker
+    - Ansible
+    - Terraform
+
+
 - id: keutt
   company:
     fr: "Keutt (Startup)"
     en: "Keutt (Startup)"
   role:
-    fr: "DevOps & Lead Tech"
-    en: "DevOps & Tech Lead"
+    fr: "DevOps & Cofondateur"
+    en: "DevOps & Cofounder"
   type: "part-time"
   period:
     start: "2026-01"
-    end: "2026-03"
+    end: "2026-05"
   location: "Paris, France"
   short:
-    fr: "Structuration complète de l'infrastructure d'une startup : CI/CD, conteneurisation, automatisation, supervision et déploiement sur VPS."
-    en: "Built a startup's infrastructure from scratch: CI/CD, containerization, automation, monitoring, and deployment on VPS."
+    fr: "Structuration complète de l'infrastructure d'une startup : CI/CD, conteneurisation, automatisation, supervision et déploiement."
+    en: "Built a startup's infrastructure from scratch: CI/CD, containerization, automation, monitoring, and deployment."
   detailed:
     fr: |
       Contexte : Participation à la structuration technique d'une startup disposant d'applications backend, frontend web et mobiles Flutter, mais sans infrastructure de déploiement ni processus industrialisés.
@@ -20,10 +103,12 @@
 
       Missions :
       - Conception et mise en place d'une infrastructure complète sur VPS, en alternative au cloud public pour des raisons de coût.
+      - Provisionnement de l'infrastructure en IaC avec Terraform : cycle de vie des instances, provisioning au premier démarrage via cloud-init, enregistrements DNS et buckets de stockage objet compatibles S3, avec state distant verrouillé et secrets chiffrés (SOPS/age).
       - Conteneurisation des différentes applications et services avec Docker.
       - Mise en place d'un reverse proxy et du routage applicatif avec Traefik.
       - Automatisation de la configuration serveur et des déploiements avec Ansible.
       - Mise en place de pipelines CI/CD pour compiler, versionner et générer automatiquement les images Docker.
+      - Mise en place de pipelines CI/CD mobiles avec Codemagic pour automatiser le build, la signature et la distribution des applications Flutter (Android et iOS) aux testeurs et sur les stores.
       - Intégration d'une stratégie de release basée sur la sémantique de version et le trunk-based development.
       - Administration des environnements via Portainer, permettant aux développeurs d'installer et de gérer visuellement les versions souhaitées.
       - Déploiement et maintenance de services internes (Nextcloud, Kimai, Portainer, OpenProject, etc.) sous Docker.
@@ -37,10 +122,12 @@
 
       Missions:
       - Designed and implemented a complete VPS-based infrastructure as a cost-effective alternative to public cloud services.
+      - Provisioned the IaC with Terraform: instance lifecycle, cloud-init first-boot provisioning, DNS records, and S3-compatible object storage buckets, with locked remote state and encrypted secrets (SOPS/age).
       - Containerized applications and internal services with Docker.
       - Set up reverse proxying and application routing with Traefik.
       - Automated server configuration and deployments with Ansible.
       - Built CI/CD pipelines to compile, version, and automatically generate Docker images.
+      - Set up mobile CI/CD pipelines with Codemagic to automate building, code signing, and distributing Flutter apps (Android and iOS) to testers and app stores.
       - Introduced a release strategy based on semantic versioning and trunk-based development.
       - Administered environments via Portainer, allowing developers to visually install and manage the desired versions.
       - Deployed and maintained internal services (Nextcloud, Kimai, Portainer, OpenProject, etc.) using Docker.
@@ -52,14 +139,15 @@
     - Docker
     - Ansible
     - Terraform
+    - SOPS
     - Kops
     - Kubernetes
     - Traefik
     - Linux
     - GitHub Actions
+    - Codemagic
     - Portainer
     - AWS
-    - OpenProject
 
 - id: lacroix
   company:
