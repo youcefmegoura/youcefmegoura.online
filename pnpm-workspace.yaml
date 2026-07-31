@@ -1,15 +1,34 @@
-# Dependency version overrides.
-#
-# Both entries patch transitive dependencies that `next` pins itself, so no
-# amount of bumping `next` resolves them:
+# Dependency version overrides — all three patch transitive dependencies we
+# don't declare ourselves, so bumping our own deps doesn't reach them:
 #   - postcss: next depends on an exact 8.4.31, vulnerable to GHSA-qx2v-qp2m-jg93.
 #   - sharp:   next declares it as an optional `^0.34.5`, vulnerable to
 #              GHSA-f88m-g3jw-g9cj. Unused here anyway — `next.config.ts` sets
 #              `images.unoptimized` with `output: "export"` — but it still lands
 #              in the lockfile, so it still trips `pnpm audit`.
+#   - brace-expansion: two independent copies, both exposed to
+#              GHSA-mh99-v99m-4gvg / CVE-2026-14257 (unbounded expansion → OOM).
+#              minimatch@10 asks for ^5.0.5 and resolution sticks at 5.0.7;
+#              minimatch@3 (eslint and its plugins) pulls a 1.x copy, fixed by
+#              the 1.1.17 backport. Each key is scoped to its own major on
+#              purpose — the majors are not interchangeable, since 1.x exports
+#              the expand function directly while 5.x exports it as a named
+#              `expand`, so an unscoped override would break minimatch@3.
 overrides:
   postcss: ^8.5.10
   sharp: ^0.35.0
+  brace-expansion@^1.0.0: ^1.1.17
+  brace-expansion@^5.0.0: ^5.0.8
+
+# GHSA-mh99-v99m-4gvg declares a single `<= 5.0.7` range that spans every
+# major, so plain semver also matches the 1.x copy above — even though the fix
+# was backported to 1.1.17 and that copy carries the EXPANSION_MAX_LENGTH cap.
+# No 1.x release can ever satisfy `>= 5.0.8`, so the audit gate cannot be
+# cleared by upgrading. The two overrides are what actually hold both copies on
+# patched versions; this entry only silences the range's false match. Drop it
+# once the advisory enumerates its backports, or once minimatch@3 leaves the tree.
+auditConfig:
+  ignoreGhsas:
+    - GHSA-mh99-v99m-4gvg
 
 # pnpm blocks dependency install scripts by default, and errors on any it has
 # no ruling for, so every package that wants one must be listed either way.
