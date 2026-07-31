@@ -1,10 +1,9 @@
-
 - id: rimay
   company:
     fr: "RIMAY (Startup)"
     en: "RIMAY (Startup)"
   role:
-    fr: "Développeur Full-Stack & Cofondateur"
+    fr: "Développeur Full-Stack & Devops"
     en: "Full-Stack Developer & Cofounder"
   type: "part-time"
   period:
@@ -88,10 +87,10 @@
   role:
     fr: "DevOps & Cofondateur"
     en: "DevOps & Cofounder"
-  type: "part-time"
+  type: null
   period:
     start: "2026-01"
-    end: "2026-05"
+    end: null
   location: "Paris, France"
   short:
     fr: "Structuration complète de l'infrastructure d'une startup : CI/CD, conteneurisation, automatisation, supervision et déploiement."
@@ -245,7 +244,7 @@
   detailed:
     fr: |
       Contexte : Évolution progressive au sein d'un éditeur ERP/CRM, du support de niveau 3 (MCO) jusqu'au rôle de Lead Technique et DevOps pour des clients grands comptes (Yves Rocher, LePlombFrancais, Rail Europe, OSG).
-      
+
       Missions :
       - Refonte et Migration : Migration de solutions monolithiques legacy (Java 5/6, Tapestry, Compiere) vers des architectures modernes (Spring Boot, Angular, JDK 17).
       - Bases de données : Pilotage de la migration complexe de bases de données d'Oracle vers PostgreSQL (Ora2PG, Orafce) et optimisation des requêtes.
@@ -254,7 +253,7 @@
       - Leadership : Rôle de Lead Technique post-production, conduite d'entretiens de recrutement, onboarding et animation de formations techniques.
     en: |
       Context: Progressed within an ERP/CRM provider from L3 support to Tech Lead and DevOps roles, supporting major enterprise clients (Yves Rocher, LePlombFrancais, Rail Europe, OSG).
-      
+
       Missions:
       - Architecture Modernization: Migrated legacy monolithic solutions (Java 5/6, Tapestry, Compiere) to modern architectures (Spring Boot, Angular, JDK 17).
       - Database Migration: Led complex database migrations from Oracle to PostgreSQL (Ora2PG, Orafce) and optimized SQL performance.
@@ -289,7 +288,7 @@
   detailed:
     fr: |
       Contexte : Réalisation de projets sur mesure pour des clients locaux et internationaux.
-      
+
       Missions :
       - Développement full-stack de sites web responsives et dynamiques (vitrines, plateformes sur mesure, CMS).
       - Conception et développement d'applications mobiles Android natives.
@@ -298,7 +297,7 @@
       - Pilotage complet des projets : recueil des besoins, chiffrage, développement et déploiement.
     en: |
       Context: Delivered custom projects for local and international clients.
-      
+
       Missions:
       - Developed full-stack responsive and dynamic websites (corporate sites, custom platforms, CMS).
       - Designed and engineered native Android mobile applications.
@@ -332,7 +331,7 @@
   detailed:
     fr: |
       Contexte : Accompagnement complet de clients et des associations dans leur stratégie visuelle et digitale.
-      
+
       Missions :
       - Conception d'identités visuelles complètes et de chartes graphiques pour renforcer l'image de marque.
       - Création de maquettes interactives et optimisation des parcours utilisateurs (UX/UI).
@@ -340,7 +339,7 @@
       - Gestion de projet autonome, de la prise de brief client jusqu'à la livraison finale.
     en: |
       Context: Provided comprehensive visual and digital strategy support for clients and associations.
-      
+
       Missions:
       - Designed full visual identities and brand guidelines to strengthen brand awareness.
       - Created interactive wireframes and optimized user journeys (UX/UI).
