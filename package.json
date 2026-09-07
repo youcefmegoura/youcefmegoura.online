@@ -15,7 +15,7 @@
     "@sentry/nextjs": "^10.49.0",
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
-    "@tsparticles/slim": "^3.9.1",
+    "@tsparticles/slim": "^4.4.0",
     "@types/d3": "^7.4.3",
     "d3": "^7.9.0",
     "framer-motion": "^12.38.0",
